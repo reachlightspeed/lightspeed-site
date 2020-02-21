@@ -20,9 +20,9 @@ Lightspeed is a digital consultancy with a laser focus on performance. We help c
 
 Mobile devices comprise more than half of overall web traffic and this proportion grows every day
 
-* Your competitors are moving fast
+* Your competition is moving quickly 
 
-There's no way to outperform your competition moving as slowly as they are
+There's no way to outperform your competition moving slowly
 
 ## How it works 
 
