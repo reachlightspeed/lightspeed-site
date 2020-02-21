@@ -6,9 +6,9 @@ Lightspeed is a digital consultancy with a laser focus on performance. We help c
 
 ## Our Services 
 
-* Performance Audit and Recommendations
+* Performance Audits and Recommendations
 * Performance Enhancements 
-* Bespoke Design and Development
+* Performant Design and Development
 
 ## Why Lightspeed 
 
