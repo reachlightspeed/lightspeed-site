@@ -78,13 +78,13 @@
         display: none;
       }
       .box.offerings ::marker {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         color: #1e2a61;
       }
       .box.offerings ol p {
         font-weight: 400;
         color: #1e2a61;
-        font-size: 1.5em; 
+        font-size: 1.5rem; 
         margin-bottom: 0px;
         line-height: 1.2;
       }
@@ -108,11 +108,19 @@
         margin-bottom: 0px;
       }
       .box.who .bio p.title {
-        font-size: .9em;
+        font-size: .9rem;
         margin-top: 0px;
       } 
       .box.contact input, .box.contact textarea {
         width: 100%;
+      }
+      .contact input, .contact textarea {
+        line-height: 2.25rem;
+        font-size: 1.25rem;
+        padding: .5rem;     
+      }
+      .contact .send-it {
+        text-align: right;
       }
       footer {
         margin-top: 50px;
@@ -212,7 +220,7 @@
         		<p>
           		<label><textarea name="message" placeholder="message"></textarea></label>
         		</p>
-        		<p>
+        		<p class="send-it">
           		<button type="submit">Send</button>
 	        	</p>
   	    	</form>
