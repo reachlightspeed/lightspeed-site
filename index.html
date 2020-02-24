@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,22 +14,83 @@
         line-height: 1.5;
       }
       *, *:before, *:after { box-sizing: inherit }
-      h1 {
-        font-family: SFProText-MediumItalic;
-        font-size: 82px;
-        color: #3B5EE2;
-        letter-spacing: -2.3px;
-        text-align: center;
+      h1, h2, h3, h4, h5, h6 { line-height: 1 }
+      img { max-width: 100%; height: auto }
+
+      body {
+        background-image: linear-gradient(180deg, #ffffff 0%, #e3f2ff 100%);
+        background-attachment: fixed;
       }
+
+      p {
+        font-size: 1.25rem;
+        font-weight: 300;
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #1e2a61;
+        letter-spacing: -0.0125rem;
+        margin: 0;
+      }
+
+      main {
+        display: block;
+        max-width: 45rem;
+        margin: 0 auto;
+      }
+
+      .proton {
+        display: block;
+        margin: 4rem auto 1rem;
+      }
+
+      .site-name {
+        font-size: 6rem;
+        font-style: oblique;
+        font-weight: 600;
+        color: #3b5ee2;
+        letter-spacing: -0.24rem;
+        text-align: center;
+        margin: 0;
+      }
+
+      .site-description {
+        max-width: 42rem;
+        font-size: 2.75rem;
+        font-weight: 200;
+        color: #1E2A61;
+        letter-spacing: 0;
+        text-align: center;
+        margin: 1rem auto;
+      }
+
+      .box {
+        border-top: 6px solid #3b5ee2;
+        background: rgba(255,255,255,0.89);
+        padding: 2.75rem;
+        margin-top: 4rem;
+        box-shadow: 0 2px 7px 0 rgba(7,7,22,0.12);
+        border-radius: 8px;
+        -webkit-backdrop-filter: saturate(140%) blur(16px);
+        backdrop-filter: saturate(140%) blur(16px);
+      }
+
     </style>
   </head>
 	
 	<body>
+
+    <main>
 	  <div>
-	  	<h1>Lightspeed</h1>
-	  	<h2>Hyper performant web experiences & page speed optimization</h2>
+      <svg width="169" height="80" viewBox="0 0 169 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="proton">
+        <path d="M152 40a23 23 0 11-46 0 23 23 0 0146 0z" fill="#3B5EE2" stroke="#1E2A61" stroke-width="6" />
+        <path d="M62 77h67.07A36.96 36.96 0 00166 40c0-20.43-16.53-37-36.93-37C122.87 3 3 3.69 3 3.69M82 52H30M90 27H44M28 27H12M43 77H10" stroke="#1E2A61" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+	  	<h1 class="site-name">Lightspeed</h1>
+	  	<h2 class="site-description">Hyper performant web experiences &amp; page speed optimization</h2>
 		</div>
-		<div class="what">
+		<div class="box">
 			<h3>What is Lightspeed</h3>
 	  	<p>Lightspeed is a digital consultancy with a laser focus on performance. We help clients inject speed into their current web experiences and create beautiful and unbelievably fast sites from scratch. It's the calculated result of two founders passionate about space-age design and out-of-this-world performance.</p>	
 		</div>
@@ -143,6 +203,7 @@
         </div>  
       </div>
     </div>
+    </main>
 
     <footer>
       Lightspeed was launched more than 50 years after the dawn of the first Space Age. 
