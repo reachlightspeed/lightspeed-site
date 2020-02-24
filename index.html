@@ -30,11 +30,11 @@
 	  	<h1>Lightspeed</h1>
 	  	<h2>Hyper performant web experiences & page speed optimization</h2>
 		</div>
-		<div>
+		<div class="what">
 			<h3>What is Lightspeed</h3>
 	  	<p>Lightspeed is a digital consultancy with a laser focus on performance. We help clients inject speed into their current web experiences and create beautiful and unbelievably fast sites from scratch. It's the calculated result of two founders passionate about space-age design and out-of-this-world performance.</p>	
 		</div>
-	  <div>
+	  <div class="services">
 	  	<h3>Our Services</h3>
 	  	<p>We have two service offerings:</p>
 			<ul>
@@ -48,9 +48,43 @@
 				</li>
 			</ul>
 	  </div>
-		<div>
-			<h3>Why Lightspeed</h3>
-		</div>
+		<div class="why">
+      <h3>Why Lightspeed</h3>
+    </div>
+    <div class="how">
+      <h3>How it works</h3>
+      <ul>
+        <li>
+          <p>Performance Audits</p>
+          <span>We create a report after running tests to see where your site is underperforming</span>
+        </li>
+        <li>
+          <p>Performance Recommendations</p>
+          <span>We rank and score recommendations based on impact and level of effort for your dev team — or we'll partner with you to make the updates ourselves</span>
+        </li>
+        <li>
+          <p>Custom Design and Development</p>
+          <span>
+            We create amazingly-fast experiences based on lean design principles that are as easy on the eyes as they are fast to load
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="who">
+      <h3>Who is Lightspeed</h3>
+      <div class="bio">
+        <img src="https://www.placecage.com/c/200/300" loading="auto"/>
+        <p class="name">Dan Klammer</p>
+        <p class="title">Co-Founder</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="bio">
+        <img src="https://www.placecage.com/c/200/300" loading="auto"/>
+        <p class="name">Tom Hanlon</p>
+        <p class="title">Co-Founder</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
 			<!-- contact section -->
 		<div>
 			<!-- contact form -->
@@ -76,7 +110,7 @@
 			</div>
 			
 			<!-- to show after form submitted -->
-			<div>
+			<div class="hidden thank-you">
 				<h3>You've reached Lightspeed</h3>
 				<p>One of the founders will get in touch with you shortly.</p>
 			</div>
@@ -164,7 +198,10 @@
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function(){
-        // show success message
+          // hide form
+          document.querySelector('.contact').classList.add('hidden');
+          // show thank you
+          document.querySelector('.hidden.thank-you').classList.remove('hidden');
         }).catch(function(e){
         // handle error 
         });
