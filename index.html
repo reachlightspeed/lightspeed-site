@@ -117,6 +117,7 @@
       }
       footer p {
         margin: 0;
+        text-align: center;
         font-size: .8rem;
       }
 
@@ -219,6 +220,11 @@
 			<div class="hidden thank-you">
 				<h3>You've reached Lightspeed</h3>
 				<p>One of the founders will get in touch with you shortly.</p>
+      </div>
+      
+      <div class="hidden error">
+				<h3>We're sorry, that didn't transmit</h3>
+				<p>There was an issue with the form and your message did not come through &mdash; please reload the page and try again.</p>
 			</div>
     </div>
     
@@ -309,7 +315,8 @@
           // show thank you
           document.querySelector('.hidden.thank-you').classList.remove('hidden');
         }).catch(function(e){
-        // handle error 
+          document.querySelector('.contact-us').classList.add('hidden');
+          document.querySelector('.hidden.error').classList.remove('hidden');
         });
       }, false);
   </script>
