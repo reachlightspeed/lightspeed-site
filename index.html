@@ -95,6 +95,8 @@
         height: 150px;
         width: 150px;
         border-radius: 100%;
+        margin: auto;
+        display: block;
       }
       .box.who .bio-container {
         display: flex;
@@ -103,6 +105,7 @@
         margin-top: 20px;
         display: inline-block;
         vertical-align: top;
+        width: 50%;
       }
       .box.who .bio p.name {
         margin-bottom: 0px;
@@ -111,6 +114,9 @@
         font-size: .9rem;
         margin-top: 0px;
       } 
+      .box.who .bio p.name, .box.who .bio p.title {
+        text-align: center;
+      }
       .box.contact input, .box.contact textarea {
         width: 100%;
       }
@@ -160,15 +166,10 @@
         .box.who .bio-container {
           display: block;
         }
-        .box.who img {
-          margin: auto;
-          display: block;
-        }
-        .box.who .bio p.name, .box.who .bio p.title {
-          text-align: center;
+        .box.who .bio {
+          width: 100%;
         }
       } 
-
     </style>
   </head>
 	
