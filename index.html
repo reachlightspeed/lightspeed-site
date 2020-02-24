@@ -109,7 +109,21 @@
       .box.who .bio p.title {
         font-size: .9em;
         margin-top: 0px;
-      }
+      } 
+      @media screen and (max-width: 420px) {
+        .box.who .bio {
+          width: 100%; 
+          display: block;
+        }
+        .box.who img {
+          margin: auto;
+          display: block;
+        }
+        .box.who .bio p.name, .box.who .bio p.title {
+          text-align: center;
+        }
+      } 
+
     </style>
   </head>
 	
