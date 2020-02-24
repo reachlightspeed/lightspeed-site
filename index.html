@@ -118,6 +118,13 @@
         line-height: 2.25rem;
         font-size: 1.25rem;
         padding: .5rem;     
+        border: 1px solid #cbcbcc;
+      }
+      .contact textarea {
+        resize: none;
+      }
+      .contact ::placeholder {
+        color: #828181
       }
       .contact .send-it {
         text-align: right;
@@ -224,13 +231,19 @@
 				<div class="contact-form">
       		<form name="contact" method="POST" data-netlify="true">
         		<p>
-          		<label><input type="text" name="name" placeholder="name"/></label>
+          		<label>
+                name*
+                <input type="text" name="name"/></label>
  	      		</p>
         		<p>
-          		<label><input type="email" name="email" placeholder="email"/></label>
+          		<label>
+                email*
+                <input type="email" name="email"/></label>
         		</p>
         		<p>
-          		<label><textarea name="message" placeholder="message"></textarea></label>
+          		<label>
+                message*
+                <textarea name="message"></textarea></label>
         		</p>
         		<p class="send-it">
           		<button type="submit">Send</button>
