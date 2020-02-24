@@ -316,19 +316,19 @@
         // consolidate form data
         const formData = serialize(form);
         // send
-        fetch(form.action, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: formData
-        }).then(function(){
-          // hide form
-          document.querySelector('.contact-us').classList.add('hidden');
-          // show thank you
-          document.querySelector('.hidden.thank-you').classList.remove('hidden');
-        }).catch(function(e){
-          document.querySelector('.contact-us').classList.add('hidden');
-          document.querySelector('.hidden.error').classList.remove('hidden');
-        });
+        // fetch(form.action, {
+        //   method: 'POST',
+        //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        //   body: formData
+        // }).then(function(){
+        //   // hide form
+        //   document.querySelector('.contact-us').classList.add('hidden');
+        //   // show thank you
+        //   document.querySelector('.hidden.thank-you').classList.remove('hidden');
+        // }).catch(function(e){
+        //   document.querySelector('.contact-us').classList.add('hidden');
+        //   document.querySelector('.hidden.error').classList.remove('hidden');
+        // });
       }, false);
   </script>
 
