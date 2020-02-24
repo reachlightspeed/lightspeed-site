@@ -4,7 +4,7 @@ Hyper performant web experiences
 ## What is Lightspeed 
 Lightspeed is a digital consultancy with a laser focus on performance. We help clients inject speed into their current web experiences and create beautiful and unbelievably fast sites from scratch. It's the calculated result of two founders passionate about space-age design and out-of-this-world performance. 
 
-## Our Services 
+## Our Services
 
 * Performance Audits and Recommendations
 * Performance Enhancements 
