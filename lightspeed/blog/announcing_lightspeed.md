@@ -4,11 +4,13 @@ date: Last Modified
 layout: blog.njk
 ---
 
-I can't remember the first time I got online -- but I do remember the screech of the modem for the handshake between your computer and your ISP. I remember the applications. AOL instant messenger. Downloading songs on Kazaa over night while you tied up the phone line.  
+I can't remember the first time I got online -- but I do remember the sound. The blaring screech of the dial-up modem for the handshake between your computer and your ISP (via landline!). 
 
-The web of today is a different beast. Instantly available streaming audio and video on demand. Entire applications that execute operations of their own without refreshing.
+I remember the applications. AOL instant messenger. Downloading songs on Kazaa over night while you tied up the phone line. Games with friends. 
 
-Browsers have also come a long way. Originally built for displaying documents, they're now applications that run _applications_ of their own. Increasingly computer hardware is becoming the 'dumb terminal' that allows for a connection to this rich ecosystem of interconnected applications. The browser applications of today are capable of doing so much -- allowing us to share high-quality photos and videos with friends and family, collaborate on docs with coworkers in real time, and more.
+The web of today is a different beast. Streaming 4k video and high-definition audio that's readily available. Entire applications that live in the browser.
+
+Browsers themselves have come a long way. Originally built for displaying documents, they're applications that now run _applications_ of their own. Increasingly the computer hardware in front of you is becoming the 'dumb terminal' that allows for a connection to this rich ecosystem of interconnected applications hosted in the cloud. The browser applications of today are capable of doing so much -- allowing us to share high-quality photos and videos with friends and family, collaborate on docs with coworkers in real time, and more.
 
 None of this is possible without pushing a lot of data up and down the pipe. 
 
@@ -23,4 +25,6 @@ As mobile web traffic continues to grow as the predominant share of web traffic,
 
 My partner Dan and I starting Lightspeed, an agency to create hyper performance web experiences. Speed and responsiveness can live alongside aesthetics to have a performant site that runs well for the lion's share   
 
-Lightspeed.
+Onwards and upwards. 
+
+
