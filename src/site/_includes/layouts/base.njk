@@ -7,21 +7,8 @@
     <title>Lightspeed - A Web Performance Optimization Consultancy</title>
     <meta name="description" content="Lightspeed is a performance optimization consultancy that works with forward-thinking companies to create inconceivably fast digital experiences.">
     <meta name="author" content="Lightspeed, LLC">
+    <link rel="stylesheet" href="/css/styles.css">
 
-    {% if (process.env.NODE_ENV == "production") %}
-
-          {% set css %}
-            {% include "/css/styles.css" %}
-          {% endset %}
-          <style>
-          {{ css | cssmin | safe }}
-          </style>
-
-    {% else %}
-
-        <link rel="stylesheet" href="/css/styles.css">
-
-    {% endif %}
 
   <style>
     html {
@@ -190,7 +177,7 @@
     </style>
   </head>
 	
-	<body class=" text-black">
+	<body class="text-black">
     {{ content | safe }}
     {% set js %}
       {% include "js/index.js" %}
