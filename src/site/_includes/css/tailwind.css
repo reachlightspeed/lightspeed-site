@@ -11,21 +11,18 @@
 }
 
 .box {
-  @apply p-10 pb-12 mt-16 rounded-lg shadow-xl border-spacepurple border-t-6;
+  @apply p-6 pb-10 mt-12 rounded-lg shadow-xl border-spacepurple border-t-6 text-center;
   background: rgba(255,255,255,0.89);
   backdrop-filter: saturate(140%) blur(16px);
 }
 
-.btn {
-
-}
 
 .transition {
   transition: all 0.3s ease;
 }
 
 p {
-  @apply text-xl font-light;
+  @apply text-lg font-light;
 }
 
 p + p {
@@ -33,7 +30,7 @@ p + p {
 }
 
 h3 {
-  @apply text-3xl font-medium text-spacepurple-dark tracking-tight mb-4 leading-snug;
+  @apply text-2xl font-medium text-spacepurple-dark tracking-tight mb-4 leading-snug;
 }
 
 
@@ -49,6 +46,24 @@ a:hover,
 a:focus {
  @apply border-b-2;
  @apply border-teal-200;
+}
+
+@screen sm {
+
+  .box {
+    @apply p-10 pb-12 mt-16 text-left;
+  }
+
+  p {
+    @apply text-xl;
+  }
+  
+  
+  h3 {
+    @apply text-3xl;
+  }
+  
+
 }
 
 
