@@ -662,20 +662,6 @@ video {
   background: rgba(255,255,255,0.89);
 }
 
-.reasons-to-believe {
-  background-color: #3b5ee2;
-  width: 100vw;
-  position: relative;
-  left: calc(-50vw + 50%);
-  padding: 2.5rem;
-  padding-top: 2.5rem;
-  padding-bottom: 3rem;
-  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
-  margin-top: -7rem;
-  padding-top: 8rem;
-  padding-bottom: 7rem;
-}
-
 .transition {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
