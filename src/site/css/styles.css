@@ -686,8 +686,8 @@ video {
 }
 
 .reasons-to-believe {
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 100px,100% 0,100% calc(100% - 100px),0 100%);
+  -webkit-clip-path: polygon(0 100px,100% 0,100% calc(100% - 100px),0 100%);
 }
 
 .how-it-works {
