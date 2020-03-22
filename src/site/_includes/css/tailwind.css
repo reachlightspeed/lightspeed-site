@@ -10,26 +10,49 @@
   background-image: linear-gradient(180deg, #ffffff 0%, #e3f2ff 100%)
 }
 
-.starfield {
-  @apply fixed top-0 left-0 w-full h-full;
+.stars {
+  position: absolute;
   z-index: -1;
+  width: 100%;
+  height: 800px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
-.stars-1 {
-  background-size: 800px auto;
-  animation: spaceTravel 60s linear infinite;
+.starfield {
+  position: absolute;
+  width: 200vw;
+  height: 100%;
+  top: 0;
+  background-image: url(/img/starfield.png);
+  background-repeat: repeat;
+  animation-name: spaceTravel;
+  animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
-.stars-2 {
-  background-size: 1600px auto;
-  animation: spaceTravel 40s linear infinite;
+.depth-1 {
+  background-size: 50vw auto;
+  animation-duration: 40s;
+}
+
+.depth-2 {
+  background-size: 25vw auto;
+  animation-duration: 60s;
+  top: -80px;
+}
+
+.depth-3 {
+  background-size: 12.5vw auto;
+  animation-duration: 80s;
+  top: -120px;
 }
 
 @keyframes spaceTravel {
   0% { transform: translateX(0) }
-  to { transform: translateX(-800px) }
+  to { transform: translateX(-50vw) }
 }
-
 
 .box {
   @apply p-6 pb-10 mt-12 rounded-lg shadow-xl border-spacepurple border-t-6 text-center bg-white;

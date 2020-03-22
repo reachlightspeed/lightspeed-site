@@ -28,24 +28,10 @@
 	<body class="bg-fixed hp-gradient mx-4 overflow-x-hidden">
     {{ content | safe }}
     {% set js %}
-      {% include "js/starfield.js" %}
       {% include "js/index.js" %}
     {% endset %}
-    
     <script>
       {{ js | jsmin | safe }}
-
-      new Starfield({ 
-        canvas: '.starfield',
-        numStars: 300,
-        vx: 0.15,
-        vy: 0.05,
-        starColor: '40,68,117',
-        bgStart: '255,255,255',
-        bgEnd: '227,242,255',
-        maxRadius: 2,
-        shootingStarInterval: 400
-      }).start();
     </script>
   </body>
 </html>
