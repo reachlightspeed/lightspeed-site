@@ -638,20 +638,20 @@ video {
 }
 
 .depth-1 {
-  background-size: 50vw auto;
+  background-size: auto 100vw;
   -webkit-animation-duration: 40s;
           animation-duration: 40s;
 }
 
 .depth-2 {
-  background-size: 25vw auto;
+  background-size: auto 50vw;
   -webkit-animation-duration: 60s;
           animation-duration: 60s;
   top: -80px;
 }
 
 .depth-3 {
-  background-size: 12.5vw auto;
+  background-size: auto 25vw;
   -webkit-animation-duration: 80s;
           animation-duration: 80s;
   top: -120px;
@@ -758,6 +758,18 @@ a:focus {
 
   h3 {
     font-size: 1.875rem;
+  }
+
+  .depth-1 {
+    background-size: auto 50vw;
+  }
+
+  .depth-2 {
+    background-size: auto 25vw;
+  }
+
+  .depth-3 {
+    background-size: auto 12.5vw;
   }
 }
 
