@@ -43,12 +43,6 @@
   top: -80px;
 }
 
-.depth-3 {
-  background-size: auto 25vw;
-  animation-duration: 80s;
-  top: -120px;
-}
-
 @keyframes spaceTravel {
   0% { transform: translateX(0) }
   to { transform: translateX(-50vw) }
