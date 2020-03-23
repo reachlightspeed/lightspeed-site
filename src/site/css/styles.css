@@ -607,70 +607,17 @@ video {
   Content sections conventions
 */
 
-.hp-gradient {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e3f2ff));
-  background-image: linear-gradient(180deg, #ffffff 0%, #e3f2ff 100%)
-}
-
-.stars {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 800px;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-.starfield {
-  position: absolute;
-  width: 200vw;
-  height: 100%;
-  top: 0;
-  background-image: url(/img/starfield.png);
-  background-repeat: repeat;
-  -webkit-animation-name: spaceTravel;
-          animation-name: spaceTravel;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.depth-1 {
-  background-size: auto 100vw;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-}
-
-.depth-2 {
-  background-size: auto 50vw;
-  -webkit-animation-duration: 60s;
-          animation-duration: 60s;
-  top: -80px;
-}
-
-.depth-3 {
-  background-size: auto 25vw;
-  -webkit-animation-duration: 80s;
-          animation-duration: 80s;
-  top: -120px;
-}
-
-@-webkit-keyframes spaceTravel {
-  0% { -webkit-transform: translateX(0); transform: translateX(0)
-  }
-
-  to { -webkit-transform: translateX(-50vw); transform: translateX(-50vw)
-  }
-}
-
-@keyframes spaceTravel {
-  0% { -webkit-transform: translateX(0); transform: translateX(0)
-  }
-
-  to { -webkit-transform: translateX(-50vw); transform: translateX(-50vw)
-  }
+.bg-starfield {
+  background-image: 
+    url('/img/starfield.svg'),
+    url('/img/starfield.svg'),
+    -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e3f2ff));
+  background-image: 
+    url('/img/starfield.svg'),
+    url('/img/starfield.svg'),
+    linear-gradient(180deg, #ffffff 0%, #e3f2ff 100%);
+  background-size: 500px auto, 250px auto, auto;
+  background-position: 0 150px, 0 0, 0 0;
 }
 
 .box {
@@ -683,7 +630,6 @@ video {
   border-top-width: 6px;
   text-align: center;
   background-color: #fff;
-  background: rgba(255,255,255,0.89);
 }
 
 .transition {
@@ -758,18 +704,6 @@ a:focus {
 
   h3 {
     font-size: 1.875rem;
-  }
-
-  .depth-1 {
-    background-size: auto 50vw;
-  }
-
-  .depth-2 {
-    background-size: auto 25vw;
-  }
-
-  .depth-3 {
-    background-size: auto 12.5vw;
   }
 }
 
