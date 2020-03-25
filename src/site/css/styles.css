@@ -617,7 +617,7 @@ video {
     url('/img/starfield.svg'),
     linear-gradient(180deg, #ffffff 0%, #e3f2ff 100%);
   background-size: 500px auto, 250px auto, auto;
-  background-position: 0 150px, 0 0, 0 0;
+  background-position: 0 -520px,0 -300px,0 0;
   -webkit-transition: background 4s ease;
   transition: background 4s ease;
 }
