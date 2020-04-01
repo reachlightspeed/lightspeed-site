@@ -232,7 +232,7 @@ layout: default
 
     <div class="max-w-2xl mx-auto mt-8 mb-12 relative">
       <form method="post" target="_blank">
-        <input type="url" name="url" id="speedtest-input" placeholder="http://reachlightspeed.com" class="w-full p-3 pb-4 text-2xl rounded shadow-lg focus:shadow-xl outline-none border-2 transition appearance-none leading-snug">
+        <input type="url" name="url" id="speedtest-input" placeholder="https://reachlightspeed.com" value="https://reachlightspeed.com" class="w-full p-3 pb-4 text-2xl rounded shadow-lg focus:shadow-xl outline-none border-2 transition appearance-none leading-snug">
         <button type="submit" class="px-10 py-3 text-xl font-medium rounded-full leading-none text-white bg-spacepurple hover:bg-spacepurple-dark transition absolute right-0 top-0 m-2">Test</button>
       </form>
     </div>
@@ -249,7 +249,6 @@ layout: default
         e.preventDefault();
         let site = document.getElementById('speedtest-input').value
         let encodedUrl = encodeURI(site);
-        // let deviceSelection = document.querySelectorAll('input[type="radio"]');
         let requestUrl = "https://developers.google.com/speed/pagespeed/insights/?url=" + encodedUrl + "&tab=mobile" 
         window.open(requestUrl, '_blank');
       }, false);
