@@ -35,7 +35,7 @@
   };
 
   // grab form
-  const form = document.querySelector('form');
+  const form = document.getElementById('form-contact');
   // add event listener 
   form.addEventListener('submit', function(e){
     e.preventDefault();
