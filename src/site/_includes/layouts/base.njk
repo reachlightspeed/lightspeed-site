@@ -6,22 +6,16 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Lightspeed &mdash; A Web Performance Optimization Consultancy</title>
     <meta name="description" content="Lightspeed is a performance optimization consultancy that works with forward-thinking companies to create inconceivably fast digital experiences.">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="preload" href="/img/starfield.svg" as="image">
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-159388575-1');
-    </script>
+    <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; ga('create', 'UA-159388575-1', 'auto'); ga('send', 'pageview');</script>
     {% set css %}
       {% include "css/styles.css" %}
     {% endset %}
     <style>
       {{ css | cssmin | safe }}
     </style>
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-159388575-1" async></script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
     <link rel="shortcut icon" href="/favicon.png">
     <meta property="og:image" content="https://reachlightspeed.com/img/lightspeed_og.png">
     <meta property="og:title" content="Lightspeed — A Web Performance Optimization Consultancy">
@@ -31,8 +25,7 @@
     <meta name="author" content="Lightspeed Consulting LLC">
     <link rel="canonical" href="https://reachlightspeed.com">
   </head>
-	
-
+  
 	<body class="bg-fixed bg-starfield mx-4 overflow-x-hidden">
     {{ content | safe }}
     {% set js %}
@@ -42,4 +35,5 @@
       {{ js | jsmin | safe }}
     </script>
   </body>
+
 </html>
