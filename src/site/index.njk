@@ -193,7 +193,7 @@ layout: default
   </section>
 
 
-  <section class="box who">
+  <section class="box who z-10 relative">
     <h3>Who is Lightspeed</h3>
     <div class="flex text-center mt-10 flex-col sm:flex-row">
       <div class="border-b pb-5 sm:pb-0 sm:border-0">
@@ -225,6 +225,37 @@ layout: default
     </div>
   </section>
 
+  <section class="spacepurple-section">
+    <h5 class="text-white text-center pt-16 opacity-75 tracking-widest uppercase">How Do You Measure Up?</h5>
+    <h3 class="text-white text-center pt-1 font-thin sm:text-5xl tracking-wide text-4xl">Test Your Site</h3>
+    <p class="max-w-xl m-auto text-white text-center pt-1">Our site loaded for you in <span class="font-medium"><span id="loadtime">0.00</span> seconds</span> and usually scores 100/100 on Google Lighthouse. How does your site compare?</p>
+
+    <div class="max-w-2xl mx-auto mt-8 mb-12 relative">
+      <form method="post" target="_blank">
+        <input type="url" name="url" id="speedtest-input" placeholder="http://reachlightspeed.com" class="w-full p-3 pb-4 text-2xl rounded shadow-lg focus:shadow-xl outline-none border-2 transition appearance-none leading-snug">
+        <button type="submit" class="px-10 py-3 text-xl font-medium rounded-full leading-none text-white bg-spacepurple hover:bg-spacepurple-dark transition absolute right-0 top-0 m-2">Test</button>
+      </form>
+    </div>
+
+    <script>
+      window.addEventListener("load", loadTime, false);
+      function loadTime() {
+        var now = new Date().getTime();
+        var page_load_time = (now - performance.timing.navigationStart) / 1000;
+        page_load_time = +page_load_time.toFixed(2);
+        document.getElementById('loadtime').innerHTML = page_load_time;
+      }
+      document.addEventListener('submit', function(e){
+        e.preventDefault();
+        let site = document.getElementById('speedtest-input').value
+        let encodedUrl = encodeURI(site);
+        // let deviceSelection = document.querySelectorAll('input[type="radio"]');
+        let requestUrl = "https://developers.google.com/speed/pagespeed/insights/?url=" + encodedUrl + "&tab=mobile" 
+        window.open(requestUrl, '_blank');
+      }, false);
+    </script>
+
+  </section>
 
   <section class="box contact">
     <div class="contact-us">
