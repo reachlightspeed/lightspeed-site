@@ -1,3 +1,25 @@
+
+// Page loaded for you in [X] Seconds
+window.addEventListener("load", loadTime, false);
+
+function loadTime() {
+  var now = new Date().getTime();
+  var page_load_time = (now - performance.timing.navigationStart) / 1000;
+  page_load_time = +page_load_time.toFixed(2);
+  document.getElementById('loadtime').innerHTML = page_load_time;
+}
+
+// Lighthouse Pagespeed Insights Form
+const formTestSite = document.getElementById('form-testsite');
+
+formTestSite.addEventListener('submit', function(e){
+  e.preventDefault();
+  let site = document.getElementById('speedtest-input').value
+  let encodedUrl = encodeURI(site);
+  let requestUrl = "https://developers.google.com/speed/pagespeed/insights/?url=" + encodedUrl + "&tab=mobile" 
+  window.location.assign(requestUrl);
+}, false);
+
 /*!
   * Serialize all form data into a query string
   * (c) 2018 Chris Ferdinandi, MIT License, https://gomakethings.com
