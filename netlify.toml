@@ -21,14 +21,14 @@
 [[headers]]
   for = "*.jpg"
   [headers.values]
-    Cache-Control = "public, max-age=300"
+    Cache-Control = "public, max-age=31557600"
 
 [[headers]]
   for = "*.png"
   [headers.values]
-    Cache-Control = "public, max-age=300"
+    Cache-Control = "public, max-age=31557600"
 
 [[headers]]
   for = "*.webp"
   [headers.values]
-    Cache-Control = "public, max-age=300"
+    Cache-Control = "public, max-age=31557600"
