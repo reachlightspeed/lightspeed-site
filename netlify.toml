@@ -6,7 +6,6 @@
 [context.production]
   environment = { NODE_VERSION = "10.15.3", NODE_ENV = "production" }
 
-
 [dev]
   command = "npm run start"
   publish = "dist"
@@ -18,3 +17,18 @@
 [[redirects]]
   from = "/post/*"
   to = "/blog/:splat"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
