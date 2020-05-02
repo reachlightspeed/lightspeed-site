@@ -30,16 +30,24 @@
     
     <main class="block max-w-3xl mx-auto">
 
-      <header>
-        <nav>
-          <svg viewBox="0 0 42 42" width="94" xmlns="http://www.w3.org/2000/svg" class="mx-auto sm:w-32 mt-16 text-spacepurple"><path fill="currentColor" fill-rule="evenodd" d="M21 42a21 21 0 100-42 21 21 0 000 42zM31.8 7.59a1 1 0 00-1.32-1.44l-18 11a1 1 0 00-.19 1.56l5.4 5.4-7.5 10.3a1 1 0 001.33 1.44l18-11a1 1 0 00.19-1.56l-5.4-5.4 7.5-10.3z" clip-rule="evenodd"></path>
-          </svg>
+      <header class="mb-32">
+        <nav class="p-4 border-b-2 bg-white z-20 fixed top-0 left-0 right-0" style="border-bottom: 2px solid #3b5ee2;">
+          <a href="/" class="inline-block border-none">
+            <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" class="w-12 text-spacepurple"><path fill="currentColor" fill-rule="evenodd" d="M21 42a21 21 0 100-42 21 21 0 000 42zM31.8 7.59a1 1 0 00-1.32-1.44l-18 11a1 1 0 00-.19 1.56l5.4 5.4-7.5 10.3a1 1 0 001.33 1.44l18-11a1 1 0 00.19-1.56l-5.4-5.4 7.5-10.3z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <ul class="inline-block float-right">
+            <li class="inline-block m-3"><a href="#ourofferings">Work</a></li>
+            <li class="inline-block m-3"><a href="#contact">Contact</a></li>
+            <li class="inline-block m-3"><a href="#about">About</a></li>
+          </ul>
         </nav>
       </header>
 
-      <section class="box z-10 relative">
-        <p>{{ page.date | readableDate }}</p>
-        <h1>{{ title | safe }}</h1>
+      <h1>{{ title | safe }}</h1>
+      <p>{{ page.date | readableDate }}</p>
+
+      <section class="box z-10 relative mt-4">  
         {{ content | safe }}
       </section>
 
