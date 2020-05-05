@@ -93,3 +93,24 @@ a:focus {
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+#about, #services, #contact {
+  scroll-margin-top: 7rem;
+}
+
+header nav {
+  border-bottom: 2px solid #e6e6e6;
+}
+
+header nav .wordmark h1 {
+  color: #1E2A61;
+}
+
+header nav li a {
+  border-bottom: none;
+}
+
+header nav li a:hover {
+  border-bottom: 2px solid #3050CB;
+  padding-bottom: 1.75rem;
+}
