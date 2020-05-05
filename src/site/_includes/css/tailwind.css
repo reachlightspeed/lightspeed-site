@@ -110,7 +110,7 @@ header nav li a {
   border-bottom: none;
 }
 
-header nav li a:hover {
+header nav li a:hover, header nav li a.active {
   border-bottom: 2px solid #3050CB;
-  padding-bottom: 1.75rem;
+  padding-bottom: 1.66rem;
 }

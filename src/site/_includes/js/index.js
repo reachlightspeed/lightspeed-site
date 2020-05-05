@@ -79,4 +79,3 @@ formTestSite.addEventListener('submit', function(e){
       document.querySelector('.hidden.error').classList.remove('hidden');
     });
   }, false);
-  
