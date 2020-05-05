@@ -114,3 +114,9 @@ header nav li a:hover, header nav li a.active {
   border-bottom: 2px solid #3050CB;
   padding-bottom: 1.66rem;
 }
+
+header nav #i-moon { 
+  fill: #1E2A61;
+  stroke: #1E2A61;
+  cursor: not-allowed; 
+}
