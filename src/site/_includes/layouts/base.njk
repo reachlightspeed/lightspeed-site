@@ -26,6 +26,21 @@
     <link rel="canonical" href="https://reachlightspeed.com">
   </head>
   
+  <header class="mb-32">
+    <nav class="p-2 border-b-2 bg-white z-20 fixed top-0 left-0 right-0" style="border-bottom: 2px solid #e6e6e6;">
+      <a href="/" class="inline-block border-none">
+        <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" class="w-12 text-spacepurple"><path fill="currentColor" fill-rule="evenodd" d="M21 42a21 21 0 100-42 21 21 0 000 42zM31.8 7.59a1 1 0 00-1.32-1.44l-18 11a1 1 0 00-.19 1.56l5.4 5.4-7.5 10.3a1 1 0 001.33 1.44l18-11a1 1 0 00.19-1.56l-5.4-5.4 7.5-10.3z" clip-rule="evenodd"></path>
+        </svg>
+      </a>
+      <ul class="inline-block float-right">
+        <li class="inline-block m-3"><a href="#ourofferings">Work</a></li>
+        <li class="inline-block m-3"><a href="#contact">Contact</a></li>
+        <li class="inline-block m-3"><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
 	<body class="bg-fixed bg-starfield mx-4 overflow-x-hidden">
     {{ content | safe }}
     {% set js %}
