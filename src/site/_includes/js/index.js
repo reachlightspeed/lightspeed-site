@@ -79,3 +79,23 @@ formTestSite.addEventListener('submit', function(e){
       document.querySelector('.hidden.error').classList.remove('hidden');
     });
   }, false);
+
+// to do: need to fix intersection of services div
+if ("IntersectionObserver" in window &&
+    "IntersectionObserverEntry" in window &&
+    "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+  let options = {
+    // root: document.querySelector('#services'),
+    rootMargin: '0px',
+    threshold: 1.0
+  }
+  let observer = new IntersectionObserver(entries => {
+    if (entries[0].boundingClientRect.y < 0) {
+      document.querySelector('nav li a[href="#services"]').classList.add("active");
+    } else {
+      document.querySelector('nav li a[href="#services"]').classList.remove("active");
+    }
+  }, options);
+  observer.observe(document.querySelector("#services"));
+}
+
