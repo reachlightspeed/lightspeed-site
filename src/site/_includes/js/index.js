@@ -1,4 +1,3 @@
-
 // Page loaded for you in [X] Seconds
 window.addEventListener("load", loadTime, false);
 
@@ -80,22 +79,26 @@ formTestSite.addEventListener('submit', function(e){
     });
   }, false);
 
-// to do: need to fix intersection of services div
+// toggle active states based on scroll depth
+let targets = document.querySelectorAll('#services, #about, #contact');
 if ("IntersectionObserver" in window &&
     "IntersectionObserverEntry" in window &&
     "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
   let options = {
-    // root: document.querySelector('#services'),
-    rootMargin: '0px',
-    threshold: 1.0
+    root: document.querySelector('header')[0],
   }
   let observer = new IntersectionObserver(entries => {
-    if (entries[0].boundingClientRect.y < 0) {
-      document.querySelector('nav li a[href="#services"]').classList.add("active");
-    } else {
-      document.querySelector('nav li a[href="#services"]').classList.remove("active");
-    }
-  }, options);
-  observer.observe(document.querySelector("#services"));
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.remove("active");
+        document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.add("active");
+      } else {
+        document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.remove("active");
+      }
+    }, options);
+    });
+  targets.forEach(target => {
+    observer.observe(target);
+  });  
 }
 

@@ -12442,6 +12442,15 @@ header nav #i-moon {
   cursor: not-allowed;
 }
 
+/* hide active dotted rectangle on linux */
+
+header nav a, a:active, a:focus{
+  outline: none; /* Works in Firefox, Chrome, IE8 and above */
+}
+
+header nav {
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
