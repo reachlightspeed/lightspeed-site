@@ -1,4 +1,6 @@
-// Page loaded for you in [X] Seconds
+// encapsulate in IFFE so we don't polute global scope
+(function(){
+  // Page loaded for you in [X] Seconds
 window.addEventListener("load", loadTime, false);
 
 function loadTime() {
@@ -79,26 +81,26 @@ formTestSite.addEventListener('submit', function(e){
     });
   }, false);
 
-// toggle active states based on scroll depth
-let targets = document.querySelectorAll('#services, #about, #contact');
-if ("IntersectionObserver" in window &&
-    "IntersectionObserverEntry" in window &&
-    "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
-  let options = {
-    root: document.querySelector('header')[0],
+  // toggle active states based on scroll depth
+  let targets = document.querySelectorAll('#services, #about, #contact');
+  if ("IntersectionObserver" in window &&
+      "IntersectionObserverEntry" in window &&
+      "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+    let options = {
+      root: document.querySelector('header')[0],
+    }
+    let observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.remove("active");
+          document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.add("active");
+        } else {
+          document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.remove("active");
+        }
+      }, options);
+      });
+    targets.forEach(target => {
+      observer.observe(target);
+    });  
   }
-  let observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.remove("active");
-        document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.add("active");
-      } else {
-        document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.remove("active");
-      }
-    }, options);
-    });
-  targets.forEach(target => {
-    observer.observe(target);
-  });  
-}
-
+})();
