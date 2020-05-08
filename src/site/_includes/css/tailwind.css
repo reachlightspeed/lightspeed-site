@@ -122,6 +122,30 @@ header nav a, a:active, a:focus{
   outline: none; /* Works in Firefox, Chrome, IE8 and above */ 
 }
 
-header nav {
-  
+/* blog */
+body.blog {
+  background-color: #F7F8FC;
+}
+.blog-masthead {
+  background-image: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1333&q=80);
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px),0 100%);
+  -webkit-clip-path: polygon(0 100px,100% 0,100% calc(100% - 100px),0 100%);
+}
+.post-info {
+  height: 350px;
+}
+.post-image {
+  background-image: url('https://images.unsplash.com/photo-1534254910684-68bdc1d69cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+  height: 264px;
+  border-radius: 8px;
+}
+
+.author-info {
+  margin-top: -34px;
 }

@@ -1,5 +1,5 @@
 ---
-title: Announcing Lightspeed
+title: Announcing Lightspeed, A Web Performance Optimization Consultancy
 layout: blog
 permalink: "blog/{{ title | slug }}/"
 date: 2020-05-05

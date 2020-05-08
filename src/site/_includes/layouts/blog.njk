@@ -26,28 +26,54 @@
     <link rel="canonical" href="https://reachlightspeed.com">
   </head>
   
-	<body class="bg-fixed bg-starfield mx-4 overflow-x-hidden">
+	<body class="mx-4 blog overflow-x-hidden">
     
     <main class="block max-w-3xl mx-auto">
 
-      <header class="mb-32">
-        <nav class="p-4 border-b-2 bg-white z-20 fixed top-0 left-0 right-0" style="border-bottom: 2px solid #3b5ee2;">
-          <a href="/" class="inline-block border-none">
-            <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" class="w-12 text-spacepurple"><path fill="currentColor" fill-rule="evenodd" d="M21 42a21 21 0 100-42 21 21 0 000 42zM31.8 7.59a1 1 0 00-1.32-1.44l-18 11a1 1 0 00-.19 1.56l5.4 5.4-7.5 10.3a1 1 0 001.33 1.44l18-11a1 1 0 00.19-1.56l-5.4-5.4 7.5-10.3z" clip-rule="evenodd"></path>
-            </svg>
-          </a>
-          <ul class="inline-block float-right">
-            <li class="inline-block m-3"><a href="#ourofferings">Work</a></li>
-            <li class="inline-block m-3"><a href="#contact">Contact</a></li>
-            <li class="inline-block m-3"><a href="#about">About</a></li>
+      {# header #}
+      <header class="mb-32 z-20 fixed top-0 left-0 right-0 border-b-2 bg-white">
+        <nav class="md:p-1 flex max-w-6xl m-auto">
+          <span class="w-1/5 flex m:w-1/4 lg:w-2/5 items-center justify-center">
+            <a href="/" class="border-none">
+              <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" class="m-3 md:m-2 w-8 md:w-12 md:align-top text-spacepurple inline-flex"><path fill="currentColor" fill-rule="evenodd" d="M21 42a21 21 0 100-42 21 21 0 000 42zM31.8 7.59a1 1 0 00-1.32-1.44l-18 11a1 1 0 00-.19 1.56l5.4 5.4-7.5 10.3a1 1 0 001.33 1.44l18-11a1 1 0 00.19-1.56l-5.4-5.4 7.5-10.3z" clip-rule="evenodd"></path>
+              </svg>
+              <h1 class="m-3 hidden whitespace-no-wrap text-2xl lg:inline-flex text-4xl italic font-semibold tracking-tighter leading-none ">Lightspeed</h1>
+            </a>
+          </span>
+          <ul class="flex md:flex m-3 w-4/5 m:w-3/4 lg:w-2/5 justify-around">
+            <li class="m-3"><a href="#services" data-nav="services">Services</a></li>
+            <li class="m-3"><a href="#">Articles</a></li>
+            <li class="m-3"><a href="#about" data-nav="about">About</a></li>
+            <li class="m-3"><a href="#contact" data-nav="contact">Contact</a></li>
           </ul>
+          <span class="hidden lg:w-1/5 lg:flex flex-row-reverse m-3">
+            <svg id="i-moon" class="m-2 w-6 opacity-75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M14 2C 9 2 3 7 3 15 3 23 9 29 17 29 25 29 30 23 30 18 19 25 7 13 14 2Z" />
+            </svg>
+          </span>
         </nav>
       </header>
 
-      <h1>{{ title | safe }}</h1>
-      <p>{{ page.date | readableDate }}</p>
-
-      <section class="box z-10 relative mt-4">  
+      <div class="mt-26 blog-masthead"></div>
+      <div class="slice"></div>
+      <div class="mt-48 relative post-info">
+        <div class="post-image rounded-md">
+          <h1 class="text-3xl text-white">{{ title | safe }}</h1>
+          <p>{{ page.date | readableDate }}</p>
+        </div>
+        <div class="author-info">
+          <picture>
+            <source srcset="../../img/tj.webp 1x, ../../img/tj@2x.webp 2x" type="image/webp">
+            <source srcset="../../img/tj.jpg 1x, ../../img/tj@2x.jpg 2x" type="image/jpeg">
+            <img src="../../img/tj.jpg" width="64" height="64" loading="lazy" alt="A photo of Tom Hanlon" class="mx-auto rounded-full" />
+          </picture>
+          <div class="author-name text-center">
+            <p class="text-2xl">Tom Hanlon</p>
+            <p class="text-lg mt-0">Performance Engineer</p>
+          </div>
+        </div>
+      </div>
+      <section class="z-10 relative mt-4">  
         {{ content | safe }}
       </section>
 
