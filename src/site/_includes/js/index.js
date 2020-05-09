@@ -57,11 +57,20 @@ formTestSite.addEventListener('submit', function(e){
   return serialized.join('&');
   };
 
-  // grab form
-  const form = document.getElementById('form-contact');
-  // add event listener 
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
+function showFormSuccess(){
+  // hide form
+  document.querySelector('.contact-us').classList.add('hidden');
+  // show thank you
+  document.querySelector('.hidden.thank-you').classList.remove('hidden');
+}
+  
+// grab form
+const form = document.getElementById('form-contact');
+// add event listener 
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  // if hidden field is empty
+  if (document.getElementById('company-input-field').value === ''){
     // consolidate form data
     const formData = serialize(form);
     // send
@@ -70,37 +79,37 @@ formTestSite.addEventListener('submit', function(e){
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function(){
-      // hide form
-      document.querySelector('.contact-us').classList.add('hidden');
-      // show thank you
-      document.querySelector('.hidden.thank-you').classList.remove('hidden');
+      showFormSuccess();
     }).catch(function(e){
       // on error show error 
       document.querySelector('.contact-us').classList.add('hidden');
       document.querySelector('.hidden.error').classList.remove('hidden');
     });
-  }, false);
-
-  // toggle active states based on scroll depth
-  let targets = document.querySelectorAll('#services, #about, #contact');
-  if ("IntersectionObserver" in window &&
-      "IntersectionObserverEntry" in window &&
-      "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
-    let options = {
-      root: document.querySelector('header')[0],
-    }
-    let observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple");
-          document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.add("border-spacepurple", "text-spacepurple");
-        } else {
-          document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple");
-        }
-      }, options);
-      });
-    targets.forEach(target => {
-      observer.observe(target);
-    });  
+   } else {
+    showFormSuccess();
   }
+}, false);   
+
+// toggle active states based on scroll depth
+let targets = document.querySelectorAll('#services, #about, #contact');
+if ("IntersectionObserver" in window &&
+    "IntersectionObserverEntry" in window &&
+    "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+  let options = {
+    root: document.querySelector('header')[0],
+  }
+  let observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple");
+        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.add("border-spacepurple", "text-spacepurple");
+      } else {
+        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple");
+      }
+    }, options);
+    });
+  targets.forEach(target => {
+    observer.observe(target);
+  });  
+}
 })();
