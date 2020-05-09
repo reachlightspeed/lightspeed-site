@@ -675,19 +675,8 @@ h3 {
   line-height: 1.25;
 }
 
-/*
-  Base styles for links
-*/
-
-a {
-  border-bottom-width: 2px;
-  border-color: #4fd1c5;
-}
-
-a:hover,
-a:focus {
-  border-bottom-width: 2px;
-  border-color: #b2f5ea;
+#about, #services, #contact {
+  scroll-margin-top: 7rem;
 }
 
 @media (min-width: 640px) {
@@ -3765,6 +3754,10 @@ a:focus {
   border-width: 2px;
 }
 
+.border-3 {
+  border-width: 3px;
+}
+
 .border-4 {
   border-width: 4px;
 }
@@ -3811,6 +3804,22 @@ a:focus {
 
 .border-l-2 {
   border-left-width: 2px;
+}
+
+.border-t-3 {
+  border-top-width: 3px;
+}
+
+.border-r-3 {
+  border-right-width: 3px;
+}
+
+.border-b-3 {
+  border-bottom-width: 3px;
+}
+
+.border-l-3 {
+  border-left-width: 3px;
 }
 
 .border-t-4 {
@@ -3885,6 +3894,10 @@ a:focus {
   border-width: 2px;
 }
 
+.hover\:border-3:hover {
+  border-width: 3px;
+}
+
 .hover\:border-4:hover {
   border-width: 4px;
 }
@@ -3931,6 +3944,22 @@ a:focus {
 
 .hover\:border-l-2:hover {
   border-left-width: 2px;
+}
+
+.hover\:border-t-3:hover {
+  border-top-width: 3px;
+}
+
+.hover\:border-r-3:hover {
+  border-right-width: 3px;
+}
+
+.hover\:border-b-3:hover {
+  border-bottom-width: 3px;
+}
+
+.hover\:border-l-3:hover {
+  border-left-width: 3px;
 }
 
 .hover\:border-t-4:hover {
@@ -4005,6 +4034,10 @@ a:focus {
   border-width: 2px;
 }
 
+.focus\:border-3:focus {
+  border-width: 3px;
+}
+
 .focus\:border-4:focus {
   border-width: 4px;
 }
@@ -4051,6 +4084,22 @@ a:focus {
 
 .focus\:border-l-2:focus {
   border-left-width: 2px;
+}
+
+.focus\:border-t-3:focus {
+  border-top-width: 3px;
+}
+
+.focus\:border-r-3:focus {
+  border-right-width: 3px;
+}
+
+.focus\:border-b-3:focus {
+  border-bottom-width: 3px;
+}
+
+.focus\:border-l-3:focus {
+  border-left-width: 3px;
 }
 
 .focus\:border-t-4:focus {
@@ -4125,6 +4174,10 @@ a:focus {
   border-width: 2px;
 }
 
+.group:hover .group-hover\:border-3 {
+  border-width: 3px;
+}
+
 .group:hover .group-hover\:border-4 {
   border-width: 4px;
 }
@@ -4171,6 +4224,22 @@ a:focus {
 
 .group:hover .group-hover\:border-l-2 {
   border-left-width: 2px;
+}
+
+.group:hover .group-hover\:border-t-3 {
+  border-top-width: 3px;
+}
+
+.group:hover .group-hover\:border-r-3 {
+  border-right-width: 3px;
+}
+
+.group:hover .group-hover\:border-b-3 {
+  border-bottom-width: 3px;
+}
+
+.group:hover .group-hover\:border-l-3 {
+  border-left-width: 3px;
 }
 
 .group:hover .group-hover\:border-t-4 {
@@ -4560,7 +4629,7 @@ a:focus {
 }
 
 .font-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, "SF Pro Text", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-hairline {
@@ -4751,6 +4820,10 @@ a:focus {
   height: 1px;
 }
 
+.h--3px {
+  height: -3px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -4883,6 +4956,10 @@ a:focus {
   margin: 1px;
 }
 
+.-m-3px {
+  margin: -3px;
+}
+
 .-m-1 {
   margin: -0.25rem;
 }
@@ -4953,6 +5030,10 @@ a:focus {
 
 .-m-px {
   margin: -1px;
+}
+
+.-m--3px {
+  margin: 3px;
 }
 
 .my-0 {
@@ -5155,6 +5236,16 @@ a:focus {
   margin-right: 1px;
 }
 
+.-my-3px {
+  margin-top: -3px;
+  margin-bottom: -3px;
+}
+
+.-mx-3px {
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
 .-my-1 {
   margin-top: -0.25rem;
   margin-bottom: -0.25rem;
@@ -5333,6 +5424,16 @@ a:focus {
 .-mx-px {
   margin-left: -1px;
   margin-right: -1px;
+}
+
+.-my--3px {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.-mx--3px {
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .mt-0 {
@@ -5655,6 +5756,22 @@ a:focus {
   margin-left: 1px;
 }
 
+.-mt-3px {
+  margin-top: -3px;
+}
+
+.-mr-3px {
+  margin-right: -3px;
+}
+
+.-mb-3px {
+  margin-bottom: -3px;
+}
+
+.-ml-3px {
+  margin-left: -3px;
+}
+
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -5943,6 +6060,22 @@ a:focus {
   margin-left: -1px;
 }
 
+.-mt--3px {
+  margin-top: 3px;
+}
+
+.-mr--3px {
+  margin-right: 3px;
+}
+
+.-mb--3px {
+  margin-bottom: 3px;
+}
+
+.-ml--3px {
+  margin-left: 3px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -5993,6 +6126,14 @@ a:focus {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-8xl {
+  max-width: 90rem;
 }
 
 .min-h-0 {
@@ -6285,6 +6426,10 @@ a:focus {
   padding: 1px;
 }
 
+.p--3px {
+  padding: -3px;
+}
+
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -6473,6 +6618,16 @@ a:focus {
 .px-px {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.py--3px {
+  padding-top: -3px;
+  padding-bottom: -3px;
+}
+
+.px--3px {
+  padding-left: -3px;
+  padding-right: -3px;
 }
 
 .pt-0 {
@@ -6777,6 +6932,22 @@ a:focus {
 
 .pl-px {
   padding-left: 1px;
+}
+
+.pt--3px {
+  padding-top: -3px;
+}
+
+.pr--3px {
+  padding-right: -3px;
+}
+
+.pb--3px {
+  padding-bottom: -3px;
+}
+
+.pl--3px {
+  padding-left: -3px;
 }
 
 .placeholder-transparent::-webkit-input-placeholder {
@@ -12275,6 +12446,10 @@ a:focus {
   width: 1px;
 }
 
+.w--3px {
+  width: -3px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -12413,38 +12588,6 @@ a:focus {
 
 .z-auto {
   z-index: auto;
-}
-
-#about, #services, #contact {
-  scroll-margin-top: 7rem;
-}
-
-header nav h1 {
-  color: #1E2A61;
-}
-
-header nav li a {
-  border-bottom: none;
-}
-
-header nav li a:hover, header nav li a.active {
-  border-bottom: 2px solid #3050CB;
-  padding-bottom: 1.9rem;
-}
-
-header nav #i-moon {
-  fill: #1E2A61;
-  stroke: #1E2A61;
-  cursor: not-allowed;
-}
-
-/* hide active dotted rectangle on linux */
-
-header nav a, a:active, a:focus{
-  outline: none; /* Works in Firefox, Chrome, IE8 and above */
-}
-
-header nav {
 }
 
 @media (min-width: 640px) {
@@ -15480,6 +15623,10 @@ header nav {
     border-width: 2px;
   }
 
+  .sm\:border-3 {
+    border-width: 3px;
+  }
+
   .sm\:border-4 {
     border-width: 4px;
   }
@@ -15526,6 +15673,22 @@ header nav {
 
   .sm\:border-l-2 {
     border-left-width: 2px;
+  }
+
+  .sm\:border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .sm\:border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .sm\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .sm\:border-l-3 {
+    border-left-width: 3px;
   }
 
   .sm\:border-t-4 {
@@ -15600,6 +15763,10 @@ header nav {
     border-width: 2px;
   }
 
+  .sm\:hover\:border-3:hover {
+    border-width: 3px;
+  }
+
   .sm\:hover\:border-4:hover {
     border-width: 4px;
   }
@@ -15646,6 +15813,22 @@ header nav {
 
   .sm\:hover\:border-l-2:hover {
     border-left-width: 2px;
+  }
+
+  .sm\:hover\:border-t-3:hover {
+    border-top-width: 3px;
+  }
+
+  .sm\:hover\:border-r-3:hover {
+    border-right-width: 3px;
+  }
+
+  .sm\:hover\:border-b-3:hover {
+    border-bottom-width: 3px;
+  }
+
+  .sm\:hover\:border-l-3:hover {
+    border-left-width: 3px;
   }
 
   .sm\:hover\:border-t-4:hover {
@@ -15720,6 +15903,10 @@ header nav {
     border-width: 2px;
   }
 
+  .sm\:focus\:border-3:focus {
+    border-width: 3px;
+  }
+
   .sm\:focus\:border-4:focus {
     border-width: 4px;
   }
@@ -15766,6 +15953,22 @@ header nav {
 
   .sm\:focus\:border-l-2:focus {
     border-left-width: 2px;
+  }
+
+  .sm\:focus\:border-t-3:focus {
+    border-top-width: 3px;
+  }
+
+  .sm\:focus\:border-r-3:focus {
+    border-right-width: 3px;
+  }
+
+  .sm\:focus\:border-b-3:focus {
+    border-bottom-width: 3px;
+  }
+
+  .sm\:focus\:border-l-3:focus {
+    border-left-width: 3px;
   }
 
   .sm\:focus\:border-t-4:focus {
@@ -15840,6 +16043,10 @@ header nav {
     border-width: 2px;
   }
 
+  .group:hover .sm\:group-hover\:border-3 {
+    border-width: 3px;
+  }
+
   .group:hover .sm\:group-hover\:border-4 {
     border-width: 4px;
   }
@@ -15886,6 +16093,22 @@ header nav {
 
   .group:hover .sm\:group-hover\:border-l-2 {
     border-left-width: 2px;
+  }
+
+  .group:hover .sm\:group-hover\:border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .group:hover .sm\:group-hover\:border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .group:hover .sm\:group-hover\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .group:hover .sm\:group-hover\:border-l-3 {
+    border-left-width: 3px;
   }
 
   .group:hover .sm\:group-hover\:border-t-4 {
@@ -16275,7 +16498,7 @@ header nav {
   }
 
   .sm\:font-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: -apple-system, "SF Pro Text", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .sm\:font-hairline {
@@ -16466,6 +16689,10 @@ header nav {
     height: 1px;
   }
 
+  .sm\:h--3px {
+    height: -3px;
+  }
+
   .sm\:h-full {
     height: 100%;
   }
@@ -16598,6 +16825,10 @@ header nav {
     margin: 1px;
   }
 
+  .sm\:-m-3px {
+    margin: -3px;
+  }
+
   .sm\:-m-1 {
     margin: -0.25rem;
   }
@@ -16668,6 +16899,10 @@ header nav {
 
   .sm\:-m-px {
     margin: -1px;
+  }
+
+  .sm\:-m--3px {
+    margin: 3px;
   }
 
   .sm\:my-0 {
@@ -16870,6 +17105,16 @@ header nav {
     margin-right: 1px;
   }
 
+  .sm\:-my-3px {
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+
+  .sm\:-mx-3px {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
   .sm\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -17048,6 +17293,16 @@ header nav {
   .sm\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .sm\:-my--3px {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .sm\:-mx--3px {
+    margin-left: 3px;
+    margin-right: 3px;
   }
 
   .sm\:mt-0 {
@@ -17370,6 +17625,22 @@ header nav {
     margin-left: 1px;
   }
 
+  .sm\:-mt-3px {
+    margin-top: -3px;
+  }
+
+  .sm\:-mr-3px {
+    margin-right: -3px;
+  }
+
+  .sm\:-mb-3px {
+    margin-bottom: -3px;
+  }
+
+  .sm\:-ml-3px {
+    margin-left: -3px;
+  }
+
   .sm\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -17658,6 +17929,22 @@ header nav {
     margin-left: -1px;
   }
 
+  .sm\:-mt--3px {
+    margin-top: 3px;
+  }
+
+  .sm\:-mr--3px {
+    margin-right: 3px;
+  }
+
+  .sm\:-mb--3px {
+    margin-bottom: 3px;
+  }
+
+  .sm\:-ml--3px {
+    margin-left: 3px;
+  }
+
   .sm\:max-h-full {
     max-height: 100%;
   }
@@ -17708,6 +17995,14 @@ header nav {
 
   .sm\:max-w-full {
     max-width: 100%;
+  }
+
+  .sm\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .sm\:max-w-8xl {
+    max-width: 90rem;
   }
 
   .sm\:min-h-0 {
@@ -18000,6 +18295,10 @@ header nav {
     padding: 1px;
   }
 
+  .sm\:p--3px {
+    padding: -3px;
+  }
+
   .sm\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -18188,6 +18487,16 @@ header nav {
   .sm\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .sm\:py--3px {
+    padding-top: -3px;
+    padding-bottom: -3px;
+  }
+
+  .sm\:px--3px {
+    padding-left: -3px;
+    padding-right: -3px;
   }
 
   .sm\:pt-0 {
@@ -18492,6 +18801,22 @@ header nav {
 
   .sm\:pl-px {
     padding-left: 1px;
+  }
+
+  .sm\:pt--3px {
+    padding-top: -3px;
+  }
+
+  .sm\:pr--3px {
+    padding-right: -3px;
+  }
+
+  .sm\:pb--3px {
+    padding-bottom: -3px;
+  }
+
+  .sm\:pl--3px {
+    padding-left: -3px;
   }
 
   .sm\:placeholder-transparent::-webkit-input-placeholder {
@@ -23990,6 +24315,10 @@ header nav {
     width: 1px;
   }
 
+  .sm\:w--3px {
+    width: -3px;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -27164,6 +27493,10 @@ header nav {
     border-width: 2px;
   }
 
+  .md\:border-3 {
+    border-width: 3px;
+  }
+
   .md\:border-4 {
     border-width: 4px;
   }
@@ -27210,6 +27543,22 @@ header nav {
 
   .md\:border-l-2 {
     border-left-width: 2px;
+  }
+
+  .md\:border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .md\:border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .md\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .md\:border-l-3 {
+    border-left-width: 3px;
   }
 
   .md\:border-t-4 {
@@ -27284,6 +27633,10 @@ header nav {
     border-width: 2px;
   }
 
+  .md\:hover\:border-3:hover {
+    border-width: 3px;
+  }
+
   .md\:hover\:border-4:hover {
     border-width: 4px;
   }
@@ -27330,6 +27683,22 @@ header nav {
 
   .md\:hover\:border-l-2:hover {
     border-left-width: 2px;
+  }
+
+  .md\:hover\:border-t-3:hover {
+    border-top-width: 3px;
+  }
+
+  .md\:hover\:border-r-3:hover {
+    border-right-width: 3px;
+  }
+
+  .md\:hover\:border-b-3:hover {
+    border-bottom-width: 3px;
+  }
+
+  .md\:hover\:border-l-3:hover {
+    border-left-width: 3px;
   }
 
   .md\:hover\:border-t-4:hover {
@@ -27404,6 +27773,10 @@ header nav {
     border-width: 2px;
   }
 
+  .md\:focus\:border-3:focus {
+    border-width: 3px;
+  }
+
   .md\:focus\:border-4:focus {
     border-width: 4px;
   }
@@ -27450,6 +27823,22 @@ header nav {
 
   .md\:focus\:border-l-2:focus {
     border-left-width: 2px;
+  }
+
+  .md\:focus\:border-t-3:focus {
+    border-top-width: 3px;
+  }
+
+  .md\:focus\:border-r-3:focus {
+    border-right-width: 3px;
+  }
+
+  .md\:focus\:border-b-3:focus {
+    border-bottom-width: 3px;
+  }
+
+  .md\:focus\:border-l-3:focus {
+    border-left-width: 3px;
   }
 
   .md\:focus\:border-t-4:focus {
@@ -27524,6 +27913,10 @@ header nav {
     border-width: 2px;
   }
 
+  .group:hover .md\:group-hover\:border-3 {
+    border-width: 3px;
+  }
+
   .group:hover .md\:group-hover\:border-4 {
     border-width: 4px;
   }
@@ -27570,6 +27963,22 @@ header nav {
 
   .group:hover .md\:group-hover\:border-l-2 {
     border-left-width: 2px;
+  }
+
+  .group:hover .md\:group-hover\:border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .group:hover .md\:group-hover\:border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .group:hover .md\:group-hover\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .group:hover .md\:group-hover\:border-l-3 {
+    border-left-width: 3px;
   }
 
   .group:hover .md\:group-hover\:border-t-4 {
@@ -27959,7 +28368,7 @@ header nav {
   }
 
   .md\:font-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: -apple-system, "SF Pro Text", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .md\:font-hairline {
@@ -28150,6 +28559,10 @@ header nav {
     height: 1px;
   }
 
+  .md\:h--3px {
+    height: -3px;
+  }
+
   .md\:h-full {
     height: 100%;
   }
@@ -28282,6 +28695,10 @@ header nav {
     margin: 1px;
   }
 
+  .md\:-m-3px {
+    margin: -3px;
+  }
+
   .md\:-m-1 {
     margin: -0.25rem;
   }
@@ -28352,6 +28769,10 @@ header nav {
 
   .md\:-m-px {
     margin: -1px;
+  }
+
+  .md\:-m--3px {
+    margin: 3px;
   }
 
   .md\:my-0 {
@@ -28554,6 +28975,16 @@ header nav {
     margin-right: 1px;
   }
 
+  .md\:-my-3px {
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+
+  .md\:-mx-3px {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
   .md\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -28732,6 +29163,16 @@ header nav {
   .md\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .md\:-my--3px {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .md\:-mx--3px {
+    margin-left: 3px;
+    margin-right: 3px;
   }
 
   .md\:mt-0 {
@@ -29054,6 +29495,22 @@ header nav {
     margin-left: 1px;
   }
 
+  .md\:-mt-3px {
+    margin-top: -3px;
+  }
+
+  .md\:-mr-3px {
+    margin-right: -3px;
+  }
+
+  .md\:-mb-3px {
+    margin-bottom: -3px;
+  }
+
+  .md\:-ml-3px {
+    margin-left: -3px;
+  }
+
   .md\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -29342,6 +29799,22 @@ header nav {
     margin-left: -1px;
   }
 
+  .md\:-mt--3px {
+    margin-top: 3px;
+  }
+
+  .md\:-mr--3px {
+    margin-right: 3px;
+  }
+
+  .md\:-mb--3px {
+    margin-bottom: 3px;
+  }
+
+  .md\:-ml--3px {
+    margin-left: 3px;
+  }
+
   .md\:max-h-full {
     max-height: 100%;
   }
@@ -29392,6 +29865,14 @@ header nav {
 
   .md\:max-w-full {
     max-width: 100%;
+  }
+
+  .md\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .md\:max-w-8xl {
+    max-width: 90rem;
   }
 
   .md\:min-h-0 {
@@ -29684,6 +30165,10 @@ header nav {
     padding: 1px;
   }
 
+  .md\:p--3px {
+    padding: -3px;
+  }
+
   .md\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -29872,6 +30357,16 @@ header nav {
   .md\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .md\:py--3px {
+    padding-top: -3px;
+    padding-bottom: -3px;
+  }
+
+  .md\:px--3px {
+    padding-left: -3px;
+    padding-right: -3px;
   }
 
   .md\:pt-0 {
@@ -30176,6 +30671,22 @@ header nav {
 
   .md\:pl-px {
     padding-left: 1px;
+  }
+
+  .md\:pt--3px {
+    padding-top: -3px;
+  }
+
+  .md\:pr--3px {
+    padding-right: -3px;
+  }
+
+  .md\:pb--3px {
+    padding-bottom: -3px;
+  }
+
+  .md\:pl--3px {
+    padding-left: -3px;
   }
 
   .md\:placeholder-transparent::-webkit-input-placeholder {
@@ -35674,6 +36185,10 @@ header nav {
     width: 1px;
   }
 
+  .md\:w--3px {
+    width: -3px;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -38848,6 +39363,10 @@ header nav {
     border-width: 2px;
   }
 
+  .lg\:border-3 {
+    border-width: 3px;
+  }
+
   .lg\:border-4 {
     border-width: 4px;
   }
@@ -38894,6 +39413,22 @@ header nav {
 
   .lg\:border-l-2 {
     border-left-width: 2px;
+  }
+
+  .lg\:border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .lg\:border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .lg\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .lg\:border-l-3 {
+    border-left-width: 3px;
   }
 
   .lg\:border-t-4 {
@@ -38968,6 +39503,10 @@ header nav {
     border-width: 2px;
   }
 
+  .lg\:hover\:border-3:hover {
+    border-width: 3px;
+  }
+
   .lg\:hover\:border-4:hover {
     border-width: 4px;
   }
@@ -39014,6 +39553,22 @@ header nav {
 
   .lg\:hover\:border-l-2:hover {
     border-left-width: 2px;
+  }
+
+  .lg\:hover\:border-t-3:hover {
+    border-top-width: 3px;
+  }
+
+  .lg\:hover\:border-r-3:hover {
+    border-right-width: 3px;
+  }
+
+  .lg\:hover\:border-b-3:hover {
+    border-bottom-width: 3px;
+  }
+
+  .lg\:hover\:border-l-3:hover {
+    border-left-width: 3px;
   }
 
   .lg\:hover\:border-t-4:hover {
@@ -39088,6 +39643,10 @@ header nav {
     border-width: 2px;
   }
 
+  .lg\:focus\:border-3:focus {
+    border-width: 3px;
+  }
+
   .lg\:focus\:border-4:focus {
     border-width: 4px;
   }
@@ -39134,6 +39693,22 @@ header nav {
 
   .lg\:focus\:border-l-2:focus {
     border-left-width: 2px;
+  }
+
+  .lg\:focus\:border-t-3:focus {
+    border-top-width: 3px;
+  }
+
+  .lg\:focus\:border-r-3:focus {
+    border-right-width: 3px;
+  }
+
+  .lg\:focus\:border-b-3:focus {
+    border-bottom-width: 3px;
+  }
+
+  .lg\:focus\:border-l-3:focus {
+    border-left-width: 3px;
   }
 
   .lg\:focus\:border-t-4:focus {
@@ -39208,6 +39783,10 @@ header nav {
     border-width: 2px;
   }
 
+  .group:hover .lg\:group-hover\:border-3 {
+    border-width: 3px;
+  }
+
   .group:hover .lg\:group-hover\:border-4 {
     border-width: 4px;
   }
@@ -39254,6 +39833,22 @@ header nav {
 
   .group:hover .lg\:group-hover\:border-l-2 {
     border-left-width: 2px;
+  }
+
+  .group:hover .lg\:group-hover\:border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .group:hover .lg\:group-hover\:border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .group:hover .lg\:group-hover\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .group:hover .lg\:group-hover\:border-l-3 {
+    border-left-width: 3px;
   }
 
   .group:hover .lg\:group-hover\:border-t-4 {
@@ -39643,7 +40238,7 @@ header nav {
   }
 
   .lg\:font-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: -apple-system, "SF Pro Text", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .lg\:font-hairline {
@@ -39834,6 +40429,10 @@ header nav {
     height: 1px;
   }
 
+  .lg\:h--3px {
+    height: -3px;
+  }
+
   .lg\:h-full {
     height: 100%;
   }
@@ -39966,6 +40565,10 @@ header nav {
     margin: 1px;
   }
 
+  .lg\:-m-3px {
+    margin: -3px;
+  }
+
   .lg\:-m-1 {
     margin: -0.25rem;
   }
@@ -40036,6 +40639,10 @@ header nav {
 
   .lg\:-m-px {
     margin: -1px;
+  }
+
+  .lg\:-m--3px {
+    margin: 3px;
   }
 
   .lg\:my-0 {
@@ -40238,6 +40845,16 @@ header nav {
     margin-right: 1px;
   }
 
+  .lg\:-my-3px {
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+
+  .lg\:-mx-3px {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
   .lg\:-my-1 {
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -40416,6 +41033,16 @@ header nav {
   .lg\:-mx-px {
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .lg\:-my--3px {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .lg\:-mx--3px {
+    margin-left: 3px;
+    margin-right: 3px;
   }
 
   .lg\:mt-0 {
@@ -40738,6 +41365,22 @@ header nav {
     margin-left: 1px;
   }
 
+  .lg\:-mt-3px {
+    margin-top: -3px;
+  }
+
+  .lg\:-mr-3px {
+    margin-right: -3px;
+  }
+
+  .lg\:-mb-3px {
+    margin-bottom: -3px;
+  }
+
+  .lg\:-ml-3px {
+    margin-left: -3px;
+  }
+
   .lg\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -41026,6 +41669,22 @@ header nav {
     margin-left: -1px;
   }
 
+  .lg\:-mt--3px {
+    margin-top: 3px;
+  }
+
+  .lg\:-mr--3px {
+    margin-right: 3px;
+  }
+
+  .lg\:-mb--3px {
+    margin-bottom: 3px;
+  }
+
+  .lg\:-ml--3px {
+    margin-left: 3px;
+  }
+
   .lg\:max-h-full {
     max-height: 100%;
   }
@@ -41076,6 +41735,14 @@ header nav {
 
   .lg\:max-w-full {
     max-width: 100%;
+  }
+
+  .lg\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .lg\:max-w-8xl {
+    max-width: 90rem;
   }
 
   .lg\:min-h-0 {
@@ -41368,6 +42035,10 @@ header nav {
     padding: 1px;
   }
 
+  .lg\:p--3px {
+    padding: -3px;
+  }
+
   .lg\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -41556,6 +42227,16 @@ header nav {
   .lg\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .lg\:py--3px {
+    padding-top: -3px;
+    padding-bottom: -3px;
+  }
+
+  .lg\:px--3px {
+    padding-left: -3px;
+    padding-right: -3px;
   }
 
   .lg\:pt-0 {
@@ -41860,6 +42541,22 @@ header nav {
 
   .lg\:pl-px {
     padding-left: 1px;
+  }
+
+  .lg\:pt--3px {
+    padding-top: -3px;
+  }
+
+  .lg\:pr--3px {
+    padding-right: -3px;
+  }
+
+  .lg\:pb--3px {
+    padding-bottom: -3px;
+  }
+
+  .lg\:pl--3px {
+    padding-left: -3px;
   }
 
   .lg\:placeholder-transparent::-webkit-input-placeholder {
@@ -47356,6 +48053,10 @@ header nav {
 
   .lg\:w-px {
     width: 1px;
+  }
+
+  .lg\:w--3px {
+    width: -3px;
   }
 
   .lg\:w-1\/2 {

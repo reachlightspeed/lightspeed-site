@@ -33,6 +33,7 @@ module.exports = {
         default: '1px',
         '0': '0',
         '2': '2px',
+        '3': '3px',
         '4': '4px',
         '6': '6px',
         '8': '8px',
@@ -57,7 +58,14 @@ module.exports = {
         '5xl': '3rem',
         '6xl': '4rem',
         '7xl': '5rem',
-      }
+      },
+      spacing: {
+        '-3px': '-3px',
+      },
+      maxWidth: {
+        '7xl': '80rem',
+        '8xl': '90rem',
+      },
     },
   },
   variants: {

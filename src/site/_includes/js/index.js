@@ -92,10 +92,10 @@ formTestSite.addEventListener('submit', function(e){
     let observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.remove("active");
-          document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.add("active");
+          document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple");
+          document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.add("border-spacepurple", "text-spacepurple");
         } else {
-          document.querySelector('nav li a[href="#' + entry.target.id + '"]').classList.remove("active");
+          document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple");
         }
       }, options);
       });

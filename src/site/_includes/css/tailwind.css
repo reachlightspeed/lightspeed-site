@@ -55,19 +55,8 @@ h3 {
   @apply text-2xl font-medium text-spacepurple-dark tracking-tight mb-4 leading-snug;
 }
 
-
-/*
-  Base styles for links
-*/
-a {
-  @apply border-b-2;
-  @apply border-teal-400;
-}
-
-a:hover,
-a:focus {
- @apply border-b-2;
- @apply border-teal-200;
+#about, #services, #contact {
+  scroll-margin-top: 7rem;
 }
 
 @screen sm {
@@ -93,35 +82,3 @@ a:focus {
 /* purgecss end ignore */
 
 @tailwind utilities;
-
-#about, #services, #contact {
-  scroll-margin-top: 7rem;
-}
-
-header nav h1 {
-  color: #1E2A61;
-}
-
-header nav li a {
-  border-bottom: none;
-}
-
-header nav li a:hover, header nav li a.active {
-  border-bottom: 2px solid #3050CB;
-  padding-bottom: 1.9rem;
-}
-
-header nav #i-moon { 
-  fill: #1E2A61;
-  stroke: #1E2A61;
-  cursor: not-allowed; 
-}
-
-/* hide active dotted rectangle on linux */
-header nav a, a:active, a:focus{
-  outline: none; /* Works in Firefox, Chrome, IE8 and above */ 
-}
-
-header nav {
-  
-}
