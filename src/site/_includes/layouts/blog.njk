@@ -56,18 +56,18 @@
 
       <div class="mt-26 blog-masthead"></div>
       <div class="slice"></div>
-      <div class="mt-48 relative post-info">
-        <div class="post-image rounded-md text-center bg-cover p-12">
+      <div class="mt-48 relative post-info h-auto">
+        <div class="post-image h-64 rounded-md text-center bg-cover p-12">
           <h1 class="text-4xl text-white">{{ title | safe }}</h1>
           <p class="text-white text-2xl pt-2">{{ page.date | readableDate }}</p>
         </div>
-        <div class="author-info">
+        <div class="author-info -m-8">
           <picture>
             <source srcset="../../img/tj.webp 1x, ../../img/tj@2x.webp 2x" type="image/webp">
             <source srcset="../../img/tj.jpg 1x, ../../img/tj@2x.jpg 2x" type="image/jpeg">
             <img src="../../img/tj.jpg" width="64" height="64" loading="lazy" alt="A photo of Tom Hanlon" class="mx-auto rounded-full" />
           </picture>
-          <div class="author-name text-center">
+          <div class="text-center">
             <p class="text-2xl">Tom Hanlon</p>
             <p class="text-lg mt-0">Co-Founder</p>
           </div>
@@ -78,6 +78,10 @@
       </section>
     </main>
 
+    <footer class="max-w-lg mx-auto pb-6 text-center mt-12 mb-10">
+      <p class="italic font-light text-lg sm:text-xl text-spacepurple-dark">Lightspeed was launched in January 2020, more than half of a century after the dawn of the first Space Age. 🚀</p>
+      <p class="font-medium text-base mt-10 opacity-50 text-spacepurple">© 2020 Lightspeed Consulting LLC</p>
+    </footer>
   </body>
 
 </html>
