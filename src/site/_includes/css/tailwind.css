@@ -146,7 +146,7 @@ body.blog .post-image {
   url(https://images.unsplash.com/photo-1534254910684-68bdc1d69cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
 }
 body.blog h2 {
-  @apply text-3xl mt-4 mb-4;
+  @apply text-3xl mt-12 mb-8;
 }
 body.blog a {
  color: #3b5ee2;

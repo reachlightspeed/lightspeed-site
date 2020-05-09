@@ -6,11 +6,11 @@ date: 2020-05-11
 tags: post
 ---
 
-When my partner Dan and I first started talking about starting [Lightspeed: A Web Performance Optimization Consultancy](/ "Lightspeed: A Web Optimization Consultancy Homepage") in the beginning of this year, we never could have expected how a global pandemic would fundamentally change how people work, shop, socialize and entertain themselves as they lead their lives sequestered away in quarantine.
+When my partner Dan and I first started talking about starting [Lightspeed: Web Performance Optimization](/ "Lightspeed: A Web Performance Optimization Homepage") in the beginning of this year, we never could have expected how a global pandemic would fundamentally change how people work, shop, socialize and entertain themselves as they lead their lives sequestered away in quarantine.
 
 Increasingly, as more internet users move to spend more of their time online (and sites like state unemployment websites are bogged down with unprecedented demand) the case for web performance has never been stronger. 
 
-According to an April 28, 2020 article from Forbes: 
+**According to an April 28, 2020 article from Forbes:** 
 
 > * U.S. retailers' online year-over-year (YoY) revenue growth is up 68% as of mid-April, surpassing an earlier peak of 49% in early January.
 > * There's been a 129% year-over-year growth in U.S. & Canadian e-commerce orders as of April 21 and an impressive 146% growth in all online retail orders.
