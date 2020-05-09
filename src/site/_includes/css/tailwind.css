@@ -55,19 +55,8 @@ h3 {
   @apply text-2xl font-medium text-spacepurple-dark tracking-tight mb-4 leading-snug;
 }
 
-
-/*
-  Base styles for links
-*/
-a {
-  @apply border-b-2;
-  @apply border-teal-400;
-}
-
-a:hover,
-a:focus {
- @apply border-b-2;
- @apply border-teal-200;
+#about, #services, #contact {
+  scroll-margin-top: 7rem;
 }
 
 @screen sm {

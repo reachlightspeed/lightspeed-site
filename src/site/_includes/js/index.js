@@ -1,5 +1,6 @@
-
-// Page loaded for you in [X] Seconds
+// encapsulate in IFFE so we don't polute global scope
+(function(){
+  // Page loaded for you in [X] Seconds
 window.addEventListener("load", loadTime, false);
 
 function loadTime() {
@@ -84,7 +85,31 @@ form.addEventListener('submit', function(e){
       document.querySelector('.contact-us').classList.add('hidden');
       document.querySelector('.hidden.error').classList.remove('hidden');
     });
-  } else {
+   } else {
     showFormSuccess();
   }
-}, false);
+}, false);   
+
+// toggle active states based on scroll depth
+let targets = document.querySelectorAll('#services, #about, #contact');
+if ("IntersectionObserver" in window &&
+    "IntersectionObserverEntry" in window &&
+    "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+  let options = {
+    root: document.querySelector('header')[0],
+  }
+  let observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple");
+        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.add("border-spacepurple", "text-spacepurple");
+      } else {
+        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple");
+      }
+    }, options);
+    });
+  targets.forEach(target => {
+    observer.observe(target);
+  });  
+}
+})();
