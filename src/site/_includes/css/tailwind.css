@@ -126,8 +126,7 @@ header nav a, a:active, a:focus{
 body.blog {
   background-color: #F7F8FC;
 }
-body.blog .blog-masthead {
-  
+body.blog .blog-masthead { 
   height: 450px;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px),0 100%);
   -webkit-clip-path: polygon(0 100px,100% 0,100% calc(100% - 100px),0 100%);
@@ -145,4 +144,26 @@ body.blog .post-image {
       rgba(0,0,0, 0.2)
     ),
   url(https://images.unsplash.com/photo-1534254910684-68bdc1d69cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+}
+body.blog h2 {
+  @apply text-3xl mt-4 mb-4;
+}
+body.blog a {
+ color: #3b5ee2;
+ border-bottom-width: 1px;
+ border-color: #3b5ee2;
+}
+body.blog a:focus, body.blog a:hover {
+  border-bottom-width: 21x;
+  border-color: #1E2A61;
+  color: #1E2A61;
+}
+body.blog blockquote {
+  @apply p-6 pb-10 rounded-lg shadow-xl border-spacepurple border-l-6 bg-white mt-10 mb-10;
+}
+body.blog blockquote ul {
+  @apply list-disc;
+}
+body.blog blockquote ul li {
+  @apply m-4 text-2xl;
 }

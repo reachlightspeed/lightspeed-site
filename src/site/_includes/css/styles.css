@@ -12487,6 +12487,45 @@ body.blog .post-image {
   url(https://images.unsplash.com/photo-1534254910684-68bdc1d69cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
 }
 
+body.blog h2 {
+  font-size: 1.875rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+body.blog a {
+  color: #3b5ee2;
+  border-bottom-width: 1px;
+  border-color: #3b5ee2;
+}
+
+body.blog a:focus, body.blog a:hover {
+  border-bottom-width: 21x;
+  border-color: #1E2A61;
+  color: #1E2A61;
+}
+
+body.blog blockquote {
+  padding: 1.5rem;
+  padding-bottom: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: #3b5ee2;
+  border-left-width: 6px;
+  background-color: #fff;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+body.blog blockquote ul {
+  list-style-type: disc;
+}
+
+body.blog blockquote ul li {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

@@ -6,7 +6,7 @@ date: 2020-05-11
 tags: post
 ---
 
-When my partner Dan and I first started talking about starting [Lightspeed, A Web Performance Optimization Consultancy](/ "Lightspeed: A Web Optimization Consultancy Homepage") in the beginning of this year, we never could have expected how a global pandemic would fundamentally change how people work, shop, socialize and entertain themselves as they lead their lives sequestered away in quarantine. 
+When my partner Dan and I first started talking about starting [Lightspeed: A Web Performance Optimization Consultancy](/ "Lightspeed: A Web Optimization Consultancy Homepage") in the beginning of this year, we never could have expected how a global pandemic would fundamentally change how people work, shop, socialize and entertain themselves as they lead their lives sequestered away in quarantine.
 
 Increasingly, as more internet users move to spend more of their time online (and sites like state unemployment websites are bogged down with unprecedented demand) the case for web performance has never been stronger. 
 
@@ -35,4 +35,4 @@ We’ll work with you to plan, design and build an incredibly fast e-commerce ex
 
 ## The web of tomorrow
 As the web increasingly shifts to mobile (phone, watch, etc.) devices, brands need to ensure that the customer experience is optimized for popular modern device types over varying connection speeds. Our mission is to ensure the experiences your customers expect match how your site performs. 
-Want to see how your site stacks up? Reach out today to set up a call -- we’d love to chat with you.
+
