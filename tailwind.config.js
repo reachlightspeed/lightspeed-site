@@ -8,7 +8,7 @@ module.exports = {
     fontFamily: {
       body: [
         '-apple-system',
-        '"SF Pro Text"'
+        '"SF Pro Text"',
         'BlinkMacSystemFont',
         '"Segoe UI"',
         'Roboto',
