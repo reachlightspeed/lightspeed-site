@@ -54,9 +54,9 @@
         </nav>
       </header>
 
-      <div class="mt-26 blog-masthead"></div>
+      <div class="mt-26 blog-masthead w-full absolute bg-cover top-0 left-0 "></div>
       <div class="slice"></div>
-      <div class="mt-48 relative post-info h-auto">
+      <div class="mt-48 relative h-auto">
         <div class="post-image h-64 rounded-md text-center bg-cover p-12">
           <h1 class="text-4xl text-white">{{ title | safe }}</h1>
           <p class="text-white text-2xl pt-2">{{ page.date | readableDate }}</p>
@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-      <section class="z-10 relative mt-4">  
+      <section class="z-10 relative mt-20">  
         {{ content | safe }}
       </section>
     </main>
