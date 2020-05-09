@@ -5,6 +5,7 @@
 /*
   Content sections conventions
 */
+.smooth-scroll { scroll-behavior: smooth }
 
 .bg-starfield {
   background-image: 
@@ -53,10 +54,6 @@ p + p {
 
 h3 {
   @apply text-2xl font-medium text-spacepurple-dark tracking-tight mb-4 leading-snug;
-}
-
-#about, #services, #contact {
-  scroll-margin-top: 7rem;
 }
 
 @screen sm {

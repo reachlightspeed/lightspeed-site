@@ -607,6 +607,9 @@ video {
   Content sections conventions
 */
 
+.smooth-scroll { scroll-behavior: smooth
+}
+
 .bg-starfield {
   background-image: 
     url('/img/starfield.svg'),
@@ -673,10 +676,6 @@ h3 {
   letter-spacing: -0.025em;
   margin-bottom: 1rem;
   line-height: 1.25;
-}
-
-#about, #services, #contact {
-  scroll-margin-top: 7rem;
 }
 
 @media (min-width: 640px) {
