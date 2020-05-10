@@ -698,6 +698,7 @@ h3 {
 /* Custom Dark Mode Styles */
 
 .mode-dark .bg-starfield {
+  background-color: #06060F;
   background-image: 
     url('/img/starfield.svg'),
     url('/img/starfield.svg'),
