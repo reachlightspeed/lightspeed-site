@@ -24,12 +24,19 @@
     <meta name="twitter:description" content="Lightspeed is a performance optimization consultancy that works with forward-thinking companies to create inconceivably fast digital experiences.">
     <meta name="author" content="Lightspeed Consulting LLC">
     <link rel="canonical" href="https://reachlightspeed.com">
+    {% set darkmode %}
+      {% include "js/darkmode.js" %}
+    {% endset %}
+    <script>
+      {{ darkmode | jsmin | safe }}
+    </script>
   </head>
 
-	<body class="bg-fixed bg-starfield mx-4 overflow-x-hidden font-body">
+	<body class="bg-fixed bg-starfield mx-4 overflow-x-hidden font-body dark:text-white">
     {% include 'partials/nav.njk' %}
 
     {{ content | safe }}
+
     {% set js %}
       {% include "js/index.js" %}
     {% endset %}
