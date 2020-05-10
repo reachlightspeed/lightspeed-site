@@ -17,20 +17,18 @@
 }
 
 .box {
-  @apply p-6 pb-10 mt-12 rounded-lg shadow-xl border-spacepurple border-t-6 text-center bg-white;
+  @apply p-6 pb-10 mt-12 rounded-lg shadow-xl border-spacepurple border-t-6 text-center;
 }
 
 .transition {
   transition: all 0.3s ease;
 }
 
-.bg-black-10 {
-  background: rgba(0,0,0,0.1)
-}
+.bg-black-10 { background: rgba(0,0,0,0.1) }
+.bg-black-20 { background: rgba(0,0,0,0.2) }
 
 .spacepurple-section {
-  background: #3B5EE2;
-  background-image: linear-gradient(121deg, #4668E7 0%, #2443BB 100%);
+  background: #3B5EE2 linear-gradient(121deg, #4668E7 0%, #2443BB 100%);
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
@@ -71,6 +69,25 @@ h3 {
     @apply text-3xl;
   }
 
+}
+
+/* Custom Dark Mode Styles */
+.mode-dark .bg-starfield {
+  @apply bg-spacepurple-darkest;
+  background-image: 
+    url('/img/starfield.svg'),
+    url('/img/starfield.svg'),
+    linear-gradient(180deg, #06060F 0%, #000000 100%);
+  background-size: 500px auto, 250px auto, auto;
+  background-position: 0 -520px,0 -300px,0 0;
+}
+
+.mode-dark .spacepurple-section {
+  background: #1c2138 linear-gradient(121deg, #1c2138 0%, #171c31 100%);
+}
+
+.mode-dark h3 {
+  @apply text-spacepurple-light;
 }
 
 
