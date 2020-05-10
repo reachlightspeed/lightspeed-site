@@ -4,9 +4,9 @@
     <div class="hidden xs:flex sm:flex-1">
 
       {% if page.url == "/" %}
-        <a href="#" class="border-none flex items-center pl-3 md:px-3">
+        <a href="#" class="border-none flex items-center pl-3 md:px-3" aria-label="Home">
       {% else %} 
-        <a href="/" class="border-none flex items-center pl-3 md:px-3">
+        <a href="/" class="border-none flex items-center pl-3 md:px-3" aria-label="Home">
       {% endif %}
         <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" class="sm:m-2 w-8 text-spacepurple"><path fill="currentColor" fill-rule="evenodd" d="M21 42a21 21 0 100-42 21 21 0 000 42zM31.8 7.59a1 1 0 00-1.32-1.44l-18 11a1 1 0 00-.19 1.56l5.4 5.4-7.5 10.3a1 1 0 001.33 1.44l18-11a1 1 0 00.19-1.56l-5.4-5.4 7.5-10.3z" clip-rule="evenodd"></path>
         </svg>
@@ -24,7 +24,7 @@
     </div>
 
     <div class="hidden lg:flex-1 lg:flex flex-row-reverse items-center">
-      <a href="#" class="flex p-3 opacity-75 hover:opacity-100" onClick="document.documentElement.classList.toggle('mode-dark'); return false">
+      <a href="#" class="flex p-3 opacity-75 hover:opacity-100" onClick="document.documentElement.classList.toggle('mode-dark'); return false" aria-label="Dark Mode">
         <svg class="w-6 mx-3 text-spacepurple-dark dark:text-spacepurple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="currentcolor" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
           <path d="M14 2C 9 2 3 7 3 15 3 23 9 29 17 29 25 29 30 23 30 18 19 25 7 13 14 2Z" />
         </svg>
