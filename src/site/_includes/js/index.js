@@ -101,10 +101,10 @@ if ("IntersectionObserver" in window &&
   let observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple");
-        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.add("border-spacepurple", "text-spacepurple");
+        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple", "dark:text-spacepurple-light");
+        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.add("border-spacepurple", "text-spacepurple", "dark:text-spacepurple-light");
       } else {
-        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple");
+        document.querySelector('nav a[href="#' + entry.target.id + '"]').classList.remove("border-spacepurple", "text-spacepurple", "dark:text-spacepurple-light");
       }
     }, options);
     });
