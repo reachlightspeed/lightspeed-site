@@ -5,6 +5,7 @@
 /*
   Content sections conventions
 */
+.smooth-scroll { scroll-behavior: smooth }
 
 .bg-starfield {
   background-image: 
@@ -16,20 +17,18 @@
 }
 
 .box {
-  @apply p-6 pb-10 mt-12 rounded-lg shadow-xl border-spacepurple border-t-6 text-center bg-white;
+  @apply p-6 pb-10 mt-12 rounded-lg shadow-xl border-spacepurple border-t-6 text-center;
 }
 
 .transition {
   transition: all 0.3s ease;
 }
 
-.bg-black-10 {
-  background: rgba(0,0,0,0.1)
-}
+.bg-black-10 { background: rgba(0,0,0,0.1) }
+.bg-black-20 { background: rgba(0,0,0,0.2) }
 
 .spacepurple-section {
-  background: #3B5EE2;
-  background-image: linear-gradient(121deg, #4668E7 0%, #2443BB 100%);
+  background: #3B5EE2 linear-gradient(121deg, #4668E7 0%, #2443BB 100%);
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
@@ -55,21 +54,6 @@ h3 {
   @apply text-2xl font-medium text-spacepurple-dark tracking-tight mb-4 leading-snug;
 }
 
-
-/*
-  Base styles for links
-*/
-a {
-  @apply border-b-2;
-  @apply border-teal-400;
-}
-
-a:hover,
-a:focus {
- @apply border-b-2;
- @apply border-teal-200;
-}
-
 @screen sm {
 
   .box {
@@ -87,6 +71,25 @@ a:focus {
 
 }
 
+/* Custom Dark Mode Styles */
+.mode-dark .bg-starfield {
+  @apply bg-spacepurple-darkest;
+  background-image: 
+    url('/img/starfield.svg'),
+    url('/img/starfield.svg'),
+    linear-gradient(180deg, #06060F 0%, #000000 100%);
+  background-size: 500px auto, 250px auto, auto;
+  background-position: 0 -520px,0 -300px,0 0;
+}
+
+.mode-dark .spacepurple-section {
+  background: #1c2138 linear-gradient(121deg, #1c2138 0%, #171c31 100%);
+}
+
+.mode-dark h3 {
+  @apply text-spacepurple-light;
+}
+
 
 /* purgecss start ignore */
 @tailwind  components;
@@ -94,39 +97,13 @@ a:focus {
 
 @tailwind utilities;
 
-#about, #services, #contact {
-  scroll-margin-top: 7rem;
-}
 
-header nav h1 {
-  color: #1E2A61;
-}
-
-header nav li a {
-  border-bottom: none;
-}
-
-header nav li a:hover, header nav li a.active {
-  border-bottom: 2px solid #3050CB;
-  padding-bottom: 1.9rem;
-}
-
-header nav #i-moon { 
-  fill: #1E2A61;
-  stroke: #1E2A61;
-  cursor: not-allowed; 
-}
-
-/* hide active dotted rectangle on linux */
-header nav a, a:active, a:focus{
-  outline: none;
-}
 
 /* blog */
-body.blog {
+body.blog main {
   background-color: #F7F8FC;
 }
-body.blog .blog-masthead { 
+body.blog main .blog-masthead { 
   height: 450px;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px),0 100%);
   -webkit-clip-path: polygon(0 100px,100% 0,100% calc(100% - 100px),0 100%);
@@ -137,7 +114,7 @@ body.blog .blog-masthead {
     ),
   url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1333&q=80);
 }
-body.blog .post-image {
+body.blog main .post-image {
   background: 
     linear-gradient(
       rgba(0,0,0, 0.2), 
@@ -145,25 +122,25 @@ body.blog .post-image {
     ),
   url(https://images.unsplash.com/photo-1534254910684-68bdc1d69cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
 }
-body.blog h2 {
+body.blog main h2 {
   @apply text-3xl mt-12 mb-8;
 }
-body.blog a {
+body.blog main a {
  color: #3b5ee2;
  border-bottom-width: 1px;
  border-color: #3b5ee2;
 }
-body.blog a:focus, body.blog a:hover {
+body.blog main a:focus, body.blog main a:hover {
   border-bottom-width: 21x;
   border-color: #1E2A61;
   color: #1E2A61;
 }
-body.blog blockquote {
+body.blog main blockquote {
   @apply p-6 pb-10 rounded-lg shadow-xl border-spacepurple border-l-6 bg-white mt-10 mb-10;
 }
-body.blog blockquote ul {
+body.blog main blockquote ul {
   @apply list-disc;
 }
-body.blog blockquote ul li {
+body.blog main blockquote ul li {
   @apply m-4 text-2xl;
 }
