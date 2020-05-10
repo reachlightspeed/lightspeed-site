@@ -21,7 +21,9 @@ else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").
 }
 
 // function triggered by click of moon icon anchor tag
-function toggleDarkMode(){
+function toggleDarkMode(event){
+  // prevent scroll on click of icon
+  event.preventDefault();
   // manually toggle dark mode or light mode depending on current setting
   document.documentElement.classList.toggle('mode-dark');
   // set dark or light based on toggle setting
