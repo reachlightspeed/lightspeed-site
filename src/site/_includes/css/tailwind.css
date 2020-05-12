@@ -90,6 +90,10 @@ h3 {
   @apply text-spacepurple-light;
 }
 
+/* remove outline on tap of link from webkit devices */
+.no-tap-highlight {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
 /* purgecss start ignore */
 @tailwind  components;
