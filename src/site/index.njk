@@ -244,7 +244,7 @@ layout: default
 
   </section>
 
-  <section id="contact" class="pt-12 -mt-12">
+  <section id="contact" class="pt-12 -mt-12 relative z-10">
     <div class="nav-destination box contact bg-white dark:bg-spacepurple-darker">
       <div class="contact-us">
         <h3>Contact Us</h3>
@@ -309,14 +309,16 @@ layout: default
   </section> #}
 
   <section class="spacepurple-section">
-    <h5 class="text-white text-center pt-16 opacity-75 tracking-widest uppercase">Our Perspectives</h5>
-    <h3 class="text-white text-center pt-1 font-thin sm:text-5xl tracking-wide text-4xl">Latest Blog Posts</h3>
+    <div class="max-w-3xl mx-auto">
+      <h5 class="text-white text-center pt-16 opacity-75 tracking-widest uppercase">Our Perspectives</h5>
+      <h3 class="text-white text-center pt-1 font-thin sm:text-5xl tracking-wide text-4xl">Latest Blog Posts</h3>
 
-    <ul>
-      {%- for post in collections.post -%}
-        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-      {%- endfor -%}
-    </ul>
+      <ul class="mt-12">
+        {%- for post in collections.post -%}
+          <li><a class="font-light text-xl my-3 sm:text-2xl leading-tight color-white text-white dark:text-spacepurple-light" href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </div>
   </section>
 
   <section class="box mb-12 bg-white dark:bg-spacepurple-darker">
