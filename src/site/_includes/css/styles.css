@@ -719,6 +719,12 @@ h3 {
   color: #5675E6;
 }
 
+/* fix issue with two nav sections showing at once */
+
+nav .border-spacepurple + .border-spacepurple {
+  border-color: transparent !important;
+}
+
 /* purgecss start ignore */
 
 .container {

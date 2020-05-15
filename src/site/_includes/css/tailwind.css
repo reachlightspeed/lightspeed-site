@@ -90,14 +90,16 @@ h3 {
   @apply text-spacepurple-light;
 }
 
+/* fix issue with two nav sections showing at once */
+nav .border-spacepurple + .border-spacepurple { 
+  border-color: transparent !important; 
+}
 
 /* purgecss start ignore */
 @tailwind  components;
 /* purgecss end ignore */
 
 @tailwind utilities;
-
-
 
 /* blog */
 body.blog main {
