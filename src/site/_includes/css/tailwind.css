@@ -102,7 +102,7 @@ nav .border-spacepurple + .border-spacepurple {
 @tailwind utilities;
 
 /* blog */
-body.blog main {
+body.blog {
   background-color: #F7F8FC;
 }
 body.blog main .blog-masthead { 
