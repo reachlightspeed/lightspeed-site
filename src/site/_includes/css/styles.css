@@ -623,12 +623,6 @@ video {
   background-position: 0 -520px,0 -300px,0 0;
 }
 
-/* Nav Highlight Fix */
-
-nav .border-spacepurple + .border-spacepurple {
-  border-color: transparent;
-}
-
 .box {
   padding: 1.5rem;
   padding-bottom: 2.5rem;
@@ -729,6 +723,7 @@ h3 {
 
 nav .border-spacepurple + .border-spacepurple {
   border-color: transparent !important;
+  color: inherit;
 }
 
 /* remove outline on tap of link from webkit devices */
