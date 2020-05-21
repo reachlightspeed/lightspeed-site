@@ -18639,13 +18639,13 @@ body.blog main .post-image {
       from(rgba(0,0,0, 0.2)), 
       to(rgba(0,0,0, 0.2))
     ),
-  url(https://images.unsplash.com/photo-1534254910684-68bdc1d69cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+  url('../../img/post-img.jpg');
   background: 
     linear-gradient(
       rgba(0,0,0, 0.2), 
       rgba(0,0,0, 0.2)
     ),
-  url(https://images.unsplash.com/photo-1534254910684-68bdc1d69cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+  url('../../img/post-img.jpg');
 }
 
 body.blog main h2 {
