@@ -137,7 +137,7 @@ body.blog main p strong {
 }
 
 body.blog main h2 {
-  @apply text-3xl mt-12 mb-8;
+  @apply text-xl mt-8 mb-4;
 }
 body.blog main a {
  color: #3b5ee2;
