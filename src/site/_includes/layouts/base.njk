@@ -37,6 +37,7 @@
 
     {{ content | safe }}
 
+    {% include 'partials/footer.njk' %}
     {% set js %}
       {% include "js/index.js" %}
     {% endset %}
