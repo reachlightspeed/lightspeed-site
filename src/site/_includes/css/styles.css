@@ -18608,7 +18608,7 @@ nav .border-spacepurple + .border-spacepurple {
 /* blog */
 
 body.blog {
-  background-color: #F7F8FC;
+  /* background-color: #F7F8FC; */
 }
 
 body.blog main .blog-masthead {
@@ -18648,6 +18648,15 @@ body.blog main .post-image {
   url('../../img/post-img.jpg');
 }
 
+body.blog main p {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+body.blog main p strong {
+  font-weight: 500;
+}
+
 body.blog main h2 {
   font-size: 1.875rem;
   margin-top: 3rem;
@@ -18684,7 +18693,30 @@ body.blog main blockquote ul {
 
 body.blog main blockquote ul li {
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-size: 1.125rem;
+}
+
+/* Dark mode blog */
+
+html.mode-dark body.blog {
+  background-color: #1c2138 ;
+}
+
+html.mode-dark body.blog h2, h3 {
+  color: #5675E6;
+}
+
+html.mode-dark body.blog p {
+  color: #fff;
+}
+
+html.mode-dark body.blog main blockquote { background: rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+html.mode-dark body.blog main blockquote ul li {
+  color: #fff;
 }
 
 @media (min-width: 336px) {

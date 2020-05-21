@@ -103,7 +103,7 @@ nav .border-spacepurple + .border-spacepurple {
 
 /* blog */
 body.blog {
-  background-color: #F7F8FC;
+  /* background-color: #F7F8FC; */
 }
 body.blog main .blog-masthead { 
   height: 450px;
@@ -124,6 +124,13 @@ body.blog main .post-image {
     ),
   url('../../img/post-img.jpg');
 }
+body.blog main p {
+  @apply font-light text-lg;
+}
+body.blog main p strong {
+  @apply font-medium;
+}
+
 body.blog main h2 {
   @apply text-3xl mt-12 mb-8;
 }
@@ -144,5 +151,22 @@ body.blog main blockquote ul {
   @apply list-disc;
 }
 body.blog main blockquote ul li {
-  @apply m-4 text-2xl;
+  @apply m-4 text-base text-lg;
+}
+/* Dark mode blog */
+html.mode-dark body.blog {
+  background-color: #1c2138 ;
+}
+html.mode-dark body.blog h2, h3 {
+  @apply text-spacepurple-light;
+}
+
+html.mode-dark body.blog p {
+  @apply text-white;
+}
+html.mode-dark body.blog main blockquote {
+  @apply bg-black-20 text-white;
+}
+html.mode-dark body.blog main blockquote ul li {
+  @apply text-white;
 }
