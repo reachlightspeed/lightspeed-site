@@ -34,6 +34,7 @@ module.exports = {
           darker: "#141421",
           darkest: "#06060F",
         },
+        tint: "#F7F8FC"
       },
       borderWidth: {
         default: "1px",

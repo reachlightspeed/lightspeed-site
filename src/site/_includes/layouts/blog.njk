@@ -7,7 +7,7 @@
     <title>Lightspeed &mdash; A Web Performance Optimization Consultancy</title>
     <meta name="description" content="Lightspeed is a performance optimization consultancy that works with forward-thinking companies to create inconceivably fast digital experiences.">
     <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="preload" href="/img/starfield.svg" as="image">
+    <link rel="preload" href="{{ hero_img | safe }}.jpg" as="image">
     <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; ga('create', 'UA-159388575-1', 'auto'); ga('send', 'pageview');</script>
     {% set css %}
       {% include "css/styles.css" %}
@@ -32,35 +32,35 @@
     </script>
   </head>
   
-	<body class="mx-4 blog overflow-x-hidden font-body">
+	<body class="mx-4 blog overflow-x-hidden font-body bg-tint">
     {% include 'partials/nav.njk' %}
     <main class="block max-w-3xl mx-auto">
+      <div class="blog-masthead w-full absolute bg-cover top-0 left-0" style="background-image: linear-gradient(rgba(59,94,226,.4),rgba(59,94,226,.4)), url({{ hero_img | safe }}.jpg);"></div>
 
-      <div class="mt-26 blog-masthead w-full absolute bg-cover top-0 left-0 "></div>
-      <div class="slice"></div>
-      <div class="mt-48 relative h-auto">
-        <div class="post-image h-64 rounded-lg text-center bg-cover p-12">
-          <h1 class="text-2xl md:text-4xl text-white">{{ title | safe }}</h1>
-          <p class="text-white text-sm md:text-xl pt-2">{{ page.date | readableDate }}</p>
+      <div class="mt-32 relative h-auto">
+        <div class="post-image flex flex-col justify-center rounded-lg text-center bg-cover px-6 py-12 lg:px-12 shadow-xl" style="background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url({{ hero_img | safe }}.jpg);">
+          <h1 class="text-2xl md:text-3xl text-white leading-snug">{{ title | safe }}</h1>
+          <span class="block font-light text-white text-lg md:text-xl pt-2">{{ page.date | readableDate }}</span>
         </div>
-        <div class="author-info -m-8">
+        <div class="author-info -mt-8">
           <picture>
-            <source srcset="../../img/tj.webp 1x, ../../img/tj@2x.webp 2x" type="image/webp">
-            <source srcset="../../img/tj.jpg 1x, ../../img/tj@2x.jpg 2x" type="image/jpeg">
-            <img src="../../img/tj.jpg" width="64" height="64" loading="lazy" alt="A photo of Tom Hanlon" class="mx-auto rounded-full" />
+            <source srcset="{{ author_img | safe }}.webp 1x, {{ author_img | safe }}@2x.webp 2x" type="image/webp">
+            <source srcset="{{ author_img | safe }}.jpg 1x, {{ author_img | safe }}@2x.jpg 2x" type="image/jpeg">
+            <img src="{{ author_img | safe }}.jpg" width="64" height="64" loading="eager" alt="A photo of {{ author | safe }}" class="mx-auto rounded-full" />
           </picture>
-          <div class="text-center">
-            <p class="md:text-2xl">Tom Hanlon</p>
-            <p class="md:text-xl text-sm mt-0">Co-Founder</p>
+          <div class="text-center mt-2 dark:text-white">
+            <span class="block md:text-xl">{{ author | safe }}</span>
+            <span class="block md:text-lg font-light text-sm mt-0 ">{{ author_title | safe }}</span>
           </div>
         </div>
       </div>
-      <section class="z-10 relative mt-20">  
+      <section class="z-12 relative mt-12">  
         {{ content | safe }}
       </section>
 
-      <div class="mt-4">
-        <p>Interested in chatting further? <a href="/#contact">Reach out today</a> to set up a call -- we’d love to hear from you.</p>
+      <div class="mt-12 mb-8 p-8 rounded-md border border-spacepurple-lightest bg-opacity-25 bg-spacepurple-lightest dark:border-spacepurple-darkest dark:bg-spacepurple-darkest">
+        <h6 class="text-lg font-medium text-spacepurple-dark mb-1 dark:text-spacepurple-light">Interested in chatting further?</h6>
+        <p><a href="/#contact">Reach out today</a> to set up a call&mdash;we’d love to hear from you.</p>
       </div>
     </main>
 

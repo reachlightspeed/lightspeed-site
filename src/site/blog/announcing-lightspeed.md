@@ -3,6 +3,10 @@ title: Announcing Lightspeed, A Web Performance Optimization Consultancy
 layout: blog
 permalink: "blog/{{ title | slug }}/"
 date: 2020-05-11
+author: Tom Hanlon
+author_title: Performance Engineer, Co-Founder
+author_img: /img/tj
+hero_img: /img/blog/hero-space
 tags: post
 ---
 
@@ -16,8 +20,8 @@ Increasingly, as more internet users move to spend more of their time online (an
 > * There's been a 129% year-over-year growth in U.S. & Canadian e-commerce orders as of April 21 and an impressive 146% growth in all online retail orders.
 > * Online conversion rates increased 8.8% in February, reflecting a level of shopping urgency typically seen during Cyber Mondays, according to QuantumMetric.
 
-
 [Forbes- How COVID-19 IS Transforming E-commerce](https://www.forbes.com/sites/louiscolumbus/2020/04/28/how-covid-19-is-transforming-e-commerce/#3c18c4d3544f "Forbes Article: How COVID-19 IS Transforming E-commerce")
+
 ## What is Web Performance Optimization?
 Web performance optimization is the practice of speeding up your website to improve page load time. What this means is your visitors are granted a fast and modern experience in which they can buy or learn more about your product offerings or services. 
 
@@ -35,4 +39,3 @@ We’ll work with you to plan, design and build an incredibly fast e-commerce ex
 
 ## The web of tomorrow
 As the web increasingly shifts to mobile (phone, watch, etc.) devices, brands need to ensure that the customer experience is optimized for popular modern device types over varying connection speeds. Our mission is to ensure the experiences your customers expect match how your site performs. 
-
