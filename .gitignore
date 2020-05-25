@@ -9,14 +9,13 @@
 .env
 
 # built css file
-src/site/_includes/css/styles.css
+/src/site/_includes/css/styles.css
 
 # macOS related files
 .DS_Store
 .AppleDouble
 .LSOverride
-src/site/_includes/css/styles.css
-src/site/_includes/css/styles.css
+
 
 # Local Netlify folder
 .netlify
