@@ -30,7 +30,7 @@ Have you ever had the experience of waiting for a web page to load while the loa
 
 ## Let’s talk ROI: What’s the benefit to my business?
 There’s been a ton of research in the performance space to indicate that there’s a direct correlation between performance and business outcomes. Amazon found that every 100ms of latency cost them 1% in sales. Google found an extra .5 seconds in search page generation time dropped traffic by 20%.
-At Accenture Interactive, I saw firsthand how many e-commerce companies pushed bloated, unoptimized web experiences to their potential customers. It wasn’t done nefariously. It’s easy to add third-party tools or unoptimized assets to a site and it’s also easy to forget about them-- and the end result is that the user experience degrades over time. 
+At Accenture Interactive, I saw firsthand how many e-commerce companies pushed bloated, unoptimized web experiences to their potential customers. It wasn’t done nefariously. It’s easy to add third-party tools or unoptimized assets to a site and it’s also easy to forget about them&mdash;and the end result is that the user experience degrades over time. 
 
 ## How does it work?
 Our offerings, as we see them, are twofold: 
