@@ -124,7 +124,8 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .blog main a {
-  @apply text-spacepurple transition underline;
+  @apply text-spacepurple underline;
+  transition: color 0.3s ease;
 }
 
 .blog main a:focus, 
