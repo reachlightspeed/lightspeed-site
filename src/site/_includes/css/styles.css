@@ -822,7 +822,8 @@ nav .border-spacepurple + .border-spacepurple {
   color: rgba(59, 94, 226, var(--text-opacity));
 }
 
-.mode-dark .blog h2, h3 {
+.mode-dark .blog h2,
+.mode-dark .blog h3 {
   --text-opacity: 1;
   color: #5675E6;
   color: rgba(86, 117, 230, var(--text-opacity));

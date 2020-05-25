@@ -144,6 +144,7 @@ nav .border-spacepurple + .border-spacepurple {
   @apply m-4 text-base text-lg;
 }
 
+
 /* Dark mode blog */
 .mode-dark .blog {
   @apply bg-spacepurple-darker;
@@ -158,7 +159,8 @@ nav .border-spacepurple + .border-spacepurple {
   @apply text-spacepurple;
 }
 
-.mode-dark .blog h2, h3 {
+.mode-dark .blog h2,
+.mode-dark .blog h3 {
   @apply text-spacepurple-light;
 }
 
@@ -173,6 +175,7 @@ nav .border-spacepurple + .border-spacepurple {
 .mode-dark .blog main blockquote ul li {
   @apply text-white;
 }
+
 
 /* purgecss start ignore */
 @tailwind  components;

@@ -2,7 +2,7 @@
 title: Announcing Lightspeed, A Web Performance Optimization Consultancy
 layout: blog
 permalink: "blog/{{ title | slug }}/"
-date: 2020-05-11
+date: 2020-05-26
 author: Tom Hanlon
 author_title: Performance Engineer, Co-Founder
 author_img: /img/tj
