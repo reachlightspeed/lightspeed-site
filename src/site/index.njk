@@ -39,7 +39,7 @@ layout: default
           </div>
         <h6 class="m-2 text-2xl">Increased Conversions</h6>
         <div class="my-2 mx-1">A fast website will boost conversions and generate more revenue.</div>
-        <div class="case-study p-4 mt-6 bg-black-20 rounded-lg">
+        <div class="case-study p-4 mt-6 bg-black bg-opacity-20 rounded-lg">
           <div class="italic text-left">A 1 second delay means a 7% reduction in conversions.</div>
           <div class="text-right opacity-75 mt-1">- Akamai</div>
         </div>
@@ -54,7 +54,7 @@ layout: default
           </div>
         <h6 class="m-2 text-2xl">Better Engagement</h6>
         <div class="my-2 mx-1">With a performant site, your users are more likely to browse than to bounce.</div>
-        <div class="case-study p-4 mt-6 bg-black-20 rounded-lg">
+        <div class="case-study p-4 mt-6 bg-black bg-opacity-20 rounded-lg">
           <div class="italic text-left">1 second of load time correlates to a 4.9% drop in session depth.</div>
           <div class="text-right opacity-75 mt-1">- Financial Times</div>
         </div>
@@ -68,7 +68,7 @@ layout: default
           </div>
         <h6 class="m-2 text-2xl">Improved SEO</h6>
         <div class="my-2 mx-1">Google penalizes slow websites. Speeding up your site will help with SEO.</div>
-        <div class="case-study p-4 mt-6 bg-black-20 rounded-lg">
+        <div class="case-study p-4 mt-6 bg-black bg-opacity-20 rounded-lg">
           <div class="italic text-left">We’ve decided to take site speed into account in our search rankings.</div>
           <div class="text-right opacity-75 mt-1">- Google Webmaster Blog</div>
         </div>
@@ -82,8 +82,8 @@ layout: default
           </div>
         <h6 class="m-2 text-2xl">Customer Delight</h6>
         <div class="my-2 mx-1">Users won't wait for a slow website. A fast user experience is a pleasurable one.</div>
-        <div class="case-study p-4 mt-6 bg-black-20 rounded-lg">
-          <div class="italic text-left">40% of visitors will abandon a website that takes >3 seconds to load.</div>
+        <div class="case-study p-4 mt-6 bg-black bg-opacity-20 rounded-lg">
+          <div class="italic text-left">40% of visitors will abandon a website that takes bg-black bg-opacity-20>3 seconds to load.</div>
           <div class="text-right opacity-75 mt-1">- Kissmetrics</div>
         </div>
       </div>
@@ -98,7 +98,7 @@ layout: default
           </div>
         <h6 class="m-2 text-2xl">Great First Impression</h6>
         <div class="my-2 mx-1">If your website loads quickly, it's instantly perceived as professional and reliable.</div>
-        <div class="case-study p-4 mt-6 bg-black-20 rounded-lg">
+        <div class="case-study p-4 mt-6 bg-black bg-opacity-20 rounded-lg">
           <div class="italic text-left">66% of visitors said speed influences their impression of a company.</div>
           <div class="text-right opacity-75 mt-1">- Customer Research Lab</div>
         </div>
@@ -112,7 +112,7 @@ layout: default
           </div>
         <h6 class="m-2 text-2xl">Accessible to All</h6>
         <div class="my-2 mx-1">Connection and device speeds vary. If your site is fast, it's accessible to all.</div>
-        <div class="case-study p-4 mt-6 bg-black-20 rounded-lg">
+        <div class="case-study p-4 mt-6 bg-black bg-opacity-20 rounded-lg">
           <div class="italic text-left">In 2019, 55.1M users accessed the internet exclusively on mobile.</div>
           <div class="text-right opacity-75 mt-1">- Statista</div>
         </div>
@@ -315,7 +315,7 @@ layout: default
 
       <ul class="mt-12 mb-10 sm:mb-16 border-t border-white border-opacity-25 dark:border-spacepurple-dark">
         {%- for post in collections.post -%}
-          <li class="mb-3"><a class="flex flex-row justify-center items-center text-white p-4 border-b border-white border-opacity-25 bg-white bg-opacity-0 hover:bg-opacity-10 transition dark:border-spacepurple-dark" href="{{ post.url }}">
+          <li class="mb-3"><a class="flex flex-row justify-center items-center text-white p-4 border-b border-white border-opacity-25 bg-black bg-opacity-0 hover:bg-opacity-10 transition dark:border-spacepurple-dark" href="{{ post.url }}">
             {# <img class="w-24 h-16 sm:w-32 sm:h-24 object-cover ml-2 mr-4 rounded-md shadow" src="{{ post.data.hero_img }}.jpg" loading="lazy" alt="Post image for {{ post.data.title }}" > #}
             <div class="flex-1 flex flex-col m-auto">
               <div class="font-light text-xl mb-2 sm:text-2xl leading-tight">{{ post.data.title }}</div>

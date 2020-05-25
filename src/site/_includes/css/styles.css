@@ -637,12 +637,6 @@ nav .border-spacepurple + .border-spacepurple { border-color: transparent;
   transition: all 0.3s ease;
 }
 
-.bg-black-10 { background: rgba(0,0,0,0.1)
-}
-
-.bg-black-20 { background: rgba(0,0,0,0.2)
-}
-
 .spacepurple-section {
   background: #3B5EE2 linear-gradient(121deg, #4668E7 0%, #2443BB 100%);
   width: 100vw;
