@@ -14314,16 +14314,20 @@ nav .border-spacepurple + .border-spacepurple {
   max-width: 90rem;
 }
 
-.min-h-0 {
-  min-height: 0;
+.min-h-32 {
+  min-height: 8rem;
 }
 
-.min-h-full {
-  min-height: 100%;
+.min-h-40 {
+  min-height: 10rem;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.min-h-48 {
+  min-height: 12rem;
+}
+
+.min-h-56 {
+  min-height: 14rem;
 }
 
 .min-w-0 {
@@ -40428,16 +40432,20 @@ nav .border-spacepurple + .border-spacepurple {
     max-width: 90rem;
   }
 
-  .xs\:min-h-0 {
-    min-height: 0;
+  .xs\:min-h-32 {
+    min-height: 8rem;
   }
 
-  .xs\:min-h-full {
-    min-height: 100%;
+  .xs\:min-h-40 {
+    min-height: 10rem;
   }
 
-  .xs\:min-h-screen {
-    min-height: 100vh;
+  .xs\:min-h-48 {
+    min-height: 12rem;
+  }
+
+  .xs\:min-h-56 {
+    min-height: 14rem;
   }
 
   .xs\:min-w-0 {
@@ -65411,16 +65419,20 @@ nav .border-spacepurple + .border-spacepurple {
     max-width: 90rem;
   }
 
-  .sm\:min-h-0 {
-    min-height: 0;
+  .sm\:min-h-32 {
+    min-height: 8rem;
   }
 
-  .sm\:min-h-full {
-    min-height: 100%;
+  .sm\:min-h-40 {
+    min-height: 10rem;
   }
 
-  .sm\:min-h-screen {
-    min-height: 100vh;
+  .sm\:min-h-48 {
+    min-height: 12rem;
+  }
+
+  .sm\:min-h-56 {
+    min-height: 14rem;
   }
 
   .sm\:min-w-0 {
@@ -90394,16 +90406,20 @@ nav .border-spacepurple + .border-spacepurple {
     max-width: 90rem;
   }
 
-  .md\:min-h-0 {
-    min-height: 0;
+  .md\:min-h-32 {
+    min-height: 8rem;
   }
 
-  .md\:min-h-full {
-    min-height: 100%;
+  .md\:min-h-40 {
+    min-height: 10rem;
   }
 
-  .md\:min-h-screen {
-    min-height: 100vh;
+  .md\:min-h-48 {
+    min-height: 12rem;
+  }
+
+  .md\:min-h-56 {
+    min-height: 14rem;
   }
 
   .md\:min-w-0 {
@@ -115377,16 +115393,20 @@ nav .border-spacepurple + .border-spacepurple {
     max-width: 90rem;
   }
 
-  .lg\:min-h-0 {
-    min-height: 0;
+  .lg\:min-h-32 {
+    min-height: 8rem;
   }
 
-  .lg\:min-h-full {
-    min-height: 100%;
+  .lg\:min-h-40 {
+    min-height: 10rem;
   }
 
-  .lg\:min-h-screen {
-    min-height: 100vh;
+  .lg\:min-h-48 {
+    min-height: 12rem;
+  }
+
+  .lg\:min-h-56 {
+    min-height: 14rem;
   }
 
   .lg\:min-w-0 {

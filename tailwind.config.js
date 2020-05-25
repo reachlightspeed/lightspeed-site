@@ -23,6 +23,12 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
     },
+    minHeight: {
+      '32': '8rem',
+      '40': '10rem',
+      '48': '12rem',
+      '56': '14rem',
+   },
     extend: {
       colors: {
         spacepurple: {
