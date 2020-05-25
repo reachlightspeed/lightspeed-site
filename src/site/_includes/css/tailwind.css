@@ -152,6 +152,15 @@ nav .border-spacepurple + .border-spacepurple {
   @apply bg-spacepurple-darker;
 }
 
+.mode-dark .blog main a {
+  @apply text-spacepurple-light;
+}
+
+.mode-dark .blog main a:focus, 
+.mode-dark .blog main a:hover {
+  @apply text-spacepurple;
+}
+
 .mode-dark .blog h2, h3 {
   @apply text-spacepurple-light;
 }
@@ -161,7 +170,7 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .mode-dark .blog main blockquote {
-  @apply bg-spacepurple-darkest text-white;
+  @apply bg-spacepurple-darkest border-spacepurple-light text-white;
 }
 
 .mode-dark .blog main blockquote ul li {

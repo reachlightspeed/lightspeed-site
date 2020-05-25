@@ -73,6 +73,10 @@ module.exports = {
         "7xl": "80rem",
         "8xl": "90rem",
       },
+      backgroundOpacity: {
+        "10": "0.1",
+        "20": "0.2",
+      },
     },
   },
   variants: {
@@ -83,6 +87,8 @@ module.exports = {
       "group-hover"
     ],
     backgroundColor: [
+      "hover",
+      "group-hover",
       "dark",
       "dark-hover",
       "dark-group-hover",
@@ -101,13 +107,29 @@ module.exports = {
     textColor: [
       "responsive",
       "hover",
+      "group-hover",
       "active",
       "dark",
       "dark-hover",
       "dark-active",
       "dark-placeholder",
     ],
-    opacity: ["dark"],
+    opacity: [
+      "hover",
+      "group-hover",
+      "dark",
+      "dark-hover",
+    ],
+    backgroundOpacity: [
+      "hover",
+      "group-hover",
+      "dark",
+      "dark-hover",
+    ],
+    translate: [
+      "hover",
+      "group-hover",
+    ],
   },
   plugins: [require("tailwindcss-dark-mode")()],
 };
