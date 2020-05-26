@@ -9,6 +9,7 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     "border-spacepurple",
     "mode-dark",
     "blockquote",
+    "cite",
   ],
 
   // Include any special characters you're using in this regular expression
