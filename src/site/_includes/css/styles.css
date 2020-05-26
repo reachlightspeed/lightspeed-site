@@ -896,7 +896,7 @@ nav .border-spacepurple + .border-spacepurple {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.mode-dark .blog main blockquote ul li {
+.mode-dark .blog main li {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
