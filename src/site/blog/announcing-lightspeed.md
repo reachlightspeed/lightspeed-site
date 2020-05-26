@@ -34,9 +34,9 @@ There’s been a ton of research in the performance space to indicate that there
 At Accenture Interactive, I saw firsthand how many e-commerce companies pushed bloated, unoptimized web experiences to their potential customers. It wasn’t done nefariously. It’s easy to add third-party tools or unoptimized assets to a site and it’s also easy to forget about them&mdash;and the end result is that the user experience degrades over time. 
 
 ## How does it work?
-Our offerings, as we see them, are twofold: 
-We'll audit your current website and partner with your in-house engineering team or agency partners to dramatically improve your site’s performance
-We’ll work with you to plan, design and build an incredibly fast e-commerce experience from the ground up
+Our offerings, as we see them, are twofold:  
+1. We'll audit your current website and partner with your in-house engineering team or agency partners to dramatically improve your site’s performance
+2. We’ll work with you to plan, design and build an incredibly fast e-commerce experience from the ground up
 
 ## The web of tomorrow
 As the web increasingly shifts to mobile (phone, watch, etc.) devices, brands need to ensure that the customer experience is optimized for popular modern device types over varying connection speeds. Our mission is to ensure the experiences your customers expect match how your site performs. 
