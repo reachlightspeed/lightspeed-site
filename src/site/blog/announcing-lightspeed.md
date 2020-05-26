@@ -1,5 +1,5 @@
 ---
-title: Announcing Lightspeed, A High-Performance E-Commerce Consultancy
+title: "Announcing Lightspeed: High-Performance E-Commerce" 
 layout: blog
 permalink: "blog/{{ title | slug }}/"
 date: 2020-05-26
