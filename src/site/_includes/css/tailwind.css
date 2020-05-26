@@ -133,16 +133,38 @@ nav .border-spacepurple + .border-spacepurple {
   @apply text-spacepurple-dark;
 }
 
+.blog main ul, .blog main ol {
+  @apply leading-snug text-gray-800 text-lg pl-4 pt-5 pb-2 ml-4;
+}
+
+.blog main ul li {
+  @apply list-disc pl-2 pb-4;
+}
+
+.blog main ol li {
+  @apply list-decimal pl-2 pb-4;
+} 
+
+.blog main li ul, .blog main li ol {
+  @apply pt-2;
+}
+
+.blog main li li {
+  @apply pb-2;
+  list-style-type: circle;
+} 
+
 .blog main blockquote {
-  @apply p-6 pb-10 rounded-lg shadow-xl border-spacepurple border-l-6 bg-white mt-10 mb-10;
+  @apply py-6 pl-6 pr-5 mt-10 mb-10 rounded-lg shadow-xl border-spacepurple border-l-6 bg-white;
 }
 
-.blog main blockquote ul {
-  @apply list-disc;
+.blog main blockquote ul,
+.blog main blockquote ol {
+  @apply ml-0;
 }
 
-.blog main blockquote ul li {
-  @apply m-4 text-base text-lg;
+.blog main blockquote cite {
+  @apply block text-right text-base pt-5 px-4;
 }
 
 
