@@ -735,6 +735,15 @@ nav .border-spacepurple + .border-spacepurple {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+.mode-icon-sun { visibility: hidden;
+}
+
+.mode-dark .mode-icon-sun { visibility: visible;
+}
+
+.mode-dark .mode-icon-moon { visibility: hidden;
+}
+
 /* blog */
 
 .blog-masthead {
