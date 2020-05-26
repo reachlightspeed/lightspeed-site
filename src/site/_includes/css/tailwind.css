@@ -27,9 +27,6 @@ nav .border-spacepurple + .border-spacepurple { border-color: transparent; }
   transition: all 0.3s ease;
 }
 
-.bg-black-10 { background: rgba(0,0,0,0.1) }
-.bg-black-20 { background: rgba(0,0,0,0.2) }
-
 .spacepurple-section {
   background: #3B5EE2 linear-gradient(121deg, #4668E7 0%, #2443BB 100%);
   width: 100vw;
@@ -93,10 +90,93 @@ h3 {
   @apply text-spacepurple-light;
 }
 
+/* fix issue with two nav sections showing at once */
+nav .border-spacepurple + .border-spacepurple { 
+  border-color: transparent !important; 
+  color: inherit;
+}
 /* remove outline on tap of link from webkit devices */
 .no-tap-highlight {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
+/* blog */
+
+.blog-masthead { 
+  height: 23rem;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px),0 100%);
+}
+
+.blog .post-image {
+  min-height: 16rem;
+}
+
+.blog main p {
+  @apply font-normal text-lg leading-relaxed text-gray-800;
+}
+
+.blog main p strong {
+  @apply font-medium;
+}
+
+.blog main h2 {
+  @apply text-2xl mt-12 mb-4 text-spacepurple-dark;
+}
+
+.blog main a {
+  @apply text-spacepurple underline;
+  transition: color 0.3s ease;
+}
+
+.blog main a:focus, 
+.blog main a:hover {
+  @apply text-spacepurple-dark;
+}
+
+.blog main blockquote {
+  @apply p-6 pb-10 rounded-lg shadow-xl border-spacepurple border-l-6 bg-white mt-10 mb-10;
+}
+
+.blog main blockquote ul {
+  @apply list-disc;
+}
+
+.blog main blockquote ul li {
+  @apply m-4 text-base text-lg;
+}
+
+
+/* Dark mode blog */
+.mode-dark .blog {
+  @apply bg-spacepurple-darker;
+}
+
+.mode-dark .blog main a {
+  @apply text-spacepurple-light;
+}
+
+.mode-dark .blog main a:focus, 
+.mode-dark .blog main a:hover {
+  @apply text-spacepurple;
+}
+
+.mode-dark .blog h2,
+.mode-dark .blog h3 {
+  @apply text-spacepurple-light;
+}
+
+.mode-dark .blog p {
+  @apply text-white; 
+}
+
+.mode-dark .blog main blockquote {
+  @apply bg-spacepurple-darkest border-spacepurple-light text-white;
+}
+
+.mode-dark .blog main blockquote ul li {
+  @apply text-white;
+}
+
 
 /* purgecss start ignore */
 @tailwind  components;

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="smooth-scroll">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,6 +37,7 @@
 
     {{ content | safe }}
 
+    {% include 'partials/footer.njk' %}
     {% set js %}
       {% include "js/index.js" %}
     {% endset %}

@@ -15,11 +15,11 @@
     </div>
 
     <div class="flex flex-1 sm:flex-initial sm:w-2/3 md:w-1/2 justify-center">
-      <nav class="flex w-full max-w-xl justify-around -m-3px md:text-lg text-spacepurple-dark mx-2 md:mr-2 lg:mx-0">
-        <a class="no-tap-highlight md:px-5 px-2 flex items-center border-b-3 border-transparent lg:hover:text-spacepurple dark:text-white dark-hover:text-spacepurple-light transition" href="#services" data-nav="services">Services</a>
-        {# <a class="no-tap-highlight md:px-5 px-2 flex items-center border-b-3 border-transparent lg:hover:text-spacepurple dark:text-white dark-hover:text-spacepurple-light transition" href="#">Articles</a></li> #}
-        <a class="no-tap-highlight md:px-5 px-2 flex items-center border-b-3 border-transparent lg:hover:text-spacepurple dark:text-white dark-hover:text-spacepurple-light transition" href="#about" data-nav="about">About</a>
-        <a class="no-tap-highlight md:px-5 px-2 flex items-center border-b-3 border-transparent lg:hover:text-spacepurple dark:text-white dark-hover:text-spacepurple-light transition" href="#contact" data-nav="contact">Contact</a>
+      <nav class="flex w-full max-w-xl justify-around -m-3px md:text-lg text-spacepurple-dark mx-2 md:mr-2 lg:mx-0 dark:text-white">
+        <a class="no-tap-highlight md:px-5 px-2 flex items-center border-b-3 border-transparent lg:hover:text-spacepurple dark:text-white dark-hover:text-spacepurple-light transition" href="/#services" data-nav="services">Services</a>
+        <a class="no-tap-highlight md:px-5 px-2 flex items-center border-b-3 border-transparent lg:hover:text-spacepurple dark:text-white dark-hover:text-spacepurple-light transition" href="/#about" data-nav="about">About</a>
+        <a class="no-tap-highlight md:px-5 px-2 flex items-center border-b-3 border-transparent lg:hover:text-spacepurple dark:text-white dark-hover:text-spacepurple-light transition" href="/#contact" data-nav="contact">Contact</a>
+        <a class="no-tap-highlight md:px-5 px-2 flex items-center border-b-3 border-transparent lg:hover:text-spacepurple dark:text-white dark-hover:text-spacepurple-light transition {% if '/blog' in page.url %}border-spacepurple text-spacepurple dark:text-spacepurple-light{% endif %}" href="/#blog" data-nav="blog">Blog</a></li>
       </nav>
     </div>
 
@@ -33,7 +33,7 @@
 
   </div>
 </header>
-<div class="absolute md:hidden right-0 -mt-16">
+<div class="absolute z-10  md:hidden right-0 -mt-16">
   <a href="#" class="flex p-3 no-tap-highlight opacity-75 hover:opacity-100" onClick="toggleDarkMode(event)" aria-label="Dark Mode">
     <svg class="w-6 mx-3 text-spacepurple-dark dark:text-spacepurple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="currentcolor" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
       <use href="#dark-mode-moon"/>
