@@ -34,7 +34,7 @@ At Accenture Interactive, I saw firsthand how many e-commerce companies pushed b
 
 ## How does it work?
 Our offerings, as we see them, are twofold:  
-1. We design and build beautiful, remarkably-fast, custom website experiences with performance as our guiding light
+1. We design and build beautiful, remarkably-fast, custom e-commerce experiences with performance as our guiding light
 2. We'll audit your website and partner with your in-house engineering team or agency partners to dramatically improve your site’s performance
 
 ## The web of tomorrow
