@@ -195,7 +195,7 @@ nav .border-spacepurple + .border-spacepurple {
   @apply bg-spacepurple-darkest border-spacepurple-light text-white;
 }
 
-.mode-dark .blog main blockquote ul li {
+.mode-dark .blog main li {
   @apply text-white;
 }
 
