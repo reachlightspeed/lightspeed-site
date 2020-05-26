@@ -165,7 +165,7 @@ nav .border-spacepurple + .border-spacepurple {
   @apply text-spacepurple-light;
 }
 
-.mode-dark .blog p {
+.mode-dark .blog main p {
   @apply text-white; 
 }
 
