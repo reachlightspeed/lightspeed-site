@@ -7,6 +7,7 @@ author: Tom Hanlon
 author_title: Performance Engineer, Co-Founder
 author_img: /img/tj
 hero_img: /img/blog/hero-space
+og_img: /img/blog/og-announcing-lightspeed
 tags: post
 ---
 
