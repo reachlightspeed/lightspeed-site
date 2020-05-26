@@ -1,7 +1,7 @@
 ---
 title: "Announcing Lightspeed: High‑Performance E‑Commerce"
 layout: blog
-permalink: "blog/{{ title | slug }}/"
+permalink: "blog/announcing-lightspeed-high-performance-e-commerce/"
 date: 2020-05-26
 author: Tom Hanlon
 author_title: Co-Founder
