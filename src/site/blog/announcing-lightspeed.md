@@ -22,7 +22,7 @@ Increasingly, as more internet users move to spend more of their time online (an
 > <cite>[Source: Forbes](https://www.forbes.com/sites/louiscolumbus/2020/04/28/how-covid-19-is-transforming-e-commerce/#3c18c4d3544f "Forbes Article: How COVID-19 IS Transforming E-commerce")</cite>
 
 ## What is "High-Performance E-Commerce"?
-As we think of "High-Performance E-Commerce", we think of noticeably fast-to-load and well-designed customer experiences. What this means is your visitors are provided a fast and modern experience in which they can buy or learn more about your product offerings or services. Our goal is to be platform agnostic -- whether that mean Shopify, Amazon, BigCommerce, Magento, Squarespace or even your own custom-built application.
+As we think of "High-Performance E-Commerce", we think of noticeably fast-to-load and well-designed customer experiences. What this means is your visitors are provided a fast and modern experience in which they can buy or learn more about your product offerings or services. Our goal is to be platform agnostic&mdash;whether that mean Shopify, Amazon, BigCommerce, Magento, Squarespace or even your own custom-built application.
 
 ## Performance is the User Experience
 Have you ever had the experience of waiting for a web page to load while the loading icon spins endlessly? We all have. We all close the browser and walk away. Sometimes we try to visit the page again and sometimes we forget about it. Our goal at Lightspeed is to help brands bring best practices to their sites to make loading their site a positive brand and user experience for users on all modern device types and connection speeds. 
