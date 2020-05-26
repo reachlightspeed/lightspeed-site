@@ -17,10 +17,11 @@ Increasingly, as more internet users move to spend more of their time online (an
 
 **According to an April 28, 2020 article from Forbes:** 
 
+> **According to an April 28, 2020 article from Forbes:** 
 > * U.S. retailers' online year-over-year (YoY) revenue growth is up 68% as of mid-April, surpassing an earlier peak of 49% in early January.
 > * There's been a 129% year-over-year growth in U.S. & Canadian e-commerce orders as of April 21 and an impressive 146% growth in all online retail orders.
 > * Online conversion rates increased 8.8% in February, reflecting a level of shopping urgency typically seen during Cyber Mondays, according to QuantumMetric.
-> [Forbes- How COVID-19 IS Transforming E-commerce](https://www.forbes.com/sites/louiscolumbus/2020/04/28/how-covid-19-is-transforming-e-commerce/#3c18c4d3544f "Forbes Article: How COVID-19 IS Transforming E-commerce")
+> <cite>[Source: Forbes](https://www.forbes.com/sites/louiscolumbus/2020/04/28/how-covid-19-is-transforming-e-commerce/#3c18c4d3544f "Forbes Article: How COVID-19 IS Transforming E-commerce")</cite>
 
 ## What is Web Performance Optimization?
 Web performance optimization is the practice of speeding up your website to improve page load time. What this means is your visitors are granted a fast and modern experience in which they can buy or learn more about your product offerings or services. 
