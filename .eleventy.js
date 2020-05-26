@@ -1,6 +1,7 @@
 const { DateTime }  = require('luxon');
 const util          = require('util');
 const CleanCSS      = require("clean-css");
+const slugify       = require("slugify");
 
 console.log('running eleventyjs')
 module.exports = function(eleventyConfig) {
@@ -14,6 +15,17 @@ module.exports = function(eleventyConfig) {
   // a debug utility
   eleventyConfig.addFilter('dump', obj => {
     return util.inspect(obj)
+  });
+
+  // strip colon out of slug url
+  // https://github.com/11ty/eleventy/issues/278#issuecomment-451105828
+  eleventyConfig.addFilter("slug", (input) => {
+    const options = {
+      replacement: "-",
+      remove: /[&,+()$~%.'":*?<>{}]/g,
+      lower: true
+    };
+    return slugify(input, options);
   });
 
   // Date helpers

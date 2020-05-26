@@ -1,5 +1,5 @@
 ---
-title: "Announcing Lightspeed: High-Performance E-Commerce" 
+title: "Announcing Lightspeed: High‑Performance E‑Commerce"
 layout: blog
 permalink: "blog/{{ title | slug }}/"
 date: 2020-05-26
