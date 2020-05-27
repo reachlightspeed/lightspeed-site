@@ -69,25 +69,20 @@ const form = document.getElementById('form-contact');
 // add event listener 
 form.addEventListener('submit', function(e){
   e.preventDefault();
-  // if hidden field is empty
-  if (document.getElementById('company-input-field').value === ''){
-    // consolidate form data
-    const formData = serialize(form);
-    // send
-    fetch(form.action, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: formData
-    }).then(function(){
-      showFormSuccess();
-    }).catch(function(e){
-      // on error show error 
-      document.querySelector('.contact-us').classList.add('hidden');
-      document.querySelector('.hidden.error').classList.remove('hidden');
-    });
-   } else {
+  // consolidate form data
+  const formData = serialize(form);
+  // send
+  fetch(form.action, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: formData
+  }).then(function(){
     showFormSuccess();
-  }
+  }).catch(function(e){
+    // on error show error 
+    document.querySelector('.contact-us').classList.add('hidden');
+    document.querySelector('.hidden.error').classList.remove('hidden');
+  });
 }, false);   
 
 // toggle active states based on scroll depth

@@ -239,7 +239,7 @@ layout: default
         <h3>Contact Us</h3>
         <p>Please feel free to drop us a note&mdash;we'd love to schedule a call to introduce ourselves and hear how we can help.</p>
         <div class="contact-form text-left">
-          <form id="form-contact" name="contact" method="POST" data-netlify="true">
+          <form id="form-contact" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
 
             <div class="sm:flex pt-4">
               <div class="sm:pr-2 w-full">
@@ -248,7 +248,7 @@ layout: default
                   <input type="text" name="name" required class="w-full p-3 rounded focus:border-spacepurple border-gray-300 outline-none border-2 transition appearance-none dark:border-spacepurple-dark dark:bg-spacepurple-darkest dark-focus:border-spacepurple" /></label>
                   <label>
                   <span class="hidden">Company</span>
-                  <input type="text" id="company-input-field" name="company" class="hidden" /></label>
+                  <input type="text" id="company-input-field" name="bot-field" class="hidden" /></label>
               </div>
               <div class="pt-4 sm:pt-0 sm:pl-2 w-full">
                 <label>
