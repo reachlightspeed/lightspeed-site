@@ -17,13 +17,17 @@
     </style>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <link rel="shortcut icon" href="/favicon.png">
-    <meta property="og:image" content="https://reachlightspeed.com{{ og_img | safe }}.jpg">
+    <meta property="og:type" content="article">
     <meta property="og:title" content="{{ title | safe }} &mdash; Lightspeed">
-    <meta property="og:url" content="https://reachlightspeed.com{{ page.url | url }}" />
-    <meta property="twitter:image" content="https://reachlightspeed.com{{ og_img | safe }}.jpg">
-    <meta name="twitter:title" content="{{ title | safe }} &mdash; Lightspeed">
+    <meta property="og:image" content="https://reachlightspeed.com{{ og_img | safe }}.jpg">
+    <meta property="og:url" content="https://reachlightspeed.com{{ page.url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ title | safe }}">
+    <meta name="twitter:description" content="{{content | striptags | truncate(196) }}">
+    <meta name="twitter:image" content="https://reachlightspeed.com{{ og_img | safe }}.jpg">
+    <meta name="twitter:url" content="https://reachlightspeed.com{{ page.url }}">
     <meta name="author" content="{{ author | safe }}">
-    <link rel="canonical" href="https://reachlightspeed.com{{ page.url | url }}">
+    <link rel="canonical" href="https://reachlightspeed.com{{ page.url }}">
     {% set darkmode %}
       {% include "js/darkmode.js" %}
     {% endset %}
