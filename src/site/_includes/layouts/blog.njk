@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="/favicon.png">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ title | safe }} &mdash; Lightspeed">
+    <meta property="og:description" content="{{content | striptags | truncate(196) }}" />
     <meta property="og:image" content="https://reachlightspeed.com{{ og_img | safe }}.jpg">
     <meta property="og:url" content="https://reachlightspeed.com{{ page.url }}">
     <meta name="twitter:card" content="summary">
