@@ -8,7 +8,8 @@ module.exports = function(eleventyConfig) {
 
   // Layout aliases for convenience
   eleventyConfig.addLayoutAlias('default', 'layouts/base.njk');
-  eleventyConfig.addLayoutAlias('report', 'layouts/report.njk');
+  eleventyConfig.addLayoutAlias('lightbar', 'layouts/lightbar.njk');
+  // eleventyConfig.addLayoutAlias('report', 'layouts/report.njk');
   eleventyConfig.addLayoutAlias('blog', 'layouts/blog.njk');
   eleventyConfig.addLayoutAlias('conf', 'layouts/conf.njk');
 
