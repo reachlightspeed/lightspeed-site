@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://instant.page">
     <link rel="preload" href="{{ hero_img | safe }}.jpg" as="image">
-    <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; ga('create', 'UA-159388575-1', 'auto'); ga('send', 'pageview');</script>
+    <script>if (document.location.hostname === "reachlightspeed.com") {window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; ga('create', 'UA-159388575-1', 'auto'); ga('send', 'pageview');}</script>
     {% set css %}
       {% include "css/styles.css" %}
     {% endset %}
