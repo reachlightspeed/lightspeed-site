@@ -40,9 +40,9 @@
 	<body class="mx-4 blog overflow-x-hidden font-body bg-tint">
     {% include 'partials/nav.njk' %}
     <main class="block max-w-3xl mx-auto">
-      <div class="blog-masthead -mt-12 sm:mt-0 w-full absolute bg-cover top-0 left-0" style="background-image: linear-gradient(rgba(59,94,226,.4),rgba(59,94,226,.4)), url({{ hero_img | safe }}.jpg);"></div>
+      <div class="blog-masthead -mt-12 sm:mt-0 w-full absolute bg-cover top-0 left-0" style="background-image: linear-gradient(rgba(59,94,226,.4),rgba(59,94,226,.4)), url({{ hero_img | safe }}.jpg), url({{ hero_img_preload | safe }});"></div>
       <div class="mt-24 sm:mt-32 relative h-auto">
-        <div class="post-image flex flex-col justify-center rounded-lg text-center bg-cover px-6 py-12 lg:px-12 shadow-xl" style="background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url({{ hero_img | safe }}.jpg);">
+        <div class="post-image flex flex-col justify-center rounded-lg text-center bg-cover px-6 py-12 lg:px-12 shadow-xl" style="background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url({{ hero_img | safe }}.jpg),  url({{ hero_img_preload | safe }});">
           <h1 class="text-2xl md:text-3xl text-white leading-snug">{{ title | safe }}</h1>
           <span class="block font-light text-white text-lg md:text-xl pt-2">{{ page.date | readableDate }}</span>
         </div>
