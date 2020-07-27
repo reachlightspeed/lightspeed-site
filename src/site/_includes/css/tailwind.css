@@ -158,7 +158,7 @@ nav .border-spacepurple + .border-spacepurple {
 } 
 
 .blog main blockquote {
-  @apply py-6 pl-6 pr-5 mt-10 mb-10 rounded-lg shadow-xl border-spacepurple border-l-6 bg-white;
+  @apply py-6 pl-6 pr-5 mt-10 mb-10 rounded-lg shadow-xl border-spacepurple border-l-6 bg-white clear-both;
 }
 
 .blog main blockquote ul,

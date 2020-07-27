@@ -828,6 +828,7 @@ nav .border-spacepurple + .border-spacepurple {
   --bg-opacity: 1;
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
+  clear: both;
 }
 
 .blog main blockquote ul,
