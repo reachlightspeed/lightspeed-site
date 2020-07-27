@@ -7,7 +7,7 @@ author: Tom Hanlon
 author_title: Co-Founder
 author_img: /img/tj
 hero_img: /img/blog/hero-milliseconds-make-millions
-hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAACCAIAAAAfCIEKAAAAKElEQVR42mNQlBF1sreKjA7JigjM05JhcLK3tbKy0pORsWdgMOdhAABxTAYx408DNgAAAABJRU5ErkJggg==
+hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAIAAAD0PzoJAAAAJUlEQVR42mOQ08mQMckHkorW1Rqu3UAGAxCL2peJutRBhBStqwGscAmewpAirwAAAABJRU5ErkJggg==
 og_img: /img/blog/og-milliseconds-make-millions
 tags: post
 ---
