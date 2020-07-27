@@ -1,0 +1,29 @@
+---
+title: "Milliseconds Make Millions: A Study on Mobile Page Speed Optimization"
+layout: blog
+permalink: "blog/milliseconds-make-millions/"
+date: 2020-07-27
+author: Tom Hanlon
+author_title: Co-Founder
+author_img: /img/tj
+hero_img: /img/blog/hero-space
+hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAIAAAD0PzoJAAAALklEQVR42mOw8iyx8q0xDGr3zFpkEtYtapjMoOdbE5k7P79+R3LRcpeU6XqBTQD10Q3WBcNLxQAAAABJRU5ErkJggg==
+og_img: /img/blog/og-announcing-lightspeed
+tags: post
+---
+
+An old work friend from Accenture recently joined an agency called [fifty-five](https://www.fifty-five.com/us/ "fifty-five Homepage") which performed the experiments and research in a new piece of thought leadership from Deloitte called ["Milliseconds Make Millions"](https://www2.deloitte.com/ie/en/pages/consulting/articles/milliseconds-make-millions.html "Deloitte: Milliseconds Make Millions").
+
+> **Based on a mobile site speed improvement of just 1/10th of a second, they found:** 
+> * Mobile site speed improvements had a direct correlation to improved funnel progression.
+> * A positive change in the number of page views, conversion rates and average order value across all verticals.
+> * Retail conversions increased by 8.4% and average order value increased by 9.2%.
+> * Travel conversions increased by 10.1% and average order value increased by 1.9%.
+> * Luxury brand page views per session increased by 8.6%.
+> * Lead generation information pages bounce rate improved by 8.3%
+> <cite>Source: [Deloitte](https://www2.deloitte.com/ie/en/pages/consulting/articles/milliseconds-make-millions.html "Deloitte: Milliseconds Make Millions")</cite>
+
+
+## "Mobile-first" means performance
+As mobile devices continue to dominate the landscape, organizations should think about page-load time for mobile devices -- and not just those on Wi-Fi. Minimizing the payload requested by mobile devices is one way to ensure you are only loading the resources you need.
+
