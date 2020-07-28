@@ -4,6 +4,7 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
   content: [
     "./src/site/**/*.njk",
     "./src/site/**/*.html",
+    "./src/site/**/*.md",
   ],
   whitelist: [
     "border-spacepurple",
