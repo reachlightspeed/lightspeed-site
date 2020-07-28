@@ -55,6 +55,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/site/fonts");
   eleventyConfig.addPassthroughCopy("./src/site/img");
   eleventyConfig.addPassthroughCopy("./src/site/css");
+  eleventyConfig.addPassthroughCopy("./src/site/js");
   eleventyConfig.addPassthroughCopy("./src/favicon.png");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
