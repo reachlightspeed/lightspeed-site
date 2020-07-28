@@ -12,7 +12,7 @@ og_img: /img/blog/og-milliseconds-make-millions
 tags: post
 ---
 
-An old work friend from Accenture recently joined an agency called [fifty-five](https://www.fifty-five.com/us/ "fifty-five Homepage") which performed the experiments and research in a new piece of thought leadership from Deloitte called ["Milliseconds Make Millions"](https://www2.deloitte.com/ie/en/pages/consulting/articles/milliseconds-make-millions.html "Deloitte: Milliseconds Make Millions").
+An old work friend from Accenture recently joined an agency called [fifty-five](https://www.fifty-five.com/us/ "fifty-five Homepage") which performed the experiments and research in a new piece of thought leadership co-authored with Deloitte called ["Milliseconds Make Millions"](https://www2.deloitte.com/ie/en/pages/consulting/articles/milliseconds-make-millions.html "Deloitte: Milliseconds Make Millions"). In it, the authors make the case for how e-commerce on mobile devices will double between 2019 and 2023, ultimately accounting for 3/4 of all future e-commerce sales. 
 
 <p>
   <a href="https://www2.deloitte.com/ie/en/pages/consulting/articles/milliseconds-make-millions.html">
@@ -23,11 +23,12 @@ An old work friend from Accenture recently joined an agency called [fifty-five](
   </a>
 </p>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum pretium dapibus. Integer porta libero erat, et egestas dui efficitur nec. In sit amet egestas lacus. Vestibulum quis congue ex, vitae tincidunt dolor.
+## "Mobile-first" means performance-first
+As mobile devices continue to grow in market share for devices which consumers regularly use to access the internet, organizations should think about page-load time for mobile devices &mdash; and not just those on Wi-Fi. Keeping your page as small as possible and only requesting the assets that you need benefits all visitors and espeically those on cellular connections. 
 
-Praesent fermentum vel enim at posuere. Nullam a ornare diam. Integer justo lacus, vulputate at velit vitae, convallis fringilla massa. Vivamus ac erat ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+As consumers continue to shift more towards mobile devices, organizations will need to invest in performance to remain competitive. 
 
-Nam egestas elementum gravida. Fusce ultricies vestibulum velit, vel luctus mauris ultricies et. Vivamus maximus maximus lacus sed dignissim.  Integer porta libero erat, et egestas dui efficitur nec.
+Some key findings from the study:
 
 > **Based on a mobile site speed improvement of just 1/10th of a second, they found:** 
 > * Mobile site speed improvements had a direct correlation to improved funnel progression.
@@ -38,7 +39,6 @@ Nam egestas elementum gravida. Fusce ultricies vestibulum velit, vel luctus maur
 > * Lead generation information pages bounce rate improved by 8.3%
 > <cite>Source: [Deloitte](https://www2.deloitte.com/ie/en/pages/consulting/articles/milliseconds-make-millions.html "Deloitte: Milliseconds Make Millions")</cite>
 
+## Need help improving the speed of your website?
 
-## "Mobile-first" means performance
-As mobile devices continue to dominate the landscape, organizations should think about page-load time for mobile devices -- and not just those on Wi-Fi. Minimizing the payload requested by mobile devices is one way to ensure you are only loading the resources you need.
-
+Since Lightspeed's inception, performance has been our guiding light. We'd love to <a href="/#contact">chat more</a> about how we can help make your brand's mobile experience faster to load. 
