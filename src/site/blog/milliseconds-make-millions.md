@@ -23,7 +23,7 @@ An old work friend from Accenture recently joined an agency called [fifty-five](
   </a>
 </p>
 
-## "Mobile-first" means performance-first
+## "Mobile first" means performance first
 As mobile devices continue to grow in market share for devices which consumers regularly use to access the internet, organizations should think about page-load time for mobile devices &mdash; and not just those on Wi-Fi. Keeping your page as small as possible and only requesting the assets that you need benefits all visitors and espeically those on cellular connections. 
 
 As consumers continue to shift more towards mobile devices, organizations will need to invest in performance to remain competitive. 
@@ -41,4 +41,4 @@ Some key findings from the study:
 
 ## Need help improving the speed of your website?
 
-Since Lightspeed's inception, performance has been our guiding light. We'd love to <a href="/#contact">chat more</a> about how we can help make your brand's mobile experience faster to load. 
+Since Lightspeed's inception, performance has been our focus. We'd love to <a href="/#contact">chat more</a> about how we can help make your brand's mobile experience faster to load. 
