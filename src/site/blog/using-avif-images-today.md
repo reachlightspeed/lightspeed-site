@@ -35,7 +35,11 @@ AVIF is supposed to land in Chrome 85 and Firefox 80 on August 25, 2020; so we s
 
 Start using AVIF with Chrome Canary or by setting the Firefox `image.avif.enabled`  to true in `about:config`.
 
-[Image that renders AVIF "Your browser supports AVIF" ]
+<p><picture>
+	<source srcset="/img/blog/post-using-avif-images-today-support.avif, /img/blog/post-using-avif-images-today-support@2x.avif 2x" type="image/avif">
+	<source srcset="/img/blog/post-using-avif-images-today-no_support.jpg, /img/blog/post-using-avif-images-today-no_support@2x.jpg 2x" type="image/jpeg">
+	<img src="/img/blog/post-using-avif-images-today-no_support.jpg" width="768" loading="lazy" alt="Does your browser support AVIF?" class="rounded shadow-md my-6">
+</picture></p>
 
 
 ## Create AVIF Files with Squoosh (AVIF Beta)
