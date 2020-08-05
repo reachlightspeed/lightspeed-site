@@ -46,8 +46,6 @@ AVIF likely doesn't show for you in your browser yet, but it can by using [Chrom
 	<img src="/img/blog/post-using-avif-images-today-firefox-avif.png" width="768" loading="lazy" alt="Enable AVIF within Firefox Advanced Configuration Preferences">
 </picture></p>
 
-If you are comfortable in the command line, you can use the offical AOMedia library, [libavif](https://github.com/AOMediaCodec/libavif), to encode/decode AVIF files. If you use macOS and Homebrew, you can quickly install a pre-built version using `brew install joedrago/repo/avifenc`, and `avifenc --help` for syntax and options.
-
 
 ## Create AVIF Files with Squoosh (AVIF Beta)
 
@@ -60,6 +58,8 @@ While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif.webp" type="image/webp">
 	<img src="/img/blog/post-using-avif-images-today-squoosh-avif.jpg" width="768" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
 </picture></a></p>
+
+If you are comfortable in the command line, you can use the offical AOMedia library, [libavif](https://github.com/AOMediaCodec/libavif), to encode/decode AVIF files. Also if you're a macOS user with [Homebrew](https://brew.sh/), you can quickly install a pre-built version using `brew install joedrago/repo/avifenc`, and `avifenc --help` for syntax and options.
 
 
 ## AVIF as Progressive Enhancement
