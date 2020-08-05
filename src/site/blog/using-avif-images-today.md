@@ -17,17 +17,19 @@ tags: post
 
 <a href="http://aomedia.org/"><svg width="220" viewBox="0 0 240 330" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto sm:float-right pt-2 pb-4 px-8"><path d="M9 10v310h221V69l-58-59H9zm163 0v59h58" fill="#fff"/><path d="M172 10l58 59h-58V10z" fill="#fff"/><path d="M230 69v251H9V10h163m58 59l-58-59m58 59h-58V10" stroke="#3B5EE2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M211 190l-42-74-43 74h85z" fill="#FBAC30"/><path d="M211 190l-16-19h-53l-16 19h85z" fill="#12B17D"/><path d="M169 218l26-47h-53l27 47z" fill="#BB255C"/><path d="M67 183H47l-2 7H28l19-53h20l20 53H69l-2-7zm-16-13h12l-6-19-6 19zm25-33h18l12 36 11-36h18l-19 53H96l-20-53" fill="#000"/><path d="M165 150l-5 6-6-6 13-13h9v32h-11v-19" fill="#F1F4D4"/><path d="M172 10l58 59h-58V10z" fill="#3B5EE2" stroke="#3B5EE2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 
-One of the upcoming technologies we're really excited about is the [AV1 (.avif)](https://aomediacodec.github.io/av1-avif/) image file format. It's basically a super-compressed image type. On their engineering blogs, [Facebook](https://engineering.fb.com/video-engineering/av1-beats-x264-and-libvpx-vp9-in-practical-use-case/) and [Netflix](https://netflixtechblog.com/avif-for-next-generation-image-coding-b1d75675fe4 "AVIF for Next-Generation Image Coding") are already considering .avif superior to the JPEG, PNG, and even the newer WebP image formats for its image quality to compressed file size ratio.
+One of the upcoming technologies we're really excited about is the [AV1 (.avif)](https://aomediacodec.github.io/av1-avif/) image file format. It's basically a super-compressed image type. [Netflix](https://netflixtechblog.com/avif-for-next-generation-image-coding-b1d75675fe4 "AVIF for Next-Generation Image Coding") has already considered .avif superior to the JPEG, PNG, and even the newer WebP image formats for its image quality to compressed file size ratio.
 
 The format was developed by the [Alliance for Open Media](http://aomedia.org/) in collaboration with Google, Cisco, and Xiph.org (who worked with Mozilla, creators of the Firefox browser). This format was created to be an open-sourced and royalty-free image format (unlike JPEG XR, which is a file format that compresses down very small but requires expensive licensing to implement).
 
 ## AVIF Compared to JPEG and WebP
 
-AVIF offers significant file size reduction for images compared with JPEG or WebP; **~50% savings compared to JPEG**, and **~20% savings compared to WebP**. Daniel Aleksandersen of [CTRL.Blog](https://www.ctrl.blog/) has a great breakdown and deep dive into [AVIF comparison to JPEG and WebP](https://www.ctrl.blog/entry/webp-avif-comparison.html). It is also one of the first image formats to support HDR color support; offering higher brightness, color bit depth, and color gamuts.
+AVIF offers significant file size reduction for images compared with JPEG or WebP; **~50% savings compared to JPEG**, and **~20% savings compared to WebP**. Daniel Aleksandersen of [CTRL.Blog](https://www.ctrl.blog/) has a great breakdown and deep dive into [AVIF comparison to JPEG and WebP](https://www.ctrl.blog/entry/webp-avif-comparison.html).
 
 <svg width="768" viewBox="0 0 768 216" fill="none" xmlns="http://www.w3.org/2000/svg" class="block w-full"><path d="M0 16h380a4 4 0 014 4v44a4 4 0 01-4 4H0V16zM0 82h533.6a4 4 0 014 4v44a4 4 0 01-4 4H0V82zM0 148h764a4 4 0 014 4v44a4 4 0 01-4 4H0v-52z" fill="#3B5EE2"/><text fill="#fff" style="white-space:pre" font-size="28" letter-spacing="0em"><tspan x="317.08" y="50.95">.avif</tspan></text><text fill="#fff" style="white-space:pre" font-size="20" font-weight="300" letter-spacing="0em"><tspan x="12" y="49.11">50% smaller than .jpeg</tspan></text><text fill="#fff" style="white-space:pre" font-size="20" font-weight="300" letter-spacing="0em"><tspan x="12" y="116.11">30% smaller than .jpeg</tspan></text><text fill="#fff" style="white-space:pre"  font-size="28" letter-spacing="0em"><tspan x="449.21" y="116.95">.webp</tspan></text><text fill="#fff" style="white-space:pre" font-size="28" letter-spacing="0em"><tspan x="692.03" y="182.95">.jpeg</tspan></text></svg>
 
 The format is very flexible in that it supports any image codec, can be lossy or lossless, has the ability to use an alpha channel (transparency for UI and design elements), and even has the ability to store a series of animated frames (think lightweight high-quality animated GIFs).
+
+It is also one of the first image formats to support HDR color support; offering higher brightness, color bit depth, and color gamuts.
 
 
 ## Using AVIF in Web Development Today
@@ -62,7 +64,7 @@ While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here
 
 <p class="btn"><a href="https://squoosh-avif.netlify.app/">Squoosh (AVIF Beta)</a><p>
 
-If you are comfortable in the command line, you can use the offical AOMedia library, [libavif](https://github.com/AOMediaCodec/libavif), to encode/decode AVIF files. Also if you're a macOS user with [Homebrew](https://brew.sh/), you can quickly install a pre-built version using `brew install joedrago/repo/avifenc`, and `avifenc --help` for syntax and options.
+If you are comfortable in the command line, you can use the offical AOMedia library, [libavif](https://github.com/AOMediaCodec/libavif), to encode/decode AVIF files. Also, if you're a macOS user with [Homebrew](https://brew.sh/), you can quickly install a pre-built version using `brew install joedrago/repo/avifenc`, and `avifenc --help` for syntax and options.
 
 
 ## AVIF as Progressive Enhancement
@@ -79,7 +81,7 @@ Even though AVIF isn't support everywhere yet, we can still use the format in na
 
 ## AVIF Content-Type Headers + Netlify
 
-An issue we noticed when using .avif files on Netlify, was that the image wasn't showing up in Firefox. It worked fine for Chrome, but not Firefox. We identified that the Response Headers were returning `Content-Type: application/octet-stream`, causing Firefox to display nothing. We fixed this by defining custom headers within the Netlify configuration file (`netlify.toml`)
+An issue we noticed when using .avif files on [Netlify](https://www.netlify.com/), was that the image wasn't showing up in Firefox. It worked fine for Chrome, but not Firefox. We identified that the Response Headers were returning `Content-Type: application/octet-stream`, causing Firefox to display nothing. We fixed this by defining custom headers within the Netlify configuration file (`netlify.toml`)
 
 ``` yaml
 [[headers]]
