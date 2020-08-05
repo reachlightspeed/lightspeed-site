@@ -9,6 +9,7 @@ author_img: /img/dk
 hero_img: /img/blog/hero-using-avif-images-today
 hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAIAAAA1REndAAAAfUlEQVR42g3EQQ6CMBAF0N/ODKWQqIlbNx7Hq3sVNkAUaelv5S2ee77e8WioXLlb6M06AFod2Mq5dxo6vaU0e4neXdhNNYejmegGB/EDqpaCZVL58i5lNemrfyRNnsWaAbr98FmAUKCawUiOzLP4yDaQYMrM+151vGocFe4PLwg+P6EG4noAAAAASUVORK5CYII=
 og_img: /img/blog/og-using-avif-images-today
+footer_callout_title: Interested in seeing performance gains your site can have with optimized imagery?
 tags: post
 ---
 
@@ -51,7 +52,7 @@ The AVIF image above likely doesn't show in your browser, but it can by using [C
 
 [Squoosh](https://squoosh.app/) is an image compression web app that allows you to dive into the advanced options provided by various image compressors.
 
-While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here is an early build with AVIF support](https://squoosh-avif.netlify.app/) that is built from a more recent [Pull Request](https://github.com/GoogleChromeLabs/squoosh/pull/722). It's still a little buggy as expected, but definitely usable with limited configuration.
+While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here is an early build with AVIF support](https://squoosh-avif.netlify.app/) that is built from a more recent [Pull Request](https://github.com/GoogleChromeLabs/squoosh/pull/722). It might be a little buggy as expected, but definitely functions well. In my opinion, this is the the best option right now for converting/creating .avif files.
 
 <p><a href="https://squoosh-avif.netlify.app/"><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif.avif" type="image/avif">
