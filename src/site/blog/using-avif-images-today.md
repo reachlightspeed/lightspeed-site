@@ -46,7 +46,7 @@ AVIF likely doesn't show for you yet, but it can by using [Chrome Canary](https:
 	<img src="/img/blog/post-using-avif-images-today-firefox-avif.png" width="768" loading="lazy" alt="Enable AVIF within Firefox Advanced Configuration Preferences">
 </picture></p>
 
-If you are comfortable in the commandline, you can use the offical AOMedia library, [libavif](https://github.com/AOMediaCodec/libavif), to encode/decode AVIF files. If you use macOS and Homebrew, you can quickly install a pre-built version using `brew install joedrago/repo/avifenc`, and `avifenc --help` for syntax and options.
+If you are comfortable in the command line, you can use the offical AOMedia library, [libavif](https://github.com/AOMediaCodec/libavif), to encode/decode AVIF files. If you use macOS and Homebrew, you can quickly install a pre-built version using `brew install joedrago/repo/avifenc`, and `avifenc --help` for syntax and options.
 
 
 ## Create AVIF Files with Squoosh (AVIF Beta)
