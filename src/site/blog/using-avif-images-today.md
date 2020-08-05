@@ -19,7 +19,7 @@ tags: post
 
 One of the upcoming technologies we're really excited about is the [AV1 (.avif)](https://aomediacodec.github.io/av1-avif/) image file format. It's basically a super-compressed image type. On their engineering blogs, [Facebook](https://engineering.fb.com/video-engineering/av1-beats-x264-and-libvpx-vp9-in-practical-use-case/) and [Netflix](https://netflixtechblog.com/avif-for-next-generation-image-coding-b1d75675fe4 "AVIF for Next-Generation Image Coding") are already considering .avif superior to the JPEG, PNG, and even the newer WebP image formats for its image quality to compressed file size ratio.
 
-The format was developed by by the [Alliance for Open Media](http://aomedia.org/) in collaboration with Google, Cisco, and Xiph.org (who worked with Mozilla, creators of the Firefox browser). This format was created to be an open-sourced and royalty-free image format (unlike JPEG XR, which is a file format that compresses down very small but requires expensive licensing to implement).
+The format was developed by the [Alliance for Open Media](http://aomedia.org/) in collaboration with Google, Cisco, and Xiph.org (who worked with Mozilla, creators of the Firefox browser). This format was created to be an open-sourced and royalty-free image format (unlike JPEG XR, which is a file format that compresses down very small but requires expensive licensing to implement).
 
 ## AVIF Compared to JPEG and WebP
 
