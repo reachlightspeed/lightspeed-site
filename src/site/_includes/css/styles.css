@@ -860,6 +860,38 @@ nav .border-spacepurple + .border-spacepurple {
   padding-right: 1rem;
 }
 
+.blog main .btn {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.blog main .btn a {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  line-height: 1;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --bg-opacity: 1;
+  background-color: #3b5ee2;
+  background-color: rgba(59, 94, 226, var(--bg-opacity));
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.blog main .btn a:hover {
+  --bg-opacity: 1;
+  background-color: #3b5ee2;
+  background-color: rgba(59, 94, 226, var(--bg-opacity))
+}
+
 /* Dark mode blog */
 
 .mode-dark .blog {

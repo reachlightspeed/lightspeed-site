@@ -170,6 +170,18 @@ nav .border-spacepurple + .border-spacepurple {
   @apply block text-right text-base pt-5 px-4;
 }
 
+.blog main .btn {
+  @apply text-center my-10;
+}
+
+.blog main .btn a {
+  @apply px-10 py-3 text-lg font-medium rounded-full leading-none text-white bg-spacepurple no-underline;
+  transition: all 0.3s ease;
+}
+
+.blog main .btn a:hover {
+  @apply bg-spacepurple
+}
 
 /* Dark mode blog */
 .mode-dark .blog {
