@@ -88,6 +88,6 @@ An issue we noticed when using .avif files on Netlify, was that the image wasn't
 You can learn more about setting [Custom Headers in Netlify](https://docs.netlify.com/routing/headers/) by checking out their docs.
 
 
-## We're Excited!
+## We're Excited
 
-We are super excited about what kind of awesome new experinces can be made with the flexibility and performance gains of this new format!
+We are super excited about what kind of awesome new experinces can be made with the flexibility and performance gains of this new format
