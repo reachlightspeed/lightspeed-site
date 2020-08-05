@@ -51,7 +51,7 @@ The AVIF image above likely doesn't show in your browser, but it can by using [C
 
 [Squoosh](https://squoosh.app/) is an image compression web app that allows you to dive into the advanced options provided by various image compressors.
 
-While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here is an early build with AVIF support](https://squoosh-avif.netlify.app/) that is built from a more recent [Pull Request](https://github.com/GoogleChromeLabs/squoosh/pull/791). It's still a little buggy as expected, but definitely usable with limited configuration.
+While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here is an early build with AVIF support](https://squoosh-avif.netlify.app/) that is built from a more recent [Pull Request](https://github.com/GoogleChromeLabs/squoosh/pull/722). It's still a little buggy as expected, but definitely usable with limited configuration.
 
 <p><a href="https://squoosh-avif.netlify.app/"><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif.avif" type="image/avif">
