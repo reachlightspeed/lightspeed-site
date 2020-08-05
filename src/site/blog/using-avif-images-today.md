@@ -2,7 +2,7 @@
 title: "Using the New High-Performance .AVIF Image Format on the Web Today"
 layout: blog
 permalink: "blog/using-the-new-high-performance-avif-image-format-on-the-web-today/"
-date: 2020-08-03
+date: 2020-08-05
 author: Dan Klammer
 author_title: Performance Designer
 author_img: /img/dk
