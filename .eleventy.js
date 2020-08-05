@@ -63,8 +63,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/favicon.png");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
-  eleventyConfig.addPassthroughCopy("./src/squoosh-avif-beta");
-
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
