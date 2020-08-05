@@ -39,7 +39,7 @@ AVIF is supposed to land in [Chrome 85](https://www.chromestatus.com/feature/490
 	<img src="/img/blog/post-using-avif-images-today-no_support.jpg" width="768" loading="lazy" alt="Does your browser support AVIF?" class="rounded shadow-lg my-6">
 </picture></p>
 
-AVIF likely doesn't show for you yet, but it can by using [Chrome Canary](https://www.google.com/chrome/canary/) or by enabling AVIF in the Firefox advanced configuration preferences. You can do this by entering `about:config` in the URL bar, searching `image.avif.enabled`, and flipping this parameter to `true`.
+AVIF likely doesn't show for you in your browser yet, but it can by using [Chrome Canary](https://www.google.com/chrome/canary/) or by enabling AVIF in the Firefox advanced configuration preferences. You can do this by entering `about:config` in the URL bar, searching `image.avif.enabled`, and flipping this parameter to `true`.
 
 <p><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-firefox-avif.webp" type="image/webp">
@@ -53,7 +53,7 @@ If you are comfortable in the command line, you can use the offical AOMedia libr
 
 [Squoosh](https://squoosh.app/) is an image compression web app that allows you to dive into the advanced options provided by various image compressors.
 
-While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here is an early build with AVIF support](https://squoosh-avif.netlify.app/) that is built from a more recent [Pull Request](https://github.com/GoogleChromeLabs/squoosh/pull/791). It's still a little buggy as expected, but definitely useable with limited configuration.
+While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here is an early build with AVIF support](https://squoosh-avif.netlify.app/) that is built from a more recent [Pull Request](https://github.com/GoogleChromeLabs/squoosh/pull/791). It's still a little buggy as expected, but definitely usable with limited configuration.
 
 <p><a href="https://squoosh-avif.netlify.app/"><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif.avif" type="image/avif">
@@ -90,4 +90,4 @@ You can learn more about setting [Custom Headers in Netlify](https://docs.netlif
 
 ## We're Excited!
 
-We are super excited about what kind of awesome new experinces can be made with the flexibility of this new format, all while being fast to load!
+We are super excited about what kind of awesome new experinces can be made with the flexibility and performance gains of this new format!
