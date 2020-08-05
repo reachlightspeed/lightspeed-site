@@ -912,21 +912,27 @@ nav .border-spacepurple + .border-spacepurple {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
+code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 80%;
+  font-weight: 600;
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   border-radius: 0.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
   color: #c3cee3;
-  background: #263238;
-  font-family: Menlo, monospace;
+  background: #2d2e42;
   font-size: 15px;
   line-height: 1.5em;
+  font-weight: 400;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
