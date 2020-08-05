@@ -180,7 +180,7 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .blog main .btn a:hover {
-  @apply bg-spacepurple
+  @apply bg-spacepurple-dark
 }
 
 /* Dark mode blog */
@@ -211,6 +211,10 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .mode-dark .blog main li {
+  @apply text-white;
+}
+
+.mode-dark .blog main .btn a {
   @apply text-white;
 }
 
