@@ -1,7 +1,8 @@
-const { DateTime }  = require('luxon');
-const util          = require('util');
-const CleanCSS      = require("clean-css");
-const slugify       = require("slugify");
+const { DateTime }    = require('luxon');
+const util            = require('util');
+const CleanCSS        = require("clean-css");
+const slugify         = require("slugify");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 console.log('running eleventyjs')
 module.exports = function(eleventyConfig) {
@@ -11,6 +12,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('report', 'layouts/report.njk');
   eleventyConfig.addLayoutAlias('blog', 'layouts/blog.njk');
   eleventyConfig.addLayoutAlias('conf', 'layouts/conf.njk');
+
+  // Syntax Highlighting
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // a debug utility
   eleventyConfig.addFilter('dump', obj => {

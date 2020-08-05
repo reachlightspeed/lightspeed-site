@@ -53,10 +53,10 @@ While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here
 
 Even though AVIF isn't support everywhere yet, we can still use the format in native HTML with the <picture> element. The <picture> element allows for progressive support as we can list the image sources in the order in which we want loaded, and the browser will load the first that it supports. If browser doesn't support <picture> at all, it will fallback to the <img> tag.
 
-```
+``` html
 <picture>
 	<source srcset="img/photo.avif" type="image/avif">
 	<source srcset="img/photo.webp" type="image/webp">
-	<img src="img/photo.jpg" width="150" height="150" loading="lazy" alt="Description of Photo">
+	<img src="img/photo.jpg" alt="Description of Photo">
 </picture>
 ```

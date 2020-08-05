@@ -25,5 +25,8 @@
     "tailwindcss": "^1.4.5",
     "tailwindcss-dark-mode": "^1.1.4",
     "terser": "^4.6.10"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
   }
 }
