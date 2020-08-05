@@ -39,7 +39,7 @@ AVIF is supposed to land in [Chrome 85](https://www.chromestatus.com/feature/490
 	<img src="/img/blog/post-using-avif-images-today-no_support.jpg" width="768" loading="lazy" alt="Does your browser support AVIF?" class="rounded shadow-lg my-6">
 </picture></p>
 
-AVIF likely doesn't show for you in your browser yet, but it can by using [Chrome Canary](https://www.google.com/chrome/canary/) or by enabling AVIF in the Firefox advanced configuration preferences. You can do this by entering `about:config` in the URL bar, searching `image.avif.enabled`, and flipping this parameter to `true`.
+AVIF image above likely doesn't show in your browser, but it can by using [Chrome Canary](https://www.google.com/chrome/canary/) or by enabling AVIF in the Firefox advanced configuration preferences. You can do this by entering `about:config` in the URL bar, searching `image.avif.enabled`, and flipping this parameter to `true`.
 
 <p><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-firefox-avif.webp" type="image/webp">
