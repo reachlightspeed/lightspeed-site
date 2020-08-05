@@ -81,7 +81,7 @@ Even though AVIF isn't support everywhere yet, we can still use the format in na
 
 ## AVIF Content-Type Headers + Netlify
 
-An issue we noticed when using .avif files on [Netlify](https://www.netlify.com/), was that the image wasn't showing up in Firefox. It worked fine for Chrome, but not Firefox. We identified that the Response Headers were returning `Content-Type: application/octet-stream`, causing Firefox to display nothing. We fixed this by defining custom headers within the Netlify configuration file (`netlify.toml`).
+An issue we noticed when using .avif files on [Netlify](https://www.netlify.com/), was that the image wasn't showing up in Firefox. It worked fine for Chrome, but not Firefox. We identified that the Response Headers were returning `Content-Type: application/octet-stream`, causing Firefox to display nothing. We fixed this by defining custom headers within the Netlify configuration file (`netlify.toml`). If `Content-Disposition` Header is set to `Inline`, the browser will try to render the file within the browser. This should be default behavior, but specifying won't hurt as this is a new filetype. 
 
 ``` yaml
 [[headers]]

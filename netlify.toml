@@ -36,6 +36,5 @@
 [[headers]]
   for = "*.avif"
   [headers.values]
-    cache-control = "public, max-age=31557600, immutable"
     content-type = "image/avif"
     content-disposition = "inline"
