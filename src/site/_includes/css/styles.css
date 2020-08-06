@@ -889,7 +889,7 @@ nav .border-spacepurple + .border-spacepurple {
 .blog main .btn a:hover {
   --bg-opacity: 1;
   background-color: #1E2A61;
-  background-color: rgba(30, 42, 97, var(--bg-opacity))
+  background-color: rgba(30, 42, 97, var(--bg-opacity));
 }
 
 /* Dark mode blog */
@@ -949,6 +949,8 @@ nav .border-spacepurple + .border-spacepurple {
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
 }
+
+/* purgecss start ignore */
 
 code {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -1169,8 +1171,6 @@ pre[class*="language-"] {
 .token.variable {
   color: #f07178;
 }
-
-/* purgecss start ignore */
 
 .container {
   width: 100%;
