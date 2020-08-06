@@ -4,11 +4,13 @@ layout: blog
 permalink: "blog/milliseconds-make-millions/"
 date: 2020-07-27
 author: Tom Hanlon
-author_title: Co-Founder
+author_title: Performance Engineer
+author_twitter: tomhanlon
 author_img: /img/tj
 hero_img: /img/blog/hero-milliseconds-make-millions
 hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAIAAAD0PzoJAAAAJUlEQVR42mOQ08mQMckHkorW1Rqu3UAGAxCL2peJutRBhBStqwGscAmewpAirwAAAABJRU5ErkJggg==
 og_img: /img/blog/og-milliseconds-make-millions
+footer_callout_title: Interested in seeing what a faster site can do for you?
 tags: post
 ---
 
@@ -38,7 +40,3 @@ Some key findings from the study:
 > * Luxury brand page views per session increased by 8.6%.
 > * Lead generation information pages bounce rate improved by 8.3%
 > <cite>Source: [Deloitte](https://www2.deloitte.com/ie/en/pages/consulting/articles/milliseconds-make-millions.html "Deloitte: Milliseconds Make Millions")</cite>
-
-## Need help improving the speed of your website?
-
-Since Lightspeed's inception, performance has been our focus. We'd love to <a href="/#contact">chat more</a> about how we can help make your brand's mobile experience faster to load. 
