@@ -39,7 +39,7 @@ AVIF is supposed to land in [Chrome 85](https://www.chromestatus.com/feature/490
 <p><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-support.avif" type="image/avif">
 	<source srcset="/img/blog/post-using-avif-images-today-no_support.jpg" type="image/jpeg">
-	<img src="/img/blog/post-using-avif-images-today-no_support.jpg" width="768" alt="Does your browser support AVIF?" class="rounded shadow-lg my-6">
+	<img src="/img/blog/post-using-avif-images-today-no_support.jpg" width="768" loading="lazy" alt="Does your browser support AVIF?" class="rounded shadow-lg my-6">
 </picture></p>
 
 The AVIF image above likely doesn't show in your browser, but it can by using [Chrome Canary](https://www.google.com/chrome/canary/) or by enabling AVIF in the Firefox advanced configuration preferences. You can do this by entering `about:config` in the URL bar, searching `image.avif.enabled`, and flipping this parameter to `true`.
@@ -59,7 +59,7 @@ While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here
 <p><a href="https://squoosh-avif.netlify.app/"><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif.avif" type="image/avif">
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif.webp" type="image/webp">
-	<img src="/img/blog/post-using-avif-images-today-squoosh-avif.jpg" width="768" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
+	<img src="/img/blog/post-using-avif-images-today-squoosh-avif.jpg" width="768" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
 </picture></a></p>
 
 <p class="btn"><a href="https://squoosh-avif.netlify.app/">Squoosh (AVIF Beta)</a><p>
