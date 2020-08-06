@@ -1,6 +1,6 @@
 ---
 title: "How to Use AVIF: The New Next-Gen Image Compression Format"
-meta_description: "Start using next-gen .avif images today progressively with the <picture> element. The format is ~50% smaller in size compared to JPEG, and ~20% smaller than WebP."
+meta_description: "Start using next-gen .avif images today progressively with the &lt;picture&gt; element. The format is ~50% smaller in size compared to JPEG, and ~20% smaller than WebP."
 layout: blog
 permalink: "blog/using-the-new-high-performance-avif-image-format-on-the-web-today/"
 date: 2020-08-05
