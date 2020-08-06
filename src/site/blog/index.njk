@@ -9,13 +9,13 @@ permalink: "blog/"
       <div class="text-white text-center pt-20 opacity-75 tracking-widest uppercase">Our Perspectives</div>
       <h1 class="text-white text-center pt-1 font-thin sm:text-5xl tracking-wide text-4xl">Latest Blog Posts</h3>
 
-      <ul class="mt-12 mb-12 sm:mb-16 border-t border-white border-opacity-25 dark:border-spacepurple-dark">
+      <ul class="text-left mt-12 mb-12 sm:mb-16 border-t border-white border-opacity-25 dark:border-spacepurple-dark">
         {%- for post in collections.post | reverse -%}
           <li><a class="flex flex-row justify-center items-center text-white p-4 border-b border-white border-opacity-25 bg-black bg-opacity-0 hover:bg-opacity-10 transition dark:border-spacepurple-dark group min-h-32" href="{{ post.url }}">
             {# <img class="w-24 h-16 sm:w-32 sm:h-24 object-cover ml-2 mr-4 rounded-md shadow" src="{{ post.data.hero_img }}.jpg" loading="lazy" alt="Post image for {{ post.data.title }}" > #}
             <div class="flex-1 flex flex-col m-auto">
               <div class="font-light text-xl mb-2 sm:text-2xl leading-tight">{{ post.data.title }}</div>
-              <div class="mb-1">{{ post.date | readableDate }} &bullet; {{ post.data.author }}</div>
+              <div class="mb-1 text-base">{{ post.date | readableDate }} &bullet; {{ post.data.author }}</div>
             </div>
             <svg class="transition transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
               <path d="M12 30 L24 16 12 2" />
