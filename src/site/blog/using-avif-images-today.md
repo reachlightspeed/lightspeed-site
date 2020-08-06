@@ -98,4 +98,4 @@ You can learn more about setting [Custom Headers in Netlify](https://docs.netlif
 
 ## We're Excited
 
-We are super excited about what kind of awesome new experinces can be made with the flexibility and performance gains of this new format.
+We are super excited about what kind of awesome new experiences can be made with the flexibility and performance gains of this new format.
