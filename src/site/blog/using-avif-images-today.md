@@ -87,8 +87,8 @@ An issue we noticed when using .avif files on [Netlify](https://www.netlify.com/
 [[headers]]
   for = "*.avif"
   [headers.values]
-		content-type = "image/avif"
-		content-disposition = "inline"
+		Content-Type = "image/avif"
+		Content-Disposition = "inline"
 ```
 
 We also set the `Content-Disposition` to `inline` vs `attachment`, this way the browser will try to render the file within the browser rather than externally. A good example of this is when a PDF will open within the browser vs as a downloadable file. While `inline` should be default behavior, specifying won't hurt as this is a new filetype.
