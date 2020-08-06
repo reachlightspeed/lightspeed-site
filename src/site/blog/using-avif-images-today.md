@@ -1,5 +1,5 @@
 ---
-title: "Using the New High-Performance .AVIF Image Format on the Web Today"
+title: "How to Use AVIF: The New Next-Gen Image Compression Format"
 meta_description: "Start using next-gen .avif images today progressively with the <picture> element. The format is ~50% smaller in size compared to JPEG, and ~20% smaller than WebP."
 layout: blog
 permalink: "blog/using-the-new-high-performance-avif-image-format-on-the-web-today/"
@@ -10,7 +10,7 @@ author_twitter: danklammer
 author_img: /img/dk
 hero_img: /img/blog/hero-using-avif-images-today
 hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAIAAAA1REndAAAAfUlEQVR42g3EQQ6CMBAF0N/ODKWQqIlbNx7Hq3sVNkAUaelv5S2ee77e8WioXLlb6M06AFod2Mq5dxo6vaU0e4neXdhNNYejmegGB/EDqpaCZVL58i5lNemrfyRNnsWaAbr98FmAUKCawUiOzLP4yDaQYMrM+151vGocFe4PLwg+P6EG4noAAAAASUVORK5CYII=
-og_img: /img/blog/og-using-avif-images-today
+og_img: /img/blog/og-how-to-use-avif
 footer_callout_title: Interested in seeing performance gains your site can have with optimized imagery?
 tags: post
 ---
