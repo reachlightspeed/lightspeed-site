@@ -6,6 +6,7 @@ permalink: "blog/using-the-new-high-performance-avif-image-format-on-the-web-tod
 date: 2020-08-05
 author: Dan Klammer
 author_title: Performance Designer
+author_twitter: danklammer
 author_img: /img/dk
 hero_img: /img/blog/hero-using-avif-images-today
 hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAIAAAA1REndAAAAfUlEQVR42g3EQQ6CMBAF0N/ODKWQqIlbNx7Hq3sVNkAUaelv5S2ee77e8WioXLlb6M06AFod2Mq5dxo6vaU0e4neXdhNNYejmegGB/EDqpaCZVL58i5lNemrfyRNnsWaAbr98FmAUKCawUiOzLP4yDaQYMrM+151vGocFe4PLwg+P6EG4noAAAAASUVORK5CYII=
