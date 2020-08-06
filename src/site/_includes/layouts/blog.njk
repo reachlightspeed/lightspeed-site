@@ -48,9 +48,10 @@
         </div>
         <div class="author-info -mt-8">
           <picture>
+            <source srcset="{{ author_img | safe }}.avif 1x, {{ author_img | safe }}@2x.avif 2x" type="image/avif">
             <source srcset="{{ author_img | safe }}.webp 1x, {{ author_img | safe }}@2x.webp 2x" type="image/webp">
             <source srcset="{{ author_img | safe }}.jpg 1x, {{ author_img | safe }}@2x.jpg 2x" type="image/jpeg">
-            <img src="{{ author_img | safe }}.jpg" width="64" height="64" alt="A photo of {{ author | safe }}" class="mx-auto rounded-full" />
+            <img src="{{ author_img | safe }}.jpg" width="64" height="64" loading="eager" alt="A photo of {{ author | safe }}" class="mx-auto rounded-full" />
           </picture>
           <div class="text-center mt-2 dark:text-white">
             <span class="block md:text-xl">{{ author | safe }}</span>
