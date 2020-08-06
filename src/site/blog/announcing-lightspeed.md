@@ -4,7 +4,8 @@ layout: blog
 permalink: "blog/announcing-lightspeed-high-performance-e-commerce/"
 date: 2020-05-26
 author: Tom Hanlon
-author_title: Co-Founder
+author_title: Performance Engineer
+author_twitter: tomhanlon
 author_img: /img/tj
 hero_img: /img/blog/hero-announcing-lightspeed
 hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAIAAAD0PzoJAAAALklEQVR42mOw8iyx8q0xDGr3zFpkEtYtapjMoOdbE5k7P79+R3LRcpeU6XqBTQD10Q3WBcNLxQAAAABJRU5ErkJggg==
