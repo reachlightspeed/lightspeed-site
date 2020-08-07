@@ -18,6 +18,10 @@
   from = "/post/*"
   to = "/blog/:splat"
 
+[[redirects]]
+  from = "/blog/announcing-lightspeed-a-web-performance-optimization-consultancy/"
+  to = "/blog/announcing-lightspeed-high-performance-e-commerce/"
+
 [[headers]]
   for = "*.jpg"
   [headers.values]
