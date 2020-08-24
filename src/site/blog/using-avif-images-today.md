@@ -71,7 +71,7 @@ If you are comfortable in the command line, you can use the offical AOMedia libr
 
 ## AVIF as Progressive Enhancement
 
-Even though AVIF isn't support everywhere yet, we can still use the format in native HTML with the `<picture>` element. The `<picture>` element allows for progressive support as we can list the image sources in the order in which we want loaded, and the browser will load the first that it supports. If browser doesn't support `<picture>` at all, it will fallback to using the default `<img>`.
+Even though AVIF isn't supported everywhere yet, we can still use the format in native HTML with the `<picture>` element. The `<picture>` element allows for progressive support as we can list the image sources in the order in which we want loaded, and the browser will load the first that it supports. If browser doesn't support `<picture>` at all, it will fallback to using the default `<img>`.
 
 ``` html
 <picture>
