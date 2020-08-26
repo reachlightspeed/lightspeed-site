@@ -15,6 +15,8 @@ footer_callout_title: Interested in seeing performance gains your site can have 
 tags: post
 ---
 
+*August 26, 2020: Updates identifiying Chrome and Squoosh.app now fully support AVIF.*
+
 ## A More Optimal Image Format
 
 <a href="http://aomedia.org/" title="AV1 (.avif) File Format"><svg width="220" viewBox="0 0 240 330" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto sm:float-right pt-2 pb-4 px-8"><title>AV1 (.avif) File Format</title><path d="M9 10v310h221V69l-58-59H9zm163 0v59h58" fill="#fff"/><path d="M172 10l58 59h-58V10z" fill="#fff"/><path d="M230 69v251H9V10h163m58 59l-58-59m58 59h-58V10" stroke="#3B5EE2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M211 190l-42-74-43 74h85z" fill="#FBAC30"/><path d="M211 190l-16-19h-53l-16 19h85z" fill="#12B17D"/><path d="M169 218l26-47h-53l27 47z" fill="#BB255C"/><path d="M67 183H47l-2 7H28l19-53h20l20 53H69l-2-7zm-16-13h12l-6-19-6 19zm25-33h18l12 36 11-36h18l-19 53H96l-20-53" fill="#000"/><path d="M165 150l-5 6-6-6 13-13h9v32h-11v-19" fill="#F1F4D4"/><path d="M172 10l58 59h-58V10z" fill="#3B5EE2" stroke="#3B5EE2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
