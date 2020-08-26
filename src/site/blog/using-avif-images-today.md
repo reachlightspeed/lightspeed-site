@@ -56,15 +56,15 @@ If the AVIF image above doesn't show in your browser, try using the latest versi
 
 [Squoosh](https://squoosh.app/) is an image compression web app that allows you to dive into the advanced options provided by various image compressors.
 
-While Google Chrome Labs plans to add AVIF to the amazing Squoosh web app, [here is an early build with AVIF support](https://squoosh-avif.netlify.app/) that is built from a more recent [Pull Request](https://github.com/GoogleChromeLabs/squoosh/pull/722). It might be a little buggy as expected, but definitely functions well. In my opinion, this is the best option right now for converting and creating .avif files.
+The Google Chrome Labs team recently added AVIF support to the amazing Squoosh web app. In my opinion, this is the best option for converting and creating .avif files.
 
-<p><a href="https://squoosh-avif.netlify.app/"><picture>
-	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif.avif" type="image/avif">
-	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif.webp" type="image/webp">
-	<img src="/img/blog/post-using-avif-images-today-squoosh-avif.jpg" width="768" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
+<p><a href="https://squoosh.app/"><picture>
+	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif-update.avif" type="image/avif">
+	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif-update.webp" type="image/webp">
+	<img src="/img/blog/post-using-avif-images-today-squoosh-avif.jpg-update" width="768" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
 </picture></a></p>
 
-<p class="btn"><a href="https://squoosh-avif.netlify.app/">Squoosh (AVIF Beta)</a><p>
+<p class="btn"><a href="https://squoosh.app/">Squoosh</a><p>
 
 If you are comfortable in the command line, you can use the offical AOMedia library, [libavif](https://github.com/AOMediaCodec/libavif), to encode/decode AVIF files. Also, if you're a macOS user with [Homebrew](https://brew.sh/), you can quickly install a pre-built version using `brew install joedrago/repo/avifenc`, and `avifenc --help` for syntax and options.
 
