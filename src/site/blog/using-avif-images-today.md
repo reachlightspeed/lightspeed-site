@@ -63,7 +63,7 @@ The Google Chrome Labs team recently added AVIF support to the amazing Squoosh w
 <p><a href="https://squoosh.app/"><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif-update.avif" type="image/avif">
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif-update.webp" type="image/webp">
-	<img src="/img/blog/post-using-avif-images-today-squoosh-avif.jpg-update" width="768" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
+	<img src="/img/blog/post-using-avif-images-today-squoosh-avif-update.jpg" width="768" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
 </picture></a></p>
 
 <p class="btn"><a href="https://squoosh.app/">Use Squoosh App</a><p>
