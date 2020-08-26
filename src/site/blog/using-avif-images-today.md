@@ -36,7 +36,7 @@ It is also one of the first image formats to support HDR color support; offering
 
 ## Using AVIF in Web Development Today
 
-AVIF is supposed to land in [Chrome 85](https://www.chromestatus.com/feature/4905307790639104) and [Firefox 80](https://www.mozilla.org/en-US/firefox/80.0beta/releasenotes/) on August 25, 2020; so we should start developing for it today!
+As of August 25 2020, AVIF is supported in [Chrome 85](https://www.chromestatus.com/feature/4905307790639104) and enabled using a feature flag in [Firefox 80](https://www.mozilla.org/en-US/firefox/80.0/releasenotes/) and will be supported by default soon. So we should start developing for it today!
 
 <p><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-support.avif" type="image/avif">
@@ -44,7 +44,7 @@ AVIF is supposed to land in [Chrome 85](https://www.chromestatus.com/feature/490
 	<img src="/img/blog/post-using-avif-images-today-no_support.jpg" width="768" loading="lazy" alt="Does your browser support AVIF?" class="rounded shadow-lg my-6">
 </picture></p>
 
-The AVIF image above likely doesn't show in your browser, but it can by using [Chrome Canary](https://www.google.com/chrome/canary/) or by enabling AVIF in the Firefox advanced configuration preferences. You can do this by entering `about:config` in the URL bar, searching `image.avif.enabled`, and flipping this parameter to `true`.
+If the AVIF image above doesn't show in your browser, try using the latest version of [Google Chrome](https://www.google.com/chrome/) or by enabling AVIF in the Firefox advanced configuration preferences. You can do this by entering `about:config` in the URL bar, searching `image.avif.enabled`, and flipping this parameter to `true`.
 
 <p><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-firefox-avif.webp" type="image/webp">
@@ -52,7 +52,7 @@ The AVIF image above likely doesn't show in your browser, but it can by using [C
 </picture></p>
 
 
-## Create AVIF Files with Squoosh (AVIF Beta)
+## Create AVIF Files with Squoosh
 
 [Squoosh](https://squoosh.app/) is an image compression web app that allows you to dive into the advanced options provided by various image compressors.
 
