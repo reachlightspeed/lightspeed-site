@@ -15,7 +15,7 @@ footer_callout_title: Interested in seeing performance gains your site can have 
 tags: post
 ---
 
-*August 26, 2020 Update: Chrome 85 now supports the AVIF format and the link to the preview build of the Squoosh.app has been updated as it now fully support AVIF.*
+*August 26, 2020 Update: Chrome 85 now supports the AVIF format and the link to the preview build of the Squoosh.app has been updated as it now fully supports AVIF.*
 
 ## A More Optimal Image Format
 
