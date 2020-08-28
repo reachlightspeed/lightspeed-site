@@ -11,7 +11,6 @@ author_img: /img/dk
 hero_img: /img/blog/hero-using-avif-images-today
 hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAIAAAA1REndAAAAfUlEQVR42g3EQQ6CMBAF0N/ODKWQqIlbNx7Hq3sVNkAUaelv5S2ee77e8WioXLlb6M06AFod2Mq5dxo6vaU0e4neXdhNNYejmegGB/EDqpaCZVL58i5lNemrfyRNnsWaAbr98FmAUKCawUiOzLP4yDaQYMrM+151vGocFe4PLwg+P6EG4noAAAAASUVORK5CYII=
 og_img: /img/blog/og-how-to-use-avif
-footer_callout_title: Interested in seeing performance gains your site can have with optimized imagery?
 tags: post
 ---
 

@@ -10,7 +10,6 @@ author_img: /img/tj
 hero_img: /img/blog/hero-milliseconds-make-millions
 hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAIAAAD0PzoJAAAAJUlEQVR42mOQ08mQMckHkorW1Rqu3UAGAxCL2peJutRBhBStqwGscAmewpAirwAAAABJRU5ErkJggg==
 og_img: /img/blog/og-milliseconds-make-millions
-footer_callout_title: Interested in seeing what a faster site can do for you?
 tags: post
 ---
 
