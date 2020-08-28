@@ -7414,6 +7414,10 @@ pre[class*="language-"] {
   --bg-opacity: 0.25;
 }
 
+.bg-opacity-35 {
+  --bg-opacity: 0.35;
+}
+
 .bg-opacity-50 {
   --bg-opacity: 0.5;
 }
@@ -7440,6 +7444,10 @@ pre[class*="language-"] {
 
 .hover\:bg-opacity-25:hover {
   --bg-opacity: 0.25;
+}
+
+.hover\:bg-opacity-35:hover {
+  --bg-opacity: 0.35;
 }
 
 .hover\:bg-opacity-50:hover {
@@ -7470,6 +7478,10 @@ pre[class*="language-"] {
   --bg-opacity: 0.25;
 }
 
+.group:hover .group-hover\:bg-opacity-35 {
+  --bg-opacity: 0.35;
+}
+
 .group:hover .group-hover\:bg-opacity-50 {
   --bg-opacity: 0.5;
 }
@@ -7498,6 +7510,10 @@ pre[class*="language-"] {
   --bg-opacity: 0.25;
 }
 
+.mode-dark .dark\:bg-opacity-35 {
+  --bg-opacity: 0.35;
+}
+
 .mode-dark .dark\:bg-opacity-50 {
   --bg-opacity: 0.5;
 }
@@ -7524,6 +7540,10 @@ pre[class*="language-"] {
 
 .mode-dark .dark-hover\:bg-opacity-25:hover {
   --bg-opacity: 0.25;
+}
+
+.mode-dark .dark-hover\:bg-opacity-35:hover {
+  --bg-opacity: 0.35;
 }
 
 .mode-dark .dark-hover\:bg-opacity-50:hover {
