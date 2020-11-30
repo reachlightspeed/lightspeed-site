@@ -727,7 +727,8 @@ h3 {
   background-position: 0 -520px,0 -300px,0 0;
 }
 
-.mode-dark .spacepurple-section {
+.mode-dark .spacepurple-section,
+.mode-dark .spacepurple-footer {
   background: #1c2138 linear-gradient(121deg, #1c2138 0%, #171c31 100%);
 }
 
