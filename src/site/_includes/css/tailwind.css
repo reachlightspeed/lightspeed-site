@@ -42,6 +42,21 @@ nav .border-spacepurple + .border-spacepurple { border-color: transparent; }
   -webkit-clip-path: polygon(0 100px,100% 0,100% calc(100% - 100px),0 100%);
 }
 
+.spacepurple-footer {
+  background: #3B5EE2 linear-gradient(121deg, #4668E7 0%, #2443BB 100%);
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  padding: 0.75rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  margin-top: -7rem;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  clip-path: polygon(0 100px,100% 0,100% 100%,0 100%);
+  -webkit-clip-path: polygon(0 100px,100% 0,100% 100%,0 100%);
+}
+
 p {
   @apply text-lg font-light;
 }
@@ -82,7 +97,8 @@ h3 {
   background-position: 0 -520px,0 -300px,0 0;
 }
 
-.mode-dark .spacepurple-section {
+.mode-dark .spacepurple-section,
+.mode-dark .spacepurple-footer {
   background: #1c2138 linear-gradient(121deg, #1c2138 0%, #171c31 100%);
 }
 
