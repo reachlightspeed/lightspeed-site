@@ -886,7 +886,7 @@ nav .border-spacepurple + .border-spacepurple {
 .blog main .btn {
   text-align: center;
   margin-top: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .blog main .btn a {
@@ -936,14 +936,14 @@ nav .border-spacepurple + .border-spacepurple {
   color: rgba(59, 94, 226, var(--text-opacity));
 }
 
-.mode-dark .blog h2,
-.mode-dark .blog h3 {
+.mode-dark .blog h2 {
   --text-opacity: 1;
   color: #5675E6;
   color: rgba(86, 117, 230, var(--text-opacity));
 }
 
-.mode-dark .blog main p {
+.mode-dark .blog main p,
+.mode-dark .blog h3 {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));

@@ -191,7 +191,7 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .blog main .btn {
-  @apply text-center mt-10 mb-12;
+  @apply text-center mt-10 mb-16;
 }
 
 .blog main .btn a {
@@ -217,12 +217,12 @@ nav .border-spacepurple + .border-spacepurple {
   @apply text-spacepurple;
 }
 
-.mode-dark .blog h2,
-.mode-dark .blog h3 {
+.mode-dark .blog h2 {
   @apply text-spacepurple-light;
 }
 
-.mode-dark .blog main p {
+.mode-dark .blog main p,
+.mode-dark .blog h3 {
   @apply text-white; 
 }
 

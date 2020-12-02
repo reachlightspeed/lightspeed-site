@@ -25,7 +25,7 @@ Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pa
 <source srcset="/img/blog/post-performance-500-chart.webp" type="image/webp">
 <img src="/img/blog/post-performance-500-chart.jpg" width="768" loading="lazy" alt="The Performance 500 (Google Sheets)" class="rounded shadow-lg my-6">
 </picture></a></p>
-<p class="btn"><a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing">The Performance 500 on Google Sheets</a><p>
+<p class="btn"><a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing">The Performance 500</a><p>
 
 
 ## A Few Notes on the Table
