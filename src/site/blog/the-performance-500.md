@@ -28,21 +28,26 @@ Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pa
 <p class="btn"><a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing">The Performance 500</a><p>
 
 ### And the Winner Is
-You’ll notice a recognizable name in first place for the Performance 500: Berkshire Hathaway. Its Chairman and CEO, Warren Buffet, famous for continuing to live in the same house he purchased in 1958, bested even Google’s parent company in Page Speed performance using a simple HTML site with minimal resources to deliver content. Hats off to you, Warren and team.
+You’ll notice a recognizable name in first place for the Performance 500: Berkshire Hathaway. Its Chairman and CEO, Warren Buffet, famous for continuing to live in the same house he purchased in 1958, bested even Google’s parent company in page speed performance using a simple HTML site with minimal resources to deliver content. Hats off to you, Warren and team.
 
 ### Other Interesting Findings
-* Only 3 Sites scored above a 90% or above on their PageSpeed Insights Performance Score
-* 414/500 (~83%) of sites have a Page Speed score of less than 50
-* The average performance score is just about 30
-* The average Largest Contentful Paint is 12 seconds(!)
+* Only 3 sites scored above a 90% or above on their PageSpeed Insights Performance Score
+* 414/500 (~83%) of sites have a Performance Score of less than 50
+* The average Performance Score is just about 30
+* The average Largest Contentful Paint metric is 12 seconds(!)
 * Over half of the Fortune 500 had a Cumulative Layout Shift (CLS) Score of better than .1
-* Only 22 of the 500 have "Good" FID scores
+* Only 22 of the 500 have "Good" First Input Delay (FID) scores
+
+### Understanding LCP, CLS & FID (Core Web Vitals)
+A quick reference:
+* LCP: Largest Contentful Paint - How long it takes from 'begin loading' to a user seeing something on the screen
+* CLS: Cumulative Layout Shift - How often things move around as the page loads
+* FID: First Input Delay - A score that measures how soon a user can interact with the page 
+
+We’ve included <a href="#understanding-core-web-vitals">a section below</a> where we explain each of these metrics in greater detail. 
 
 ### Ranking Methodology
 We chose to rank these companies “Performance 500” rank first by Google’s PageSpeed Insights Performance Score, then by Largest Contentful Paint (LCP), then by Cumulative Layout Shift (CLS), then First Input Delay (FID), three Core Web Vitals metrics that Google recently [announced on their Search Central Blog](https://developers.google.com/search/blog/2020/11/timing-for-page-experience) that will affect Page Rank in Google Search Results beginning in May 2021. We preferred this ranking order as FID is not assigned a weight in [Google’s weighting of the performance score](https://web.dev/performance-scoring/#lighthouse-6).
-
-### Understanding LCP, CLS & FID (Core Web Vitals)
-We’ve included <a href="#understanding-core-web-vitals">a section below</a> where we explain each of these metrics in greater detail. 
 
 ### Cumulative Layout Shift
 You may notice that Cumulative Layout Shift (Column H) is the PageSpeed Insights metric not measured in time and is itself a score: _CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page._
