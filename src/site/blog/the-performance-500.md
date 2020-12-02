@@ -40,11 +40,7 @@ We also chose to only show the mobile rankings of these sites. A prior version o
 We’ve included <a href="#understanding-core-web-vitals">a section below</a> where we explain each of these metrics in greater detail. 
 
 ### Cumulative Layout Shift
-You may notice that Cumulative Layout Shift (Column H) is the PageSpeed Insights metric not measured in time and is itself a score: 
-
-<blockquote>
-CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page.
-</blockquote>
+You may notice that Cumulative Layout Shift (Column H) is the PageSpeed Insights metric not measured in time and is itself a score: _CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page._
 
 ### Color Coding
 We chose to use the green, yellow and red labels using the same color coding scheme used by Page Speed Insights. These vary by metric and can be found in the [PageSpeed Insights documentation](https://developers.google.com/speed/docs/insights/v5/about#categories).
