@@ -64,18 +64,37 @@ A caveat: in a few examples there’s a slight deviance from some of the website
 Starting next May, as Google Search Results start to take into account Loading (Largest Contentful Paint), Interactivity (First Input Delay) and Visual Stability (Cumulative Layout Shift) metrics, sites that have not focused on improving these metrics will be penalized against sites that are faster to load. Let’s take a look at each of these categories.
 
 ### Loading: Largest Contentful Paint (LCP)
+
 > The First Contentful Paint (FCP) metric measures the time from when the page starts loading to when any part of the page's content is rendered on the screen. For this metric, "content" refers to text, images (including background images), svg elements, or non-white canvas elements.
 > <cite>[web.dev](https://web.dev/lcp/)</cite>
 
+<picture>
+  <source srcset="/img/blog/post-performance-500-lcp-sm.svg" media="(max-width: 640px)">
+  <img src="/img/blog/post-performance-500-lcp-lg.svg" width="768" loading="lazy" alt="Largest Contentful Paint (LCP)">
+</picture>
+
 
 ### Visual Stability: Cumulative Layout Shift (CLS)
+
 > CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page.
 A layout shift occurs any time a visible element changes its position from one rendered frame to the next.
 > <cite>[web.dev](https://web.dev/cls/)</cite>
 
+<picture>
+  <source srcset="/img/blog/post-performance-500-cls-sm.svg" media="(max-width: 640px)">
+  <img src="/img/blog/post-performance-500-cls-lg.svg" width="768" loading="lazy" alt="Cumulative Layout Shift (CLS)">
+</picture>
+
+
 ### Interactivity: First Input Delay (FID)
+
 > FID measures the time from when a user first interacts with a page (i.e. when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction.
 > <cite>[web.dev](https://web.dev/fid/)</cite>
+
+<picture>
+  <source srcset="/img/blog/post-performance-500-fid-sm.svg" media="(max-width: 640px)">
+  <img src="/img/blog/post-performance-500-fid-lg.svg" width="768" loading="lazy" alt="First Input Delay (FID)">
+</picture>
 
 ## The Future's A Little Brighter
 
