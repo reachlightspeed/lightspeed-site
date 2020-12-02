@@ -16,9 +16,9 @@ tags: post
 
 ## The Performance 500
 
-Every year, [Fortune](https://www.fortune.com) compiles a list of the top 500 American companies by revenue. We got to thinking: what if we ranked companies by the Page Speed of their homepages? Is there a correlation between business performance and Page Speed performance? What else might we find?
+Every year, [Fortune](https://www.fortune.com) compiles a list of the top 500 American companies by revenue. We got to thinking: what if we ranked companies by the Page Speed of their websites? Is there a correlation between business performance and Page Speed performance? What else might we find?
 
-Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pagespeed/insights/) and The 2020 Fortune 500 list from Fortune, we compiled what we’re calling “The Performance 500”. 
+Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pagespeed/insights/) and 2020 Fortune 500 data from Fortune, we compiled what we’re calling “The Performance 500”. 
 
 <p><a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing"><picture>
 <source srcset="/img/blog/post-performance-500-chart.avif" type="image/avif">
@@ -30,11 +30,16 @@ Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pa
 ### And the Winner Is
 You’ll notice a recognizable name in first place for the Performance 500: Berkshire Hathaway. Its Chairman and CEO, Warren Buffet, famous for continuing to live in the same house he purchased in 1958, bested even Google’s parent company in Page Speed performance using a simple HTML site with minimal resources to deliver content. Hats off to you, Warren and team.
 
+### Other Interesting Findings
+* Only 3 Sites scored above a 90% or above on their PageSpeed Insights Performance Score
+* 414/500 (~83%) of sites have a Page Speed score of less than 50
+* The average performance score is just about 30
+* The average Largest Contentful Paint is 12 seconds(!)
+* Over half of the Fortune 500 had a Cumulative Layout Shift (CLS) Score of better than .1
+* Only 22 of the 500 have "Good" FID scores
+
 ### Ranking Methodology
 We chose to rank these companies “Performance 500” rank first by Google’s PageSpeed Insights Performance Score, then by Largest Contentful Paint (LCP), then by Cumulative Layout Shift (CLS), then First Input Delay (FID), three Core Web Vitals metrics that Google recently [announced on their Search Central Blog](https://developers.google.com/search/blog/2020/11/timing-for-page-experience) that will affect Page Rank in Google Search Results beginning in May 2021. We preferred this ranking order as FID is not assigned a weight in [Google’s weighting of the performance score](https://web.dev/performance-scoring/#lighthouse-6).
-
-### Device Type
-We also chose to only show the mobile rankings of these sites. A prior version of this table existed with desktop scores as well but we felt it was too cluttered to meaningfully show desktop and mobile metrics in the same table.
 
 ### Understanding LCP, CLS & FID (Core Web Vitals)
 We’ve included <a href="#understanding-core-web-vitals">a section below</a> where we explain each of these metrics in greater detail. 
@@ -45,16 +50,8 @@ You may notice that Cumulative Layout Shift (Column H) is the PageSpeed Insights
 ### Color Coding
 We chose to use the green, yellow and red labels using the same color coding scheme used by Page Speed Insights. These vary by metric and can be found in the [PageSpeed Insights documentation](https://developers.google.com/speed/docs/insights/v5/about#categories).
 
-
-### The Sites We Used
-A caveat: in a few examples there’s a slight deviance from some of the websites listed in the company profiles of the Fortune 500. Some linked to investor homepages (www.stock.walmart.com instead of the customer-facing homepages like www.walmart.com).  
-
-### Other Interesting Findings
-* Only 3 Sites scored above a 90% or above on Page Speed score
-* 414/500 (~83%) of sites have a Page Speed score of less than 50
-* TBD 
-* TBD 
-* TBD
+### Device Type
+We also chose to only show the mobile rankings of these sites. A prior version of this table existed with desktop scores as well but we felt it was too cluttered to meaningfully show desktop and mobile metrics in the same table.
 
 <h2 id="understanding-core-web-vitals">Understanding Core Web Vitals (Loading, Visual Stability, and Interactivity Metrics)</h2>
 
