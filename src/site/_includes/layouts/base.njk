@@ -6,16 +6,22 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Lightspeed &mdash; A High-Performance E-Commerce Consultancy</title>
     <meta name="description" content="Lightspeed is a performance optimization consultancy that works with forward-thinking companies to create inconceivably fast digital experiences.">
-    <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="preload" href="/img/starfield.svg" as="image">
-    <script>if (document.location.hostname === "reachlightspeed.com") {window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; ga('create', 'UA-159388575-1', 'auto'); ga('send', 'pageview');}</script>
+    <script>
+      (function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
+      ;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
+      ;c.parentNode.insertBefore(a,c)
+      })(window,document,"galite","script","/js/ga-lite.js");
+      
+      galite('create', 'UA-159388575-1', 'auto');
+      galite('send', 'pageview');
+    </script>
     {% set css %}
       {% include "css/styles.css" %}
     {% endset %}
     <style>
       {{ css | cssmin | safe }}
     </style>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
     <script defer src="/js/instantpage.js"></script>
     <link rel="shortcut icon" href="/favicon.png">
     <meta property="og:type" content="website">
