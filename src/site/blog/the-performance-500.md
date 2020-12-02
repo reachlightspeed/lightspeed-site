@@ -1,9 +1,9 @@
 ---
 title: "The Performance 500: Homepages of The Fortune 500 Ranked by Page Speed"
-meta_description: "tbd"
+meta_description: "The Performance 500 is a list of Fortune 500 companies ranked by the PageSpeed Insights Performance Score and other key performance metrics."
 layout: blog
 permalink: "blog/the-performance-500-homepages-of-the-fortune-500-ranked-by-page-speed/"
-date: 2020-12-02
+date: 2020-12-03
 author: Tom Hanlon
 author_title: Performance Engineer
 author_twitter: tomhanlon
@@ -14,89 +14,69 @@ og_img: /img/blog/og-performance-500
 tags: post
 ---
 
-## A More Optimal Image Format
+## The Performance 500
 
-<a href="http://aomedia.org/" title="AV1 (.avif) File Format"><svg width="220" viewBox="0 0 240 330" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto sm:float-right pt-2 pb-4 px-8"><title>AV1 (.avif) File Format</title><path d="M9 10v310h221V69l-58-59H9zm163 0v59h58" fill="#fff"/><path d="M172 10l58 59h-58V10z" fill="#fff"/><path d="M230 69v251H9V10h163m58 59l-58-59m58 59h-58V10" stroke="#3B5EE2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M211 190l-42-74-43 74h85z" fill="#FBAC30"/><path d="M211 190l-16-19h-53l-16 19h85z" fill="#12B17D"/><path d="M169 218l26-47h-53l27 47z" fill="#BB255C"/><path d="M67 183H47l-2 7H28l19-53h20l20 53H69l-2-7zm-16-13h12l-6-19-6 19zm25-33h18l12 36 11-36h18l-19 53H96l-20-53" fill="#000"/><path d="M165 150l-5 6-6-6 13-13h9v32h-11v-19" fill="#F1F4D4"/><path d="M172 10l58 59h-58V10z" fill="#3B5EE2" stroke="#3B5EE2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+Every year, [Fortune](https://www.fortune.com) compiles a list of the top 500 American companies by revenue. We got to thinking: what if we ranked companies by the Page Speed of their homepages? Is there a correlation between business performance and Page Speed performance? What else might we find?
 
-One of the upcoming technologies we're really excited about is the [AV1 (.avif)](https://aomediacodec.github.io/av1-avif/) image file format. It's basically a super-compressed image type. [Netflix](https://netflixtechblog.com/avif-for-next-generation-image-coding-b1d75675fe4 "AVIF for Next-Generation Image Coding") has already considered .avif superior to the JPEG, PNG, and even the newer WebP image formats for its image quality to compressed file size ratio.
+Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pagespeed/insights/) and The 2020 Fortune 500 list from Fortune, we compiled what we’re calling “The Performance 500”. 
 
-The format was developed by the [Alliance for Open Media](http://aomedia.org/) in collaboration with Google, Cisco, and Xiph.org (who worked with Mozilla, creators of the Firefox browser). This format was created to be an open-sourced and royalty-free image format (unlike JPEG XR, which is a file format that compresses down very small but requires expensive licensing to implement).
+table img 
+<a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing" target="_blank">The Performance 500</a>
 
-## AVIF Compared to JPEG and WebP
+## A Few Notes on the Table
 
-AVIF offers significant file size reduction for images compared with JPEG or WebP; **~50% savings compared to JPEG**, and **~20% savings compared to WebP**. Daniel Aleksandersen of [CTRL.Blog](https://www.ctrl.blog/) has a great breakdown and deep dive into [AVIF comparison to JPEG and WebP](https://www.ctrl.blog/entry/webp-avif-comparison.html).
+### And the Winner Is
+You’ll notice a recognizable name in first place for the Performance 500: Berkshire Hathaway. Its Chairman and CEO, Warren Buffet, famous for continuing to live in the same house he purchased in 1958, bested even Google’s parent company in Page Speed performance using a simple HTML site with minimal resources to deliver content. Hats off to you, Warren and team.
 
-<svg width="768" viewBox="0 0 768 216" fill="none" xmlns="http://www.w3.org/2000/svg" class="block w-full"><path d="M0 16h380a4 4 0 014 4v44a4 4 0 01-4 4H0V16zM0 82h533.6a4 4 0 014 4v44a4 4 0 01-4 4H0V82zM0 148h764a4 4 0 014 4v44a4 4 0 01-4 4H0v-52z" fill="#3B5EE2"/><text fill="#fff" style="white-space:pre" font-size="28" letter-spacing="0em"><tspan x="317.08" y="50.95">.avif</tspan></text><text fill="#fff" style="white-space:pre" font-size="20" font-weight="300" letter-spacing="0em"><tspan x="12" y="49.11">50% smaller than .jpeg</tspan></text><text fill="#fff" style="white-space:pre" font-size="20" font-weight="300" letter-spacing="0em"><tspan x="12" y="116.11">30% smaller than .jpeg</tspan></text><text fill="#fff" style="white-space:pre"  font-size="28" letter-spacing="0em"><tspan x="449.21" y="116.95">.webp</tspan></text><text fill="#fff" style="white-space:pre" font-size="28" letter-spacing="0em"><tspan x="692.03" y="182.95">.jpeg</tspan></text></svg>
+### Ranking Methodology
+We chose to rank these companies “Performance 500” rank first by Google’s PageSpeed Insights Score Ranking, then by Largest Contentful Paint (LCP), then by Cumulative Layout Shift (CLS), then First Input Delay (FID), three Core Web Vitals metrics that Google recently [announced on their Search Central Blog](https://developers.google.com/search/blog/2020/11/timing-for-page-experience) that will affect Page Rank in Google Search Results beginning in May 2021. We preferred this ranking order as FID is not assigned a weight in [Google’s weighting of the performance score](https://web.dev/performance-scoring/#lighthouse-6).
 
-The format is very flexible in that it supports any image codec, can be lossy or lossless, has the ability to use an alpha channel (transparency for UI and design elements), and even has the ability to store a series of animated frames (think lightweight high-quality animated GIFs).
+### Device Type
+We also chose to only show the mobile rankings of these sites. A prior version of this table existed with desktop scores as well but we felt it was too cluttered to meaningfully show desktop and mobile metrics in the same table.
 
-It is also one of the first image formats to support HDR color support; offering higher brightness, color bit depth, and color gamuts.
+### Understanding LCP, CLS & FID (Core Web Vitals)
+We’ve included a section below where we explain each of these metrics in greater detail. 
 
+### Cumulative Layout Shift
+You may notice that Cumulative Layout Shift (Column H) is the PageSpeed Insights metric not measured in time and is itself a score: 
 
-## Using AVIF in Web Development Today
+<blockquote>
+CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page.
+</blockquote>
 
-As of August 25 2020, AVIF is supported in [Chrome 85](https://www.chromestatus.com/feature/4905307790639104) and enabled using a feature flag in [Firefox 80](https://www.mozilla.org/en-US/firefox/80.0/releasenotes/) (and will be supported by default soon); so we should start developing for it today!
-
-<p><picture>
-	<source srcset="/img/blog/post-using-avif-images-today-support.avif" type="image/avif">
-	<source srcset="/img/blog/post-using-avif-images-today-no_support.jpg" type="image/jpeg">
-	<img src="/img/blog/post-using-avif-images-today-no_support.jpg" width="768" loading="lazy" alt="Does your browser support AVIF?" class="rounded shadow-lg my-6">
-</picture></p>
-
-If the AVIF image above doesn't show in your browser, try using the latest version of [Google Chrome](https://www.google.com/chrome/) or by enabling AVIF in the Firefox advanced configuration preferences. You can do this by entering `about:config` in the URL bar, searching `image.avif.enabled`, and flipping this parameter to `true`.
-
-<p><picture>
-	<source srcset="/img/blog/post-using-avif-images-today-firefox-avif.webp" type="image/webp">
-	<img src="/img/blog/post-using-avif-images-today-firefox-avif.png" width="768" loading="lazy" alt="Enable AVIF within Firefox Advanced Configuration Preferences">
-</picture></p>
+### Color Coding
+We chose to use the green, yellow and red labels using the same color coding scheme used by Page Speed Insights. These vary by metric and can be found in the [PageSpeed Insights documentation](https://developers.google.com/speed/docs/insights/v5/about#categories).
 
 
-## Create AVIF Files with Squoosh
+### The Sites We Used
+A caveat: in a few examples there’s a slight deviance from some of the websites listed in the company profiles of the Fortune 500. Some linked to investor homepages (www.stock.walmart.com instead of the customer-facing homepages like www.walmart.com).  
 
-[Squoosh](https://squoosh.app/) is an image compression web app that allows you to dive into the advanced options provided by various image compressors.
+### Other Interesting Findings
+* Only 3 Sites scored above a 90% or above on Page Speed score
+* 414/500 (~83%) of sites have a Page Speed score of less than 50
+* TBD 
+* TBD 
+* TBD
 
-The Google Chrome Labs team recently added AVIF support to the amazing Squoosh web app. In my opinion, this is the best option for converting and creating .avif files.
+## Understanding Core Web Vitals (Loading, Visual Stability, and Interactivity Metrics)
+Starting next May, as Google Search Results start to take into account Loading (Largest Contentful Paint), Interactivity (First Input Delay) and Visual Stability (Cumulative Layout Shift) metrics, sites that have not focused on improving these metrics will be penalized against sites that are faster to load. Let’s take a look at each of these categories.
 
-<p><a href="https://squoosh.app/"><picture>
-	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif-update.avif" type="image/avif">
-	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif-update.webp" type="image/webp">
-	<img src="/img/blog/post-using-avif-images-today-squoosh-avif-update.jpg" width="768" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
-</picture></a></p>
-
-<p class="btn"><a href="https://squoosh.app/">Use Squoosh App</a><p>
-
-If you are comfortable in the command line, you can use the offical AOMedia library, [libavif](https://github.com/AOMediaCodec/libavif), to encode/decode AVIF files. Also, if you're a macOS user with [Homebrew](https://brew.sh/), you can quickly install a pre-built version using `brew install joedrago/repo/avifenc`, and `avifenc --help` for syntax and options.
-
-
-## AVIF as Progressive Enhancement
-
-Even though AVIF isn't supported everywhere yet, we can still use the format in native HTML with the `<picture>` element. The `<picture>` element allows for progressive support as we can list the image sources in the order in which we want loaded, and the browser will load the first that it supports. If browser doesn't support `<picture>` at all, it will fallback to using the default `<img>`.
-
-``` html
-<picture>
-	<source srcset="img/photo.avif" type="image/avif">
-	<source srcset="img/photo.webp" type="image/webp">
-	<img src="img/photo.jpg" alt="Description of Photo">
-</picture>
-```
-
-## AVIF Content-Type Headers + Netlify
-
-An issue we noticed when using .avif files on [Netlify](https://www.netlify.com/), was that the image wasn't showing up in Firefox. It worked fine for Chrome, but not Firefox. We identified that the Response Headers were returning `Content-Type: application/octet-stream`, causing Firefox to display nothing. We fixed this by defining custom headers within the Netlify configuration file (`netlify.toml`).
-
-``` yaml
-[[headers]]
-  for = "*.avif"
-  [headers.values]
-    Content-Type = "image/avif"
-    Content-Disposition = "inline"
-```
-
-We also set the `Content-Disposition` to `inline` vs `attachment`, this way the browser will try to render the file within the browser rather than externally. A good example of this is when a PDF will open within the browser vs as a downloadable file. While `inline` should be default behavior, specifying won't hurt as this is a new filetype.
-
-You can learn more about setting [Custom Headers in Netlify](https://docs.netlify.com/routing/headers/) by checking out their docs.
+### Loading: Largest Contentful Paint (LCP)
+> The First Contentful Paint (FCP) metric measures the time from when the page starts loading to when any part of the page's content is rendered on the screen. For this metric, "content" refers to text, images (including background images), svg elements, or non-white canvas elements.
+> <cite>[web.dev](https://web.dev/lcp/)</cite>
 
 
-## We're Excited
+### Visual Stability: Cumulative Layout Shift (CLS)
+> CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page.
+A layout shift occurs any time a visible element changes its position from one rendered frame to the next.
+> <cite>[web.dev](https://web.dev/cls/)</cite>
 
-We are super excited about what kind of awesome new experiences can be made with the flexibility and performance gains of this new format.
+### Interactivity: First Input Delay (FID)
+> FID measures the time from when a user first interacts with a page (i.e. when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction.
+> <cite>[web.dev](https://web.dev/fid/)</cite>
+
+## The Future's A Little Brighter
+
+We’re really excited to see these aspects of the user experience factored into organic search rankings as we’d love to see companies large and small incentivized to focus on improving the user experience.
+
+Special thanks to Lekshmi Nair’s [repo](https://github.com/lekshmicnair/Fortune500_Financial_Analysis) as a starter for most of the 2020 Fortune 500 company data in this table.
