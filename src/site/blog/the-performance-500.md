@@ -92,6 +92,6 @@ Google's Definition: FID measures the time from when a user first interacts with
 
 ## The Future's A Little Brighter
 
-We’re really excited to see these aspects of the user experience factored into organic search rankings as we’d love to see companies large and small incentivized to focus on improving the user experience.
+We’re really excited to see these aspects of the user experience factored into organic search rankings as we’d love to see companies large and small incentivized to focus on improving page speed performance.
 
 Special thanks to Lekshmi Nair’s [repo](https://github.com/lekshmicnair/Fortune500_Financial_Analysis) as a starter for most of the 2020 Fortune 500 company data in this table.
