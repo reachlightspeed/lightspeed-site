@@ -65,8 +65,7 @@ Starting next May, as Google Search Results start to take into account Loading (
 
 ### Loading: Largest Contentful Paint (LCP)
 
-> The First Contentful Paint (FCP) metric measures the time from when the page starts loading to when any part of the page's content is rendered on the screen. For this metric, "content" refers to text, images (including background images), svg elements, or non-white canvas elements.
-> <cite>[web.dev](https://web.dev/lcp/)</cite>
+The First Contentful Paint (FCP) metric measures the time from when the page starts loading to when any part of the page's content is rendered on the screen. For this metric, "content" refers to text, images (including background images), svg elements, or non-white canvas elements. [web.dev](https://web.dev/lcp/)
 
 <picture>
   <source srcset="/img/blog/post-performance-500-lcp-sm.svg" media="(max-width: 640px)">
@@ -76,9 +75,9 @@ Starting next May, as Google Search Results start to take into account Loading (
 
 ### Visual Stability: Cumulative Layout Shift (CLS)
 
-> CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page.
-A layout shift occurs any time a visible element changes its position from one rendered frame to the next.
-> <cite>[web.dev](https://web.dev/cls/)</cite>
+CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page.
+
+A layout shift occurs any time a visible element changes its position from one rendered frame to the next. [web.dev](https://web.dev/cls/)
 
 <picture>
   <source srcset="/img/blog/post-performance-500-cls-sm.svg" media="(max-width: 640px)">
@@ -88,8 +87,7 @@ A layout shift occurs any time a visible element changes its position from one r
 
 ### Interactivity: First Input Delay (FID)
 
-> FID measures the time from when a user first interacts with a page (i.e. when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction.
-> <cite>[web.dev](https://web.dev/fid/)</cite>
+FID measures the time from when a user first interacts with a page (i.e. when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction. [web.dev](https://web.dev/fid/)
 
 <picture>
   <source srcset="/img/blog/post-performance-500-fid-sm.svg" media="(max-width: 640px)">
