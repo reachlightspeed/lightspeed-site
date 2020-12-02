@@ -20,8 +20,13 @@ Every year, [Fortune](https://www.fortune.com) compiles a list of the top 500 Am
 
 Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pagespeed/insights/) and The 2020 Fortune 500 list from Fortune, we compiled what we’re calling “The Performance 500”. 
 
-table img 
-<a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing" target="_blank">The Performance 500</a>
+<p><a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing"><picture>
+<source srcset="/img/blog/post-performance-500-chart.avif" type="image/avif">
+<source srcset="/img/blog/post-performance-500-chart.webp" type="image/webp">
+<img src="/img/blog/post-performance-500-chart.jpg" width="768" loading="lazy" alt="The Performance 500 (Google Sheets)" class="rounded shadow-lg my-6">
+</picture></a></p>
+<p class="btn"><a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing">The Performance 500 on Google Sheets</a><p>
+
 
 ## A Few Notes on the Table
 
