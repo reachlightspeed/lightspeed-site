@@ -27,20 +27,17 @@ Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pa
 </picture></a></p>
 <p class="btn"><a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing">The Performance 500</a><p>
 
-
-## A Few Notes on the Table
-
 ### And the Winner Is
 You’ll notice a recognizable name in first place for the Performance 500: Berkshire Hathaway. Its Chairman and CEO, Warren Buffet, famous for continuing to live in the same house he purchased in 1958, bested even Google’s parent company in Page Speed performance using a simple HTML site with minimal resources to deliver content. Hats off to you, Warren and team.
 
 ### Ranking Methodology
-We chose to rank these companies “Performance 500” rank first by Google’s PageSpeed Insights Score Ranking, then by Largest Contentful Paint (LCP), then by Cumulative Layout Shift (CLS), then First Input Delay (FID), three Core Web Vitals metrics that Google recently [announced on their Search Central Blog](https://developers.google.com/search/blog/2020/11/timing-for-page-experience) that will affect Page Rank in Google Search Results beginning in May 2021. We preferred this ranking order as FID is not assigned a weight in [Google’s weighting of the performance score](https://web.dev/performance-scoring/#lighthouse-6).
+We chose to rank these companies “Performance 500” rank first by Google’s PageSpeed Insights Performance Score, then by Largest Contentful Paint (LCP), then by Cumulative Layout Shift (CLS), then First Input Delay (FID), three Core Web Vitals metrics that Google recently [announced on their Search Central Blog](https://developers.google.com/search/blog/2020/11/timing-for-page-experience) that will affect Page Rank in Google Search Results beginning in May 2021. We preferred this ranking order as FID is not assigned a weight in [Google’s weighting of the performance score](https://web.dev/performance-scoring/#lighthouse-6).
 
 ### Device Type
 We also chose to only show the mobile rankings of these sites. A prior version of this table existed with desktop scores as well but we felt it was too cluttered to meaningfully show desktop and mobile metrics in the same table.
 
 ### Understanding LCP, CLS & FID (Core Web Vitals)
-We’ve included a section below where we explain each of these metrics in greater detail. 
+We’ve included <a href="#understanding-core-web-vitals">a section below</a> where we explain each of these metrics in greater detail. 
 
 ### Cumulative Layout Shift
 You may notice that Cumulative Layout Shift (Column H) is the PageSpeed Insights metric not measured in time and is itself a score: 
@@ -63,7 +60,7 @@ A caveat: in a few examples there’s a slight deviance from some of the website
 * TBD 
 * TBD
 
-## Understanding Core Web Vitals (Loading, Visual Stability, and Interactivity Metrics)
+<h2 id="understanding-core-web-vitals" class="-mt-12 pt-12">Understanding Core Web Vitals (Loading, Visual Stability, and Interactivity Metrics)</h2>
 Starting next May, as Google Search Results start to take into account Loading (Largest Contentful Paint), Interactivity (First Input Delay) and Visual Stability (Cumulative Layout Shift) metrics, sites that have not focused on improving these metrics will be penalized against sites that are faster to load. Let’s take a look at each of these categories.
 
 ### Loading: Largest Contentful Paint (LCP)
