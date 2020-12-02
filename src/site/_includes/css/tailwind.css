@@ -191,7 +191,7 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .blog main .btn {
-  @apply text-center my-10;
+  @apply text-center mt-10 mb-12;
 }
 
 .blog main .btn a {
