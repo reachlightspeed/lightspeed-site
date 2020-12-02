@@ -34,23 +34,20 @@ You’ll notice a recognizable name in first place for the Performance 500: Berk
 * Only 3 sites scored above a 90% or above on their PageSpeed Insights Performance Score
 * 414/500 (~83%) of sites have a Performance Score of less than 50
 * The average Performance Score is just about 30
-* The average Largest Contentful Paint metric is 12 seconds(!)
+* The average Largest Contentful Paint (LCP) metric is 12 seconds(!)
 * Over half of the Fortune 500 had a Cumulative Layout Shift (CLS) Score of better than .1
 * Only 22 of the 500 have "Good" First Input Delay (FID) scores
 
 ### Understanding LCP, CLS & FID (Core Web Vitals)
 A quick reference:
-* LCP: Largest Contentful Paint - How long it takes from 'begin loading' to a user seeing something on the screen
-* CLS: Cumulative Layout Shift - How often things move around as the page loads
-* FID: First Input Delay - A score that measures how soon a user can interact with the page 
+* LCP: Largest Contentful Paint - How long does it take to render the largest element within the viewport (measured in seconds)
+* CLS: Cumulative Layout Shift - How often things move around as the page loads (presented as a score value)
+* FID: First Input Delay - How soon a user can interact with the page (measured in milliseconds)
 
 We’ve included <a href="#understanding-core-web-vitals">a section below</a> where we explain each of these metrics in greater detail. 
 
 ### Ranking Methodology
 We chose to rank these companies “Performance 500” rank first by Google’s PageSpeed Insights Performance Score, then by Largest Contentful Paint (LCP), then by Cumulative Layout Shift (CLS), then First Input Delay (FID), three Core Web Vitals metrics that Google recently [announced on their Search Central Blog](https://developers.google.com/search/blog/2020/11/timing-for-page-experience) that will affect Page Rank in Google Search Results beginning in May 2021. We preferred this ranking order as FID is not assigned a weight in [Google’s weighting of the performance score](https://web.dev/performance-scoring/#lighthouse-6).
-
-### Cumulative Layout Shift
-You may notice that Cumulative Layout Shift (Column H) is the PageSpeed Insights metric not measured in time and is itself a score: _CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page._
 
 ### Color Coding
 We chose to use the green, yellow and red labels using the same color coding scheme used by Page Speed Insights. These vary by metric and can be found in the [PageSpeed Insights documentation](https://developers.google.com/speed/docs/insights/v5/about#categories).
@@ -64,7 +61,7 @@ Starting next May, as Google Search Results start to take into account Loading (
 
 ### Loading: Largest Contentful Paint (LCP)
 
-The First Contentful Paint (FCP) metric measures the time from when the page starts loading to when any part of the page's content is rendered on the screen. For this metric, "content" refers to text, images (including background images), svg elements, or non-white canvas elements. [web.dev](https://web.dev/lcp/)
+Google's Definition: The Largest Contentful Paint (LCP) metric reports the render time of the largest image or text block visible within the viewport. [web.dev](https://web.dev/lcp/)
 
 <picture>
   <source srcset="/img/blog/post-performance-500-lcp-sm.svg" media="(max-width: 640px)">
@@ -74,7 +71,7 @@ The First Contentful Paint (FCP) metric measures the time from when the page sta
 
 ### Visual Stability: Cumulative Layout Shift (CLS)
 
-CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page.
+Google's Definition: CLS measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page.
 
 A layout shift occurs any time a visible element changes its position from one rendered frame to the next. [web.dev](https://web.dev/cls/)
 
@@ -86,7 +83,7 @@ A layout shift occurs any time a visible element changes its position from one r
 
 ### Interactivity: First Input Delay (FID)
 
-FID measures the time from when a user first interacts with a page (i.e. when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction. [web.dev](https://web.dev/fid/)
+Google's Definition: FID measures the time from when a user first interacts with a page (i.e. when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction. [web.dev](https://web.dev/fid/)
 
 <picture>
   <source srcset="/img/blog/post-performance-500-fid-sm.svg" media="(max-width: 640px)">
