@@ -60,7 +60,7 @@ A caveat: in a few examples there’s a slight deviance from some of the website
 * TBD 
 * TBD
 
-<h2 id="understanding-core-web-vitals" class="-mt-12 pt-12">Understanding Core Web Vitals (Loading, Visual Stability, and Interactivity Metrics)</h2>
+<h2 id="understanding-core-web-vitals">Understanding Core Web Vitals (Loading, Visual Stability, and Interactivity Metrics)</h2>
 Starting next May, as Google Search Results start to take into account Loading (Largest Contentful Paint), Interactivity (First Input Delay) and Visual Stability (Cumulative Layout Shift) metrics, sites that have not focused on improving these metrics will be penalized against sites that are faster to load. Let’s take a look at each of these categories.
 
 ### Loading: Largest Contentful Paint (LCP)

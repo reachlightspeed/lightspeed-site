@@ -140,10 +140,12 @@ nav .border-spacepurple + .border-spacepurple {
 
 .blog main h2 {
   @apply text-2xl mt-12 mb-4 text-spacepurple-dark;
+  scroll-margin-top: 5rem;
 }
 
 .blog main h3 {
   @apply text-lg mt-8 mb-1 font-medium;
+  scroll-margin-top: 5rem;
 }
 
 .blog main a {

@@ -792,6 +792,7 @@ nav .border-spacepurple + .border-spacepurple {
   --text-opacity: 1;
   color: #1E2A61;
   color: rgba(30, 42, 97, var(--text-opacity));
+  scroll-margin-top: 5rem;
 }
 
 .blog main h3 {
@@ -799,6 +800,7 @@ nav .border-spacepurple + .border-spacepurple {
   margin-top: 2rem;
   margin-bottom: 0.25rem;
   font-weight: 500;
+  scroll-margin-top: 5rem;
 }
 
 .blog main a {
