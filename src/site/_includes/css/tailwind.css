@@ -159,7 +159,7 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .blog main ul, .blog main ol {
-  @apply leading-snug text-gray-800 text-lg pl-4 pt-5 pb-2 ml-4;
+  @apply leading-snug text-gray-800 text-lg pl-4 pt-5 mb-2 ml-4;
 }
 
 .blog main ul li {
