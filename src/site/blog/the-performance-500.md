@@ -18,7 +18,7 @@ tags: post
 
 Google [recently announced](https://developers.google.com/search/blog/2020/11/timing-for-page-experience) that Page Rank changes are coming: performance metrics (Core Web Vitals like Largest Contentful Paint, Cumulative Layout Shift and First Input Delay) will soon be taken into account for prioritizing search listings. 
 
-We wanted to see how some of America's top companies &mdash;The Fortune 500&mdash; would stack up against each other when viewed in a different light: performance. Is there a correlation between business performance and Page Speed performance? What else might we find?
+We wanted to see how some of America's top companies &mdash;The Fortune 500&mdash; would stack up against each other when viewed in a different light: website performance. Is there a correlation between business performance and Page Speed performance? What else might we find?
 
 Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pagespeed/insights/) and 2020 Fortune 500 data, we compiled what we’re calling “The Performance 500”. 
 
