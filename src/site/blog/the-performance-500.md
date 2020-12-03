@@ -96,6 +96,4 @@ Google's Definition: FID measures the time from when a user first interacts with
 
 We think these Page Rank changes from Google will have a positive impact, incentivizing companies to focus on improving page speed performance and ultimately the user experience.
 
-Need help optimizing your website's performance? Feel free to send a note to team@reachlightspeed.com to schedule a call.
-
 Special thanks to Lekshmi Nair’s [repo](https://github.com/lekshmicnair/Fortune500_Financial_Analysis) as a starter for most of the 2020 Fortune 500 company data in this table.
