@@ -65,7 +65,7 @@ p + p {
   @apply mt-4;
 }
 
-h3 {
+.box h3 {
   @apply text-2xl font-medium text-spacepurple-dark tracking-tight mb-4 leading-snug;
 }
 
@@ -80,7 +80,7 @@ h3 {
   }
   
   
-  h3 {
+ .box h3 {
     @apply text-3xl;
   }
 
@@ -102,7 +102,7 @@ h3 {
   background: #1c2138 linear-gradient(121deg, #1c2138 0%, #171c31 100%);
 }
 
-.mode-dark h3 {
+.mode-dark .box h3 {
   @apply text-spacepurple-light;
 }
 
@@ -131,7 +131,7 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .blog main p {
-  @apply font-normal text-lg leading-relaxed text-gray-800;
+  @apply text-lg font-normal leading-relaxed text-gray-800;
 }
 
 .blog main p strong {
@@ -140,6 +140,12 @@ nav .border-spacepurple + .border-spacepurple {
 
 .blog main h2 {
   @apply text-2xl mt-12 mb-4 text-spacepurple-dark;
+  scroll-margin-top: 5rem;
+}
+
+.blog main h3 {
+  @apply text-lg mt-8 mb-1 font-medium;
+  scroll-margin-top: 5rem;
 }
 
 .blog main a {
@@ -153,7 +159,7 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .blog main ul, .blog main ol {
-  @apply leading-snug text-gray-800 text-lg pl-4 pt-5 pb-2 ml-4;
+  @apply leading-snug text-gray-800 text-lg pl-4 pt-5 mb-2 ml-4;
 }
 
 .blog main ul li {
@@ -187,7 +193,7 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .blog main .btn {
-  @apply text-center my-10;
+  @apply text-center mt-10 mb-16;
 }
 
 .blog main .btn a {
@@ -213,12 +219,12 @@ nav .border-spacepurple + .border-spacepurple {
   @apply text-spacepurple;
 }
 
-.mode-dark .blog h2,
-.mode-dark .blog h3 {
+.mode-dark .blog h2 {
   @apply text-spacepurple-light;
 }
 
-.mode-dark .blog main p {
+.mode-dark .blog main p,
+.mode-dark .blog h3 {
   @apply text-white; 
 }
 

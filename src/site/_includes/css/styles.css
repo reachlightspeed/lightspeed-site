@@ -681,7 +681,7 @@ p + p {
   margin-top: 1rem;
 }
 
-h3 {
+.box h3 {
   font-size: 1.5rem;
   font-weight: 500;
   --text-opacity: 1;
@@ -704,7 +704,7 @@ h3 {
     font-size: 1.25rem;
   }
 
-  h3 {
+  .box h3 {
     font-size: 1.875rem;
   }
 }
@@ -732,7 +732,7 @@ h3 {
   background: #1c2138 linear-gradient(121deg, #1c2138 0%, #171c31 100%);
 }
 
-.mode-dark h3 {
+.mode-dark .box h3 {
   --text-opacity: 1;
   color: #5675E6;
   color: rgba(86, 117, 230, var(--text-opacity));
@@ -773,8 +773,8 @@ nav .border-spacepurple + .border-spacepurple {
 }
 
 .blog main p {
-  font-weight: 400;
   font-size: 1.125rem;
+  font-weight: 400;
   line-height: 1.625;
   --text-opacity: 1;
   color: #2d3748;
@@ -792,6 +792,15 @@ nav .border-spacepurple + .border-spacepurple {
   --text-opacity: 1;
   color: #1E2A61;
   color: rgba(30, 42, 97, var(--text-opacity));
+  scroll-margin-top: 5rem;
+}
+
+.blog main h3 {
+  font-size: 1.125rem;
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  scroll-margin-top: 5rem;
 }
 
 .blog main a {
@@ -818,7 +827,7 @@ nav .border-spacepurple + .border-spacepurple {
   font-size: 1.125rem;
   padding-left: 1rem;
   padding-top: 1.25rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   margin-left: 1rem;
 }
 
@@ -879,7 +888,7 @@ nav .border-spacepurple + .border-spacepurple {
 .blog main .btn {
   text-align: center;
   margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
 }
 
 .blog main .btn a {
@@ -929,14 +938,14 @@ nav .border-spacepurple + .border-spacepurple {
   color: rgba(59, 94, 226, var(--text-opacity));
 }
 
-.mode-dark .blog h2,
-.mode-dark .blog h3 {
+.mode-dark .blog h2 {
   --text-opacity: 1;
   color: #5675E6;
   color: rgba(86, 117, 230, var(--text-opacity));
 }
 
-.mode-dark .blog main p {
+.mode-dark .blog main p,
+.mode-dark .blog h3 {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
