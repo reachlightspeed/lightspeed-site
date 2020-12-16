@@ -1,9 +1,9 @@
 ---
-title: "The Performance 500: Homepages of The Fortune 500 Ranked by Page Speed"
-meta_description: "The Performance 500 is a list of Fortune 500 companies ranked by the PageSpeed Insights Performance Score and other key performance metrics."
+title: "The Performance 500: Websites of The Fortune 500 Ranked by Page Speed"
+meta_description: "The Performance 500 is a list of Fortune 500 companies ranked by the PageSpeed Insights Performance Score and other key performance metrics of their websites."
 layout: blog
-permalink: "blog/the-performance-500-homepages-of-the-fortune-500-ranked-by-page-speed/"
-date: 2020-12-03
+permalink: "blog/the-performance-500-websites-of-the-fortune-500-ranked-by-page-speed/"
+date: 2020-12-16
 author: Tom Hanlon
 author_title: Performance Engineer
 author_twitter: tomhanlon
@@ -33,12 +33,12 @@ Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pa
 You’ll notice a recognizable name in first place for the Performance 500: <a href="https://www.berkshirehathaway.com/">Berkshire Hathaway</a>. Its Chairman and CEO, Warren Buffet, famous for continuing to live in the same house he purchased in 1958, bested even Google’s parent company in page speed performance using a simple HTML site with minimal resources to deliver content. Hats off to you, Warren and team.
 
 ### Other Interesting Findings
-* Only 3 sites scored above a 90% or above on their PageSpeed Insights Performance Score
-* 83% (414/500) of sites have a Performance Score of less than 50
-* The average Performance Score is just about 30
-* The average Largest Contentful Paint (LCP) metric is 12 seconds(!)
-* Over half of the Fortune 500 had a Cumulative Layout Shift (CLS) Score of better than .1
-* Only 22 of the 500 have "Good" First Input Delay (FID) scores
+* Only 4 sites out of the 500 (.8%) scored above a 90% or above on their PageSpeed Insights Performance Score
+* ~85% (424/500) of sites have a Performance Score of less than 50
+* The average Performance Score is ~29
+* The average Largest Contentful Paint (LCP) metric is 13.5 seconds(!)
+* Less than half of the Fortune 500 had a Cumulative Layout Shift (CLS) Score of better than .1
+* Only 11 of the 500 have "Good" First Input Delay (FID) scores
 
 ### Understanding Core Web Vitals (LCP, CLS & FID)
 A quick reference:
@@ -47,6 +47,9 @@ A quick reference:
 * FID: First Input Delay - How soon after a user input does the browser process the event (measured in milliseconds)
 
 We’ve included <a href="#understanding-core-web-vitals">a section below</a> that explains these in further detail in the language used on <a href="https://web.dev">web.dev</a>. 
+
+### How We Tested
+We ran 5 tests at different times of day over a period of two weeks. Those results have been averaged into the scores presented in the table above. PageSpeed Insights never returned a Performance Score for ViacomCBS so we ranked it last. 
 
 ### Ranking Methodology
 We chose to rank these companies “Performance 500” rank first by Google’s PageSpeed Insights Performance Score, then by Largest Contentful Paint (LCP), then by Cumulative Layout Shift (CLS), then First Input Delay (FID). We preferred this ranking order as FID is not assigned a weight in [Google’s weighting of the performance score](https://web.dev/performance-scoring/#lighthouse-6).
