@@ -38,7 +38,7 @@ It is also one of the first image formats to support HDR color support; offering
 
 ## Using AVIF in Web Development Today
 
-As of January 13 2021, [AVIF is supported](https://caniuse.com/avif) in [Chrome 85](https://www.chromestatus.com/feature/4905307790639104), [Firefox 86](https://www.mozilla.org/en-US/firefox/86.0a1/releasenotes/), and enabled using a feature flag in [Firefox 80](https://www.mozilla.org/en-US/firefox/80.0/releasenotes/) (and will be supported by default soon); so we should start developing for it today!
+As of January 13 2021, [AVIF is supported](https://caniuse.com/avif) in [Chrome 85](https://www.chromestatus.com/feature/4905307790639104), [Firefox 86](https://www.mozilla.org/en-US/firefox/86.0a1/releasenotes/), and enabled using a feature flag in Firefox 85 or older!
 
 <p><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-support.avif" type="image/avif">
