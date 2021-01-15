@@ -25,7 +25,7 @@ Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pa
 <p><a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing"><picture>
 <source srcset="/img/blog/post-performance-500-chart.avif" type="image/avif">
 <source srcset="/img/blog/post-performance-500-chart.webp" type="image/webp">
-<img src="/img/blog/post-performance-500-chart.jpg" width="768" loading="lazy" alt="The Performance 500 (Google Sheets)" class="rounded shadow-lg my-6">
+<img src="/img/blog/post-performance-500-chart.jpg" width="768" height="404" loading="lazy" alt="The Performance 500 (Google Sheets)" class="rounded shadow-lg my-6">
 </picture></a></p>
 <p class="btn"><a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing">The Performance 500</a><p>
 
@@ -70,7 +70,7 @@ Google's Definition: The Largest Contentful Paint (LCP) metric reports the rende
 
 <picture>
   <source srcset="/img/blog/post-performance-500-lcp-sm.svg" media="(max-width: 640px)">
-  <img src="/img/blog/post-performance-500-lcp-lg.svg" width="768" loading="lazy" alt="Largest Contentful Paint (LCP)">
+  <img src="/img/blog/post-performance-500-lcp-lg.svg" width="768" height="192" loading="lazy" alt="Largest Contentful Paint (LCP)">
 </picture>
 
 
@@ -82,7 +82,7 @@ A layout shift occurs any time a visible element changes its position from one r
 
 <picture>
   <source srcset="/img/blog/post-performance-500-cls-sm.svg" media="(max-width: 640px)">
-  <img src="/img/blog/post-performance-500-cls-lg.svg" width="768" loading="lazy" alt="Cumulative Layout Shift (CLS)">
+  <img src="/img/blog/post-performance-500-cls-lg.svg" width="768" height="192" loading="lazy" alt="Cumulative Layout Shift (CLS)">
 </picture>
 
 
@@ -92,7 +92,7 @@ Google's Definition: FID measures the time from when a user first interacts with
 
 <picture>
   <source srcset="/img/blog/post-performance-500-fid-sm.svg" media="(max-width: 640px)">
-  <img src="/img/blog/post-performance-500-fid-lg.svg" width="768" loading="lazy" alt="First Input Delay (FID)">
+  <img src="/img/blog/post-performance-500-fid-lg.svg" width="768" height="192" loading="lazy" alt="First Input Delay (FID)">
 </picture>
 
 ## Incentivizing A Faster Web

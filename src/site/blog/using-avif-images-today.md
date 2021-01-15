@@ -43,14 +43,14 @@ As of January 13 2021, [AVIF is supported](https://caniuse.com/avif) in [Chrome 
 <p><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-support.avif" type="image/avif">
 	<source srcset="/img/blog/post-using-avif-images-today-no_support.jpg" type="image/jpeg">
-	<img src="/img/blog/post-using-avif-images-today-no_support.jpg" width="768" loading="lazy" alt="Does your browser support AVIF?" class="rounded shadow-lg my-6">
+	<img src="/img/blog/post-using-avif-images-today-no_support.jpg" width="768" height="336" loading="lazy" alt="Does your browser support AVIF?" class="rounded shadow-lg my-6">
 </picture></p>
 
 If the AVIF image above doesn't show in your browser, try using the latest version of [Google Chrome](https://www.google.com/chrome/) or by enabling AVIF in the Firefox advanced configuration preferences. You can do this by entering `about:config` in the URL bar, searching `image.avif.enabled`, and flipping this parameter to `true`.
 
 <p><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-firefox-avif.webp" type="image/webp">
-	<img src="/img/blog/post-using-avif-images-today-firefox-avif.png" width="768" loading="lazy" alt="Enable AVIF within Firefox Advanced Configuration Preferences">
+	<img src="/img/blog/post-using-avif-images-today-firefox-avif.png" width="768" height="429" loading="lazy" alt="Enable AVIF within Firefox Advanced Configuration Preferences">
 </picture></p>
 
 
@@ -63,7 +63,7 @@ The Google Chrome Labs team recently added AVIF support to the amazing Squoosh w
 <p><a href="https://squoosh.app/"><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif-update.avif" type="image/avif">
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif-update.webp" type="image/webp">
-	<img src="/img/blog/post-using-avif-images-today-squoosh-avif-update.jpg" width="768" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
+	<img src="/img/blog/post-using-avif-images-today-squoosh-avif-update.jpg" width="768" height="471" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
 </picture></a></p>
 
 <p class="btn"><a href="https://squoosh.app/">Use Squoosh App</a><p>

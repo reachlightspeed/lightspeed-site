@@ -19,7 +19,7 @@ An old work friend from Accenture recently joined an agency called [fifty-five](
   <a href="https://www2.deloitte.com/ie/en/pages/consulting/articles/milliseconds-make-millions.html">
     <picture>
       <source srcset="/img/blog/post-milliseconds-make-millions-book.webp" type="image/webp">
-      <img src="/img/blog/post-milliseconds-make-millions-book.png" alt="Case Stufy of Deloitte: Milliseconds Make Millions" width="300" height="438" class="mx-auto sm:float-right">
+      <img src="/img/blog/post-milliseconds-make-millions-book.png" alt="Case Stufy of Deloitte: Milliseconds Make Millions" width="300" height="439" class="mx-auto sm:float-right">
     </picture>
   </a>
 </p>
