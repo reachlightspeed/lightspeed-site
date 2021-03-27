@@ -29,8 +29,10 @@ npm install
 netlify dev
 ```
 
+## Live Reload
+`npm run watch`
 
-## Previewing the production build
+ Previewing the production build
 
 When building for production, an extra build step will strip out all CSS classes not used in the site. This step is not performed during the automatic rebuilds which take place during dev.
 

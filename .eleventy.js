@@ -44,9 +44,6 @@ module.exports = function(eleventyConfig) {
     }).toFormat('y-MM-dd');
   });
 
-  // Grab excerpts and sections from a file
-  eleventyConfig.addFilter("section", require("./src/utils/section.js") );
-
   // compress and combine js files
   eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js") );
 
