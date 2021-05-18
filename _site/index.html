@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Does it work?</title>
+    
+
+    
+      <link rel="stylesheet" href="/styles.css">
+    
+
+    
+  </head>
+  <body class="font-sans text-white text-center bg-no-repeat bg-cover" style="background-image: radial-gradient(#0F153A, #0A0C2A); background-position: cover;">
+    <header class="mb-8 z-20 w-full pt-1 bg-hex-FFFFFF08 border-b border-hex-FFFFFF14 backdrop-blur">
+  <div class="flex max-w-6xl m-auto h-16">
+
+    <div class="flex flex-1">
+
+        <a href="/" class="border-none flex items-center pl-3 md:px-3" aria-label="Home">
+        <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" class="mr-2 w-6">
+          <defs>
+            <linearGradient id="lslogo" x1="-6%" x2="100%" y1="-12%" y2="93%">
+              <stop offset="0%" stop-color="#85F8A2"/>
+              <stop offset="44%" stop-color="#4A84BE"/>
+              <stop offset="100%" stop-color="#7060B4"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#lslogo)" fill="currentColor" fill-rule="evenodd" d="M21 42a21 21 0 100-42 21 21 0 000 42zM31.8 7.59a1 1 0 00-1.32-1.44l-18 11a1 1 0 00-.19 1.56l5.4 5.4-7.5 10.3a1 1 0 001.33 1.44l18-11a1 1 0 00.19-1.56l-5.4-5.4 7.5-10.3z" clip-rule="evenodd"></path>
+        </svg>
+        <h1 class="hidden whitespace-no-wrap sm:inline-flex text-2xl italic font-semibold tracking-tight leading-none">Lightspeed</h1>
+      </a>
+    </div>
+
+    <div class="flex flex-1 sm:flex-initial sm:w-2/3 md:w-1/2 justify-center">
+      <nav class="flex w-full max-w-xl justify-around uppercase tracking-[2px] font-medium text-[13px]">
+        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/services">
+          Our Work
+          <span class="opacity-100 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+        </a>
+        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/capabilities">
+          Capabilities
+          <span class="opacity-0 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+        </a>
+        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/about">
+          About
+          <span class="opacity-0 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+        </a>
+        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/blog">
+          Blog
+          <span class="opacity-0 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="hidden lg:flex-1 lg:flex flex-row-reverse items-center">
+      <a type="button" class="px-5 py-[10px] mx-4 text-[15px] bg-hex-FFFFFF10 border border-hex-FFFFFF16 rounded" href="/contact">Let’s Chat</a>
+    </div>
+
+  </div>
+</header>
+
+    
+      
+
+<div class="p-6 max-w-2xl leading-relaxed text-lg text-justify mx-auto">
+  <h1 class="text-center text-5xl font-bold italic bg-gradient-to-br from-lightspeed-green via-lightspeed-blue to-lightspeed-purple bg-clip-text text-transparent mb-6">We can help you</h1>
+
+  <p>Yada yada, we work directly with your Marketing and E-Commerse team… In interdum tincidunt nisl, non elementum dui mattis eu. Quisque vitae ornare orci, a vestibulum dui. Curabitur sagittis eu arcu ac rutrum. Donec interdum cursus erat vitae varius. Vestibulum eget metus gravida.</p>
+</div>
+
+    
+
+    <footer class="mt-10 p-6">
+<hr class="block border-none w-full h-px  bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" />
+  
+</footer>
+
+    
+    <script>
+      
+        
+      // encapsulate in IFFE so we don't polute global scope
+(function(){
+  
+  // Page loaded for you in [X] Seconds
+  window.addEventListener("load", loadTime, false);
+
+  function loadTime() {
+    var now = new Date().getTime();
+    var page_load_time = (now - performance.timing.navigationStart) / 1000;
+    page_load_time = +page_load_time.toFixed(2);
+    document.getElementById('loadtime').innerHTML = page_load_time;
+  }
+
+})();
+    
+      
+    </script>
+  </body>
+</html>

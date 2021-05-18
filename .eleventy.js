@@ -1,82 +1,62 @@
-const { DateTime }    = require('luxon');
-const util            = require('util');
-const CleanCSS        = require("clean-css");
-const slugify         = require("slugify");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const { PurgeCSS } = require('purgecss');
+const terser = require('terser');
+const htmlmin = require('html-minifier');
 
-console.log('running eleventyjs')
-module.exports = function(eleventyConfig) {
 
-  // Layout aliases for convenience
-  eleventyConfig.addLayoutAlias('default', 'layouts/base.njk');
-  eleventyConfig.addLayoutAlias('report', 'layouts/report.njk');
-  eleventyConfig.addLayoutAlias('blog', 'layouts/blog.njk');
-  eleventyConfig.addLayoutAlias('conf', 'layouts/conf.njk');
+module.exports = function (eleventyConfig) {
 
-  // Syntax Highlighting
-  eleventyConfig.addPlugin(syntaxHighlight);
-
-  // a debug utility
-  eleventyConfig.addFilter('dump', obj => {
-    return util.inspect(obj)
+  // When Production Inline CSS and Purge any style not used on that page
+  eleventyConfig.addTransform('inline-and-purge-css', async (content, outputPath) => {
+    if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
+      return content;
+    }
+    let purgeCSSResults = await new PurgeCSS().purge({
+      content: [{ raw: content }],
+      css: ['./src/styles.css'],
+      keyframes: true,
+    });
+    return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
   });
 
-  // strip colon out of slug url
-  // https://github.com/11ty/eleventy/issues/278#issuecomment-451105828
-  eleventyConfig.addFilter("slug", (input) => {
-    const options = {
-      replacement: "-",
-      remove: /[&,+()$~%.'":*?<>{}]/g,
-      lower: true
-    };
-    return slugify(input, options);
+  // Minify and Inline JS
+  eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
+    try {
+      const minified = await terser.minify(code);
+      return callback(null, minified.code);
+    } catch (err) {
+      console.error("Error during terser minify:", err);
+      return callback(err, code);
+    }
   });
 
-  // Date helpers
-  eleventyConfig.addFilter('readableDate', dateObj => {
-    return DateTime.fromJSDate(dateObj, {
-      zone: 'utc'
-    }).toFormat('LLLL d, y');
+  // When Production, Minify HTML
+  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+    if (process.env.ELEVENTY_ENV && outputPath && outputPath.endsWith('.html')) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      })
+      return minified;
+    }
+    return content;
   });
-  eleventyConfig.addFilter('htmlDate', dateObj => {
-    return DateTime.fromJSDate(dateObj, {
-      zone: 'utc'
-    }).toFormat('y-MM-dd');
-  });
 
-  // Grab excerpts and sections from a file
-  eleventyConfig.addFilter("section", require("./src/utils/section.js") );
-
-  // compress and combine js files
-  eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js") );
-
-  // minify the html output when running in prod
-  if (process.env.NODE_ENV == "production") {
-    eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js") );
+  // Allow the styles.css on Watch
+  if (process.env.ELEVENTY_ENV !== 'production') {
+    eleventyConfig.addPassthroughCopy('./src/styles.css');
   }
-
-  // Static assets to pass through
-  eleventyConfig.addPassthroughCopy("./src/site/fonts");
-  eleventyConfig.addPassthroughCopy("./src/site/img");
-  eleventyConfig.addPassthroughCopy("./src/site/css");
-  eleventyConfig.addPassthroughCopy("./src/site/js");
-  eleventyConfig.addPassthroughCopy("./src/favicon.png");
-  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
-
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
 
   return  {
     dir: {
-      input: "src/site",
+      input: "src",
       includes: "_includes",
-      output: "dist"
+      output: "_site"
     },
     passthroughFileCopy: true,
-    templateFormats : ["njk", "md", "png", "icon"],
+    templateFormats : ["njk", "md"],
     htmlTemplateEngine : "njk",
     markdownTemplateEngine : "njk",
   };
 
-};
+}

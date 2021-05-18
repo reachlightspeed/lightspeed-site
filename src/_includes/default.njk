@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Does it work?{% endblock %}</title>
+    {% if description %}<meta name="description" content="{{description}}"/>{% endif %}
+
+    {% if site.environment === 'production' %}
+      <!-- INLINE CSS-->
+    {% else %}
+      <link rel="stylesheet" href="/styles.css">
+    {% endif %}
+
+    {% block head %}{% endblock %}
+  </head>
+  <body class="font-sans text-white text-center bg-no-repeat bg-cover" style="background-image: radial-gradient(#0F153A, #0A0C2A); background-position: cover;">
+    {% include 'partials/header.njk' %}
+
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+
+    {% include 'partials/footer.njk' %}
+
+    {% set js %}
+      {% include "js/global.js" %}
+    {% endset %}
+    <script>
+      {% if site.environment === 'production' %}
+        {{ js | jsmin | safe }}
+      {% else %}
+        {{ js | safe }}
+      {% endif %}
+    </script>
+  </body>
+</html>
