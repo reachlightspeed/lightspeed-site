@@ -1,8 +1,9 @@
 # dependecies installed by npm
 node_modules
 
-# build
+# build artifacts
 _site
+src/styles.css
 
 # secrets
 .env
