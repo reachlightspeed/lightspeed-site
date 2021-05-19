@@ -19,6 +19,6 @@
     "onchange": "^7.1.0",
     "purgecss": "^4.0.3",
     "terser": "^5.6.1",
-    "windicss": "^2.5.11"
+    "windicss": "^3.0.9"
   }
 }

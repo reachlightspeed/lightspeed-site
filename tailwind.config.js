@@ -1,6 +1,7 @@
 module.exports = {
   prefixer: true,
   darkMode: 'media', // or 'class'
+  safelist: 'hidden',
   theme: {
     fontFamily: {
       sans: ['Avenir Next', 'Avenir', 'Segoe UI', 'Helvetica', 'helvetica', 'sans-serif'],

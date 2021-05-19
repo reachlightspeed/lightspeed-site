@@ -1,23 +1,14 @@
 # dependecies installed by npm
-/node_modules
+node_modules
 
-# build artifacts
-/dist
-/src/site/css
+# build
+_site
 
 # secrets
 .env
-
-# built css file
-/src/site/_includes/css/styles.css
 
 # macOS related files
 .DS_Store
 .AppleDouble
 .LSOverride
 .nova
-
-# Local Netlify folder
-.netlify
-
-_site
