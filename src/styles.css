@@ -285,8 +285,17 @@ svg {
 .pl-3 {
   padding-left: 0.75rem;
 }
+.absolute {
+  position: absolute;
+}
 .relative {
   position: relative;
+}
+.bottom-\[-1px\] {
+  bottom: -1px;
+}
+.left-0 {
+  left: 0px;
 }
 .text-center {
   text-align: center;
