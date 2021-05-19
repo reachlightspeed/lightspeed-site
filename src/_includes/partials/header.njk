@@ -20,21 +20,21 @@
 
     <div class="flex flex-1 sm:flex-initial sm:w-2/3 md:w-1/2 justify-center">
       <nav class="flex w-full max-w-xl justify-around uppercase tracking-[2px] font-medium text-[13px]">
+        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/products">
+          Products
+          <span class=" {{ 'opacity-100' if '/products' in page.url }} block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+        </a>
         <a class="relative px-2 flex items-center border-b-px border-transparent" href="/services">
-          Our Work
-          <span class="opacity-100 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
-        </a>
-        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/capabilities">
-          Capabilities
-          <span class="opacity-0 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
-        </a>
-        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/about">
-          About
-          <span class="opacity-0 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+          Services
+          <span class="opacity-0 {{ 'opacity-100' if '/services' in page.url }} block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
         </a>
         <a class="relative px-2 flex items-center border-b-px border-transparent" href="/blog">
           Blog
-          <span class="opacity-0 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+          <span class="opacity-0 {{ 'opacity-100' if '/blog' in page.url }} block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+        </a>
+        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/about">
+          About
+          <span class="opacity-0 {{ 'opacity-100' if '/about' in page.url }} block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
         </a>
       </nav>
     </div>
