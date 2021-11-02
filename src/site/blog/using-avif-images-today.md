@@ -13,7 +13,7 @@ hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAECAIAAAA1
 og_img: /img/blog/og-how-to-use-avif
 tags: post
 ---
-*January 13, 2021 Update: Firefox 86 now supports the AVIF format.*
+*November 2, 2021 Update: Firefox 93 now supports the AVIF format without feature flag.*
 
 *August 26, 2020 Update: Chrome 85 now supports the AVIF format and the link to the preview build of the Squoosh.app has been updated as it now fully supports AVIF.*
 
@@ -54,11 +54,11 @@ If the AVIF image above doesn't show in your browser, try using the latest versi
 </picture></p>
 
 
-## Create AVIF Files with Squoosh
+## Create AVIF Files Online
 
-[Squoosh](https://squoosh.app/) is an image compression web app that allows you to dive into the advanced options provided by various image compressors.
+[Squoosh](https://squoosh.app/) and [avif.io](https://avif.io/) are free image compression web apps that allow you to dive into the advanced options provided by various image compressors.
 
-The Google Chrome Labs team recently added AVIF support to the amazing Squoosh web app. In my opinion, this is the best option for converting and creating .avif files.
+The Google Chrome Labs team recently added AVIF support to the amazing Squoosh web app. AVIF.io is another great powerful alternative with easy-to-understand options.
 
 <p><a href="https://squoosh.app/"><picture>
 	<source srcset="/img/blog/post-using-avif-images-today-squoosh-avif-update.avif" type="image/avif">
@@ -66,7 +66,7 @@ The Google Chrome Labs team recently added AVIF support to the amazing Squoosh w
 	<img src="/img/blog/post-using-avif-images-today-squoosh-avif-update.jpg" width="768" height="471" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
 </picture></a></p>
 
-<p class="btn"><a href="https://squoosh.app/">Use Squoosh App</a><p>
+<p class="btn"><a href="https://squoosh.app/">Use Squoosh App</a> <a href="https://avif.io/">Use AVIF.io App</a><p>
 
 If you are comfortable in the command line, you can use the offical AOMedia library, [libavif](https://github.com/AOMediaCodec/libavif), to encode/decode AVIF files. Also, if you're a macOS user with [Homebrew](https://brew.sh/), you can quickly install a pre-built version using `brew install joedrago/repo/avifenc`, and `avifenc --help` for syntax and options.
 
