@@ -56,7 +56,7 @@ If the AVIF image above doesn't show in your browser, try using the latest versi
 
 ## Create AVIF Files Online
 
-[Squoosh](https://squoosh.app/) and [avif.io](https://avif.io/) are free image compression web apps that allow you to dive into the advanced options provided by various image compressors.
+[Squoosh](https://squoosh.app/) and [avif.io](https://avif.io/) are free image compression web apps that can convert your images to .avif in seconds.
 
 The Google Chrome Labs team recently added AVIF support to the amazing Squoosh web app. AVIF.io is another great powerful alternative with easy-to-understand options.
 
