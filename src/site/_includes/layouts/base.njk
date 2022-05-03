@@ -7,15 +7,6 @@
     <title>Lightspeed &mdash; A High-Performance E-Commerce Agency</title>
     <meta name="description" content="Lightspeed is a performance web design agency that works with forward-thinking companies to create inconceivably fast digital experiences.">
     <link rel="preload" href="/img/starfield.svg" as="image">
-    <script>
-      (function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
-      ;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
-      ;c.parentNode.insertBefore(a,c)
-      })(window,document,"galite","script","/js/ga-lite.js");
-      
-      galite('create', 'UA-159388575-1', 'auto');
-      galite('send', 'pageview');
-    </script>
     {% set css %}
       {% include "css/styles.css" %}
     {% endset %}
@@ -42,6 +33,11 @@
     <script>
       {{ darkmode | jsmin | safe }}
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PFDPDTY68"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-3PFDPDTY68');
+    </script>
   </head>
 
 	<body class="bg-fixed bg-starfield mx-4 overflow-x-hidden font-body dark:text-white">
@@ -55,6 +51,11 @@
     {% endset %}
     <script>
       {{ js | jsmin | safe }}
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PFDPDTY68"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-3PFDPDTY68');
     </script>
   </body>
 
