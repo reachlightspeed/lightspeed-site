@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
     }
     let purgeCSSResults = await new PurgeCSS().purge({
       content: [{ raw: content }],
-      css: ['./src/styles.css'],
+      css: ['./_site/styles.css'],
       keyframes: true,
     });
     return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
@@ -41,11 +41,6 @@ module.exports = function (eleventyConfig) {
     }
     return content;
   });
-
-  // Allow the styles.css on Watch
-  if (process.env.ELEVENTY_ENV !== 'production') {
-    eleventyConfig.addPassthroughCopy('./src/styles.css');
-  }
 
   return  {
     dir: {

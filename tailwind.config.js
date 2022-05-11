@@ -1,6 +1,5 @@
 module.exports = {
-  prefixer: true,
-  darkMode: 'media', // or 'class'
+  content: ["./src/**/*.{html,js,njk}"],
   theme: {
     fontFamily: {
       sans: ['Avenir Next', 'Avenir', 'Segoe UI', 'Helvetica', 'helvetica', 'sans-serif'],
@@ -14,5 +13,6 @@ module.exports = {
         }
       }
     }
-  }
+  },
+  plugins: [],
 }
