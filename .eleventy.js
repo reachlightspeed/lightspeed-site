@@ -42,6 +42,8 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  eleventyConfig.addPassthroughCopy('./src/robots.txt');
+
   return  {
     dir: {
       input: "src",
