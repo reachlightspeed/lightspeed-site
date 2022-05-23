@@ -42,7 +42,11 @@ module.exports = function (eleventyConfig) {
     }
     return content;
   });
+  
+  // Get Year. Usage: {% year %}
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+  // Passthrough Items
   eleventyConfig.addPassthroughCopy('./src/robots.txt');
 
   return  {
