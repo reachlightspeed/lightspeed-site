@@ -1,4 +1,4 @@
-// https://www.cssscript.com/animated-starfield-effect/
+/*! Starfield Effect | MIT License | https://github.com/Ashikpaul/Starfield-effect */
 const canvas = document.getElementById('starfield');
 const c = canvas.getContext('2d');
 canvas.width = window.innerWidth; //screen width
