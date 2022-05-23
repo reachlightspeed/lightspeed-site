@@ -3,7 +3,7 @@
 
     <div class="flex flex-1">
 
-        <a href="/" class="border-none flex items-center pl-3 md:px-3" aria-label="Home">
+        <a href="/" class="relative border-none flex items-center pl-3 md:px-3 active:top-px" aria-label="Home">
         
         <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" width="42" height="42" class="mr-2 w-6 h-6">
           <defs>
@@ -22,27 +22,27 @@
 
     <div class="flex flex-1 sm:flex-initial sm:w-2/3 md:w-1/2 justify-center">
       <nav class="flex w-full max-w-xl justify-around uppercase tracking-[2px] font-medium text-[13px]">
-        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/services">
-          Our Work
-          <span class="opacity-100 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+        <a class="relative px-2 flex items-center border-b-px border-transparent group" href="/services">
+          <span class="relative group-active:top-px">Services</span>
+          <span class="block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded transition-all opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 {{ '!opacity-100 !scale-100' if '/services' in page.url }}" aria-hidden="true"></span>
         </a>
-        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/capabilities">
-          Capabilities
-          <span class="opacity-0 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+        <a class="relative px-2 flex items-center border-b-px border-transparent group" href="/our-work">
+          <span class="relative group-active:top-px">Our Work</span>
+          <span class="block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded transition-all opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 {{ '!opacity-100 !scale-100' if '/our-work' in page.url }}" aria-hidden="true"></span>
         </a>
-        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/about">
-          About
-          <span class="opacity-0 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+        <a class="relative px-2 flex items-center border-b-px border-transparent group" href="/blog">
+          <span class="relative group-active:top-px">Blog</span>
+          <span class="block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded transition-all opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 {{ '!opacity-100 !scale-100' if '/blog' in page.url }}" aria-hidden="true"></span>
         </a>
-        <a class="relative px-2 flex items-center border-b-px border-transparent" href="/blog">
-          Blog
-          <span class="opacity-0 block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded" aria-hidden="true"></span>
+        <a class="relative px-2 flex items-center border-b-px border-transparent group" href="/about">
+          <span class="relative group-active:top-px">About</span>
+          <span class="block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded transition-all opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 {{ '!opacity-100 !scale-100' if '/about' in page.url }}" aria-hidden="true"></span>
         </a>
       </nav>
     </div>
 
     <div class="hidden lg:flex-1 lg:flex flex-row-reverse items-center">
-      <a role="button" class="px-5 py-2 mx-4 text-[15px] bg-white/[.10] border border-white/[.16] rounded" href="/contact">Let’s Chat</a>
+      <a role="button" class="relative px-5 py-2 mx-4 text-md bg-gradient-to-r from-white/[.10] to-white/[.10] border border-white/[.16] rounded hover:from-lightspeed-blue hover:to-lightspeed-purple active:top-px" href="/contact">Let’s Chat</a>
     </div>
 
   </div>
