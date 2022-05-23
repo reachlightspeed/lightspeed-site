@@ -3,11 +3,12 @@
   publish = "_site"
 
 [context.production]
-  environment = { NODE_ENV = "production" }
+  environment = { NODE_VERSION = "16.15.0", NODE_ENV = "production" }
 
 [dev]
   command = "npm run watch"
   publish = "_site"
+  port = 3000
   NODE_ENV = "development"
 
 [[headers]]
