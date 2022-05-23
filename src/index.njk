@@ -2,9 +2,46 @@
 layout: default
 ---
 
+<canvas id="starfield" class="absolute -z-50 inset-0 w-screen h-screen opacity-50"></canvas>
+{% set js %}
+  {% include 'js/starfield.js' %}
+{% endset %}
+<script>
+  {% if site.environment === 'production' %}
+    {{ js | jsmin | safe }}
+  {% else %}
+    {{ js | safe }}
+  {% endif %}
+</script>
 
-<div class="p-6 max-w-2xl leading-relaxed text-lg text-justify mx-auto">
-  <h1 class="text-center text-5xl font-bold italic bg-gradient-to-br from-lightspeed-green via-lightspeed-blue to-lightspeed-purple bg-clip-text text-transparent mb-6">We can help you</h1>
+<section class="p-6 max-w-2xl leading-relaxed text-lg text-justify mx-auto">
 
-  <p>Yada yada, we work directly with your Marketing and E-Commerse team… In interdum tincidunt nisl, non elementum dui mattis eu. Quisque vitae ornare orci, a vestibulum dui. Curabitur sagittis eu arcu ac rutrum. Donec interdum cursus erat vitae varius. Vestibulum eget metus gravida.</p>
-</div>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 164 223" width="164" height="223" class="overflow-visible mx-auto my-4">
+    <defs>
+      <linearGradient x1="25%" y1="10%" x2="73%" y2="82%" id="b">
+        <stop stop-color="#85F8A2" offset="0%"/>
+        <stop stop-color="#4A84BE" offset="48.9%"/>
+        <stop stop-color="#7060B4" offset="100%"/>
+      </linearGradient>
+      <path d="M150 1 19 81c-4 3-5 8-1 12l39 39-55 75c-4 7 3 15 10 11l131-80c4-3 5-8 1-12l-39-39 55-75c4-7-3-15-10-11Z" id="a"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+      <use stroke="url(#b)" xlink:href="#a"/>
+      <circle fill="#FFF" cx="149" cy="2" r="2"/>
+      <circle fill="#FFF" cx="19" cy="81" r="2"/>
+      <circle fill="#FFF" cx="18" cy="93" r="2"/>
+      <circle fill="#FFF" cx="105" cy="87" r="2"/>
+      <circle fill="#FFF" cx="143" cy="126" r="2"/>
+      <circle fill="#FFF" cx="142" cy="138" r="2"/>
+      <circle fill="#FFF" cx="56" cy="132" r="2"/>
+      <circle fill="#FFF" cx="12" cy="218" r="2"/>
+      <circle fill="#FFF" cx="2" cy="207" r="2"/>
+      <circle fill="#FFF" cx="159" cy="13" r="2"/>
+    </g>
+  </svg>
+
+  <h1 class="text-center text-5xl font-bold italic bg-gradient-to-br from-lightspeed-green via-lightspeed-blue to-lightspeed-purple bg-clip-text text-transparent mb-6 pb-2">Fast, modern, future-ready digital experiences</h1>
+
+  <p class="text-center text-2xl">High-performance marketing coupled with real-time analytics visualizations. We design, build, and test digital experiences for e-commerce brands.</p>
+  
+</section>
