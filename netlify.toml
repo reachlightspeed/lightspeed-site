@@ -8,7 +8,6 @@
 [dev]
   command = "npm run watch"
   publish = "_site"
-  port = 8080
   NODE_ENV = "development"
 
 [[headers]]
