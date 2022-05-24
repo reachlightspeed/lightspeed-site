@@ -5,18 +5,8 @@ description: Lightspeed is a performance web design agency that works with forwa
 ---
 
 <canvas id="starfield" class="absolute -z-50 inset-0 w-screen h-screen opacity-50"></canvas>
-{% set js %}
-  {% include 'js/starfield.js' %}
-{% endset %}
-<script>
-  {% if site.environment === 'production' %}
-    {{ js | jsmin | safe }}
-  {% else %}
-    {{ js | safe }}
-  {% endif %}
-</script>
 
-<section class="p-6 max-w-2xl leading-relaxed text-lg text-justify mx-auto">
+<section class="p-6 max-w-2xl leading-relaxed text-lg text-center mx-auto">
 
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 164 223" width="164" height="223" class="overflow-visible mx-auto my-4">
     <defs>
@@ -42,8 +32,21 @@ description: Lightspeed is a performance web design agency that works with forwa
     </g>
   </svg>
 
-  <h1 class="text-center text-5xl font-bold italic bg-gradient-to-br from-lightspeed-green via-lightspeed-blue to-lightspeed-purple bg-clip-text text-transparent mb-6 pb-2">Fast, modern, future-ready digital experiences</h1>
+  <h1 class="text-5xl font-bold italic bg-gradient-to-br from-lightspeed-green via-lightspeed-blue to-lightspeed-purple bg-clip-text text-transparent mb-6 pb-2">Fast, modern, future-ready digital experiences</h1>
 
-  <p class="text-center text-2xl">High-performance marketing coupled with real-time analytics visualizations. We design, build, and test digital experiences for e-commerce brands.</p>
+  <p class="text-2xl">High-performance marketing coupled with real-time analytics visualizations. We design, build, and test digital experiences for e-commerce brands.</p>
+  
+  <a href="#" class="btn mt-8" id="hero-cta">Get Started Now</a>
   
 </section>
+
+{% set js %}
+  {% include 'js/starfield.js' %}
+{% endset %}
+<script>
+  {% if site.environment === 'production' %}
+    {{ js | jsmin | safe }}
+  {% else %}
+    {{ js | safe }}
+  {% endif %}
+</script>

@@ -3,13 +3,20 @@ const canvas = document.getElementById('starfield');
 const c = canvas.getContext('2d');
 canvas.width = window.innerWidth; //screen width
 canvas.height = window.innerHeight; //screen height
-//on mouse scroll changes speed and color
-// window.addEventListener('wheel', (event) => {
-//   c.strokeStyle = 'rgb('+Math.random()*255+', '+Math.random()*255+', '+Math.random()*255+')';
-//   if (event.deltaY < 0) speed *= 1.1;
-//   else speed *= 0.9;
-//   if (speed < 0.01) speed = 0.01; else if (speed > 0.1) speed = 0.1;
-// });
+
+const cta = document.getElementById('hero-cta');
+cta.addEventListener("mouseenter", (event) => {
+  c.strokeStyle = 'rgb(112, 96, 180)';  // Purple
+  // c.strokeStyle = 'rgb(133, 248, 162)';  // Green
+  // c.strokeStyle = 'rgb(74, 132, 190)';  // Blue
+  speed = 0.1;
+});
+
+cta.addEventListener("mouseout", (event) => {
+  c.strokeStyle = 'rgb(255, 255, 255)';
+  speed = 0.003;
+});
+
 class Star {
   constructor() {
     //initializing
