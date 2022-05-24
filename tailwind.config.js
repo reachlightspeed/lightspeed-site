@@ -21,5 +21,8 @@ module.exports = {
         'md': '.9375rem',
       }
     }
-  }
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

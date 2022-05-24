@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="288" viewBox="0 0 384 288" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif">
+  <text font-size="95" font-weight="500" fill="#2979FF"><tspan x="50%" y="98" text-anchor="middle">FID</tspan></text>
+  <text font-size="22" fill="#666"><tspan x="50%" y="141" text-anchor="middle">First Input Delay</tspan></text>
+  <path fill="#0CCE6B" d="M15 172h115v43H15z"/>
+  <path fill="#FFA400" d="M130 172h125v43H130z"/>
+  <path fill="#FF4E42" d="M255 172h115v43H255z"/>
+  <path stroke="#555555" stroke-width="2" d="M130 239v-21"/>
+  <path d="M130 211a4 4 0 110 8 4 4 0 010-8z" fill="#555555" fill-rule="nonzero"/>
+  <path stroke="#555555" stroke-width="2" d="M255 239v-21"/>
+  <path d="M255 211a4 4 0 110 8 4 4 0 010-8z" fill="#555555" fill-rule="nonzero"/>
+  <text font-size="14" font-weight="400" fill="#000"><tspan x="52.2" y="198">GOOD</tspan></text>
+  <text font-size="18" font-weight="400" fill="#555555"><tspan x="102.6" y="260">100 ms</tspan></text>
+  <text font-size="18" font-weight="400" fill="#555555"><tspan x="226.3" y="260">300 ms</tspan></text>
+  <text font-size="14" font-weight="400" fill="#000"><tspan x="293.4" y="198">POOR</tspan></text>
+  <text font-size="14" font-weight="400" fill="#000"><tspan x="170.3" y="190">NEEDS </tspan> <tspan x="143.3" y="206">IMPROVEMENT</tspan></text>
+</svg>

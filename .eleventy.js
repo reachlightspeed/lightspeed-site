@@ -1,10 +1,35 @@
+const { DateTime }    = require('luxon');
 const { PurgeCSS } = require('purgecss');
 const terser = require('terser');
 const htmlmin = require('html-minifier');
-
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (eleventyConfig) {
+  
+  // Get Year. Usage: {% year %}
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+  
+  // Date helpers
+  eleventyConfig.addFilter('readableDate', dateObj => {
+    return DateTime.fromJSDate(dateObj, {
+      zone: 'utc'
+    }).toFormat('LLLL d, y');
+  });
+  
+  eleventyConfig.addFilter('htmlDate', dateObj => {
+    return DateTime.fromJSDate(dateObj, {
+      zone: 'utc'
+    }).toFormat('y-MM-dd');
+  });
 
+  // Static assets to pass through
+  eleventyConfig.addPassthroughCopy("./src/favicon.png");
+  eleventyConfig.addPassthroughCopy("./src/img");
+  eleventyConfig.addPassthroughCopy('./src/robots.txt');
+  
+  // Syntax Highlighting
+  eleventyConfig.addPlugin(syntaxHighlight);
+  
   // When Production Inline CSS and Purge any style not used on that page
   eleventyConfig.addTransform('inline-and-purge-css', async (content, outputPath) => {
     if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
@@ -18,7 +43,7 @@ module.exports = function (eleventyConfig) {
     });
     return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
   });
-
+  
   // Minify and Inline JS
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
     try {
@@ -29,7 +54,7 @@ module.exports = function (eleventyConfig) {
       return callback(err, code);
     }
   });
-
+  
   // When Production, Minify HTML
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (process.env.ELEVENTY_ENV && outputPath && outputPath.endsWith('.html')) {
@@ -42,16 +67,11 @@ module.exports = function (eleventyConfig) {
     }
     return content;
   });
-  
-  // Get Year. Usage: {% year %}
-  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-
-  // Passthrough Items
-  eleventyConfig.addPassthroughCopy('./src/robots.txt');
 
   return  {
     dir: {
       input: "src",
+      layouts: "_layouts",
       includes: "_includes",
       output: "_site"
     },
