@@ -4,11 +4,16 @@ title: Lightspeed — A High-Performance E-Commerce Agency
 description: Lightspeed is a performance web design agency that works with forward-thinking companies to create inconceivably fast digital experiences.
 ---
 
-<canvas id="starfield" class="absolute -z-50 inset-0 w-screen h-screen opacity-50"></canvas>
+<canvas id="starfield" class="fixed -z-50 inset-0 w-screen h-screen opacity-50"></canvas>
 
 <section class="p-6 max-w-2xl leading-relaxed text-lg text-center mx-auto">
 
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 164 223" width="164" height="223" class="overflow-visible mx-auto my-4">
+
+  <style>
+    .warpspeed .bolt-outline { opacity: 0; }
+    .warpspeed .bolt-fill { opacity: 0.8; }
+  </style>
+  <svg id="hero-bolt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 164 223" width="164" height="223" class="overflow-visible mx-auto my-4">
     <defs>
       <linearGradient x1="25%" y1="10%" x2="73%" y2="82%" id="b">
         <stop stop-color="#85F8A2" offset="0%"/>
@@ -17,7 +22,8 @@ description: Lightspeed is a performance web design agency that works with forwa
       </linearGradient>
       <path d="M150 1 19 81c-4 3-5 8-1 12l39 39-55 75c-4 7 3 15 10 11l131-80c4-3 5-8 1-12l-39-39 55-75c4-7-3-15-10-11Z" id="a"/>
     </defs>
-    <g fill="none" fill-rule="evenodd">
+    <use class="bolt-fill transition opacity-0" xlink:href="#a" fill="url(#b)"/>
+    <g class="bolt-outline transition opacity-100" fill="none" fill-rule="evenodd">
       <use stroke="url(#b)" xlink:href="#a"/>
       <circle fill="#FFF" cx="149" cy="2" r="2"/>
       <circle fill="#FFF" cx="19" cy="81" r="2"/>
@@ -31,6 +37,7 @@ description: Lightspeed is a performance web design agency that works with forwa
       <circle fill="#FFF" cx="159" cy="13" r="2"/>
     </g>
   </svg>
+
 
   <h1 class="text-5xl font-bold italic bg-gradient-to-br from-lightspeed-green via-lightspeed-blue to-lightspeed-purple bg-clip-text text-transparent mb-6 pb-2">Fast, modern, future-ready digital experiences</h1>
 

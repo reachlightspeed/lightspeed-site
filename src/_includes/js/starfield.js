@@ -10,11 +10,13 @@ cta.addEventListener("mouseenter", (event) => {
   // c.strokeStyle = 'rgb(133, 248, 162)';  // Green
   // c.strokeStyle = 'rgb(74, 132, 190)';  // Blue
   speed = 0.1;
+  document.documentElement.classList.add('warpspeed');
 });
 
 cta.addEventListener("mouseout", (event) => {
   c.strokeStyle = 'rgb(255, 255, 255)';
   speed = 0.003;
+  document.documentElement.classList.remove('warpspeed');
 });
 
 class Star {
