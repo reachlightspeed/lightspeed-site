@@ -44,15 +44,14 @@
 
   </head>
   <body class="font-sans text-white text-center bg-no-repeat bg-lightspeed-midnight bg-gradient-radial from-lightspeed-night to-lightspeed-midnight bg-fixed bg-center antialiased border-t border-lightspeed-night">
-  
+    {% include 'partials/announcement-bar.njk' %}
     {% include 'partials/header.njk' %}
-
+    
     {% block content %}
       {{ content | safe }}
     {% endblock %}
-
+    
     {% include 'partials/footer.njk' %}
-
     {% set js %}
       {% include "js/global.js" %}
     {% endset %}

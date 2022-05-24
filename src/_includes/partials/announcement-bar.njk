@@ -1,0 +1,22 @@
+<style>
+  @keyframes handwave {
+      0% { transform: rotate( 0deg) }
+     10% { transform: rotate(14deg) }
+     20% { transform: rotate(-8deg) }
+     30% { transform: rotate(14deg) }
+     40% { transform: rotate(-4deg) }
+     50% { transform: rotate(10deg) }
+     60% { transform: rotate( 0deg) } 
+    100% { transform: rotate( 0deg) }
+  }
+  #announcement a:hover .handwave {
+    animation: handwave 2s infinite;
+    transform-origin: 70% 70%;
+  }
+</style>
+
+<div id="announcement" class="-mt-px bg-lightspeed-teal p-1">
+  <a class="inline-flex justify-center items-center gap-3 sm:gap-2 p-2 leading-tight font-medium [text-shadow:0_1px_1px_rgba(0,0,0,0.3)]" href="/contact">
+    <span class="handwave text-3xl sm:text-lg mt-1 sm:mt-px">👋</span> <span class="text-left">We have availability for work in Q3 of 2022. <span class="inline-block underline decoration-1">Reach out to schedule a call</span>.</span>
+  </a>
+</div>
