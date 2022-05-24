@@ -1,8 +1,8 @@
-const { DateTime }    = require('luxon');
+const { DateTime } = require('luxon');
 const { PurgeCSS } = require('purgecss');
-const terser = require('terser');
 const htmlmin = require('html-minifier');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const terser = require('terser');
 
 module.exports = function (eleventyConfig) {
   
@@ -15,7 +15,6 @@ module.exports = function (eleventyConfig) {
       zone: 'utc'
     }).toFormat('LLLL d, y');
   });
-  
   eleventyConfig.addFilter('htmlDate', dateObj => {
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
