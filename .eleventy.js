@@ -36,7 +36,7 @@ module.exports = function (eleventyConfig) {
     }
     let purgeCSSResults = await new PurgeCSS().purge({
       content: [{ raw: content }],
-      defaultExtractor: content => content.match(/[\w-:./\[\]]+(?<!:)/g) || [],
+      defaultExtractor: content => content.match(/[\w-!:./\[\]]+(?<!:)/g) || [],
       css: ['./_site/styles.css'],
       keyframes: true,
     });
