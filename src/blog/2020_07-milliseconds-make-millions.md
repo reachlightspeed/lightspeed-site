@@ -8,7 +8,6 @@ author_title: Performance Engineer
 author_twitter: tomhanlon
 author_img: /img/tj
 hero_img: /img/blog/hero-milliseconds-make-millions
-hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAACCAIAAAD0PzoJAAAAJUlEQVR42mOQ08mQMckHkorW1Rqu3UAGAxCL2peJutRBhBStqwGscAmewpAirwAAAABJRU5ErkJggg==
 og_img: /img/blog/og-milliseconds-make-millions
 tags: post
 ---

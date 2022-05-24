@@ -9,7 +9,6 @@ author_title: Performance Engineer
 author_twitter: tomhanlon
 author_img: /img/tj
 hero_img: /img/blog/hero-performance-500
-hero_img_preload: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAFCAIAAAD67UpFAAAAjklEQVR42i3Ky2kDQRBF0Vv12pZljBYOwhE4FCfurYIQ6ANievpVSwyCszzx+3dUo5//ZbtW77/f9z8SzAUCEqb7Te0zXSaa2pcpIS1XqkNub26CFJkJkM960FhFWIvrzgwICphEglwjmdNr1+5AQoY88MVAiAS2nWL0JIKy44O3nas0mupEGYLXnMpG8gBHZEJhuwDn1AAAAABJRU5ErkJggg==
 og_img: /img/blog/og-performance-500
 tags: post
 ---
