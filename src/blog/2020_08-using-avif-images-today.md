@@ -28,7 +28,7 @@ The format was developed by the [Alliance for Open Media](http://aomedia.org/) i
 
 AVIF offers significant file size reduction for images compared with JPEG or WebP; **~50% savings compared to JPEG**, and **~20% savings compared to WebP**. Daniel Aleksandersen of [CTRL.Blog](https://www.ctrl.blog/) has a great breakdown and deep dive into [AVIF comparison to JPEG and WebP](https://www.ctrl.blog/entry/webp-avif-comparison.html).
 
-<svg width="768" viewBox="0 0 768 216" fill="none" xmlns="http://www.w3.org/2000/svg" class="block w-full"><path d="M0 16h380a4 4 0 014 4v44a4 4 0 01-4 4H0V16zM0 82h533.6a4 4 0 014 4v44a4 4 0 01-4 4H0V82zM0 148h764a4 4 0 014 4v44a4 4 0 01-4 4H0v-52z" fill="#3B5EE2"/><text fill="#fff" style="white-space:pre" font-size="28" letter-spacing="0em"><tspan x="317.08" y="50.95">.avif</tspan></text><text fill="#fff" style="white-space:pre" font-size="20" font-weight="300" letter-spacing="0em"><tspan x="12" y="49.11">50% smaller than .jpeg</tspan></text><text fill="#fff" style="white-space:pre" font-size="20" font-weight="300" letter-spacing="0em"><tspan x="12" y="116.11">30% smaller than .jpeg</tspan></text><text fill="#fff" style="white-space:pre"  font-size="28" letter-spacing="0em"><tspan x="449.21" y="116.95">.webp</tspan></text><text fill="#fff" style="white-space:pre" font-size="28" letter-spacing="0em"><tspan x="692.03" y="182.95">.jpeg</tspan></text></svg>
+<svg width="768" viewBox="0 0 768 216" fill="none" xmlns="http://www.w3.org/2000/svg" class="block w-full"><path d="M0 16h380a4 4 0 014 4v44a4 4 0 01-4 4H0V16zM0 82h533.6a4 4 0 014 4v44a4 4 0 01-4 4H0V82zM0 148h764a4 4 0 014 4v44a4 4 0 01-4 4H0v-52z" fill="#3B5EE2"/><text fill="#fff" style="white-space:pre" font-size="28" letter-spacing="0em"><tspan x="317.08" y="50.95">.avif</tspan></text><text fill="#fff" style="white-space:pre" font-size="20" font-weight="400" letter-spacing="0em"><tspan x="12" y="49.11">50% smaller than .jpeg</tspan></text><text fill="#fff" style="white-space:pre" font-size="20" font-weight="400" letter-spacing="0em"><tspan x="12" y="116.11">30% smaller than .jpeg</tspan></text><text fill="#fff" style="white-space:pre"  font-size="28" letter-spacing="0em"><tspan x="449.21" y="116.95">.webp</tspan></text><text fill="#fff" style="white-space:pre" font-size="28" letter-spacing="0em"><tspan x="692.03" y="182.95">.jpeg</tspan></text></svg>
 
 The format is very flexible in that it supports any image codec, can be lossy or lossless, has the ability to use an alpha channel (transparency for UI and design elements), and even has the ability to store a series of animated frames (think lightweight high-quality animated GIFs).
 
@@ -65,7 +65,10 @@ The Google Chrome Labs team recently added AVIF support to the amazing Squoosh w
 	<img src="/img/blog/post-using-avif-images-today-squoosh-avif-update.jpg" width="768" height="471" loading="lazy" alt="Use Squoosh to convert and encode AVIF files." class="rounded shadow-lg my-6">
 </picture></a></p>
 
-<p class="btn"><a href="https://squoosh.app/">Use Squoosh App</a> <a href="https://avif.io/">Use AVIF.io App</a><p>
+<p class="flex gap-4 justify-center pt-2 pb-4">
+	<a href="https://squoosh.app/" class="btn">Use Squoosh App</a>
+	<a href="https://avif.io/" class="btn">Use AVIF.io App</a>
+<p>
 
 If you are comfortable in the command line, you can use the offical AOMedia library, [libavif](https://github.com/AOMediaCodec/libavif), to encode/decode AVIF files. Also, if you're a macOS user with [Homebrew](https://brew.sh/), you can quickly install a pre-built version using `brew install joedrago/repo/avifenc`, and `avifenc --help` for syntax and options.
 

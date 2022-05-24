@@ -26,7 +26,7 @@ Using Google’s [PageSpeed Insights API](https://developers.google.com/speed/pa
 <source srcset="/img/blog/post-performance-500-chart.webp" type="image/webp">
 <img src="/img/blog/post-performance-500-chart.jpg" width="768" height="404" loading="lazy" alt="The Performance 500 (Google Sheets)" class="rounded shadow-lg my-6">
 </picture></a></p>
-<p class="btn"><a href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing">The Performance 500</a><p>
+<p class="text-center"><a class="btn" href="https://docs.google.com/spreadsheets/d/17qQh1zKpa5qwNBzXcCgkVbsy-YMHV0DB_doNgktcp8M/edit?usp=sharing">The Performance 500</a><p>
 
 ### And the Winner Is
 You’ll notice a recognizable name in first place for the Performance 500: <a href="https://www.berkshirehathaway.com/">Berkshire Hathaway</a>. Its Chairman and CEO, Warren Buffet, famous for continuing to live in the same house he purchased in 1958, bested even Google’s parent company in page speed performance using a simple HTML site with minimal resources to deliver content. Hats off to you, Warren and team.

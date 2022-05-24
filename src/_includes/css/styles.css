@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
+
+/* Global Links */
+a {
+  @apply underline-offset-4 decoration-2 decoration-lightspeed-purple transition hover:decoration-lightspeed-green;
+}
+
+/* Button */
+.btn {
+  @apply relative inline-block px-6 py-4 text-center font-medium rounded leading-none text-white bg-lightspeed-purple no-underline border border-white/[.16] transition hover:opacity-80 active:top-px;
+}
+
 @tailwind utilities;
+
 
 /* Syntax Highlighting */
 .token.atrule { color: #c792ea; }

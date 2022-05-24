@@ -17,7 +17,7 @@ title: Blog
       {# <img class="w-24 h-16 sm:w-32 sm:h-24 object-cover ml-2 mr-4 rounded-md shadow" src="{{ post.data.hero_img }}.jpg" loading="lazy" alt="Post image for {{ post.data.title }}" > #}
       <div class="flex-1 flex flex-col m-auto md:pr-20">
         <div class="text-xl mb-2 sm:text-xl leading-tight font-medium">{{ post.data.title }}</div>
-        <div class="mb-1 text-base font-normal">{{ post.date | readableDate }} <span class="px-2">&#9642;</span> {{ post.data.author }}</div>
+        <div class="mb-1 text-base font-normal">{{ post.date | readableDate }} <span class="px-2">&middot;</span> {{ post.data.author }}</div>
       </div>
       <svg class="transition transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <path d="M12 30 L24 16 12 2" />

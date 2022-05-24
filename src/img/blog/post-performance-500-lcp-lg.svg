@@ -2,17 +2,17 @@
   <path fill="#0CCE6B" d="M360 58h115v43H360z"/>
   <path fill="#FFA400" d="M475 58h125v43H475z"/>
   <path fill="#FF4E42" d="M600 58h115v43H600z"/>
-  <path stroke="#555555" stroke-width="2" d="M475 125v-21"/>
-  <path d="M475 97a4 4 0 110 8 4 4 0 010-8z" fill="#555555"/>
-  <path stroke="#555555" stroke-width="2" d="M600 125v-21"/>
-  <path d="M600 97a4 4 0 110 8 4 4 0 010-8z" fill="#555555"/>
+  <path stroke="#fff" stroke-width="2" d="M475 125v-21"/>
+  <path d="M475 97a4 4 0 110 8 4 4 0 010-8z" fill="#fff"/>
+  <path stroke="#fff" stroke-width="2" d="M600 125v-21"/>
+  <path d="M600 97a4 4 0 110 8 4 4 0 010-8z" fill="#fff"/>
   <g transform="translate(-200,0)">
     <text font-size="96" font-weight="500" fill="#2979FF"><tspan x="50%" y="111" text-anchor="middle">LCP</tspan></text>
-    <text font-size="22" fill="#666"><tspan x="50%" y="157" text-anchor="middle">Largest Contentful Paint</tspan></text>
+    <text font-size="22" fill="#fff"><tspan x="50%" y="157" text-anchor="middle">Largest Contentful Paint</tspan></text>
   </g>
   <text font-size="14" font-weight="400"><tspan x="397.2" y="84">GOOD</tspan></text>
-  <text font-size="18" font-weight="400" fill="#555555"><tspan x="447.6" y="146">2.5 sec</tspan></text>
-  <text font-size="18" font-weight="400" fill="#555555"><tspan x="571.3" y="146">4.0 sec</tspan></text>
+  <text font-size="18" font-weight="400" fill="#fff"><tspan x="447.6" y="146">2.5 sec</tspan></text>
+  <text font-size="18" font-weight="400" fill="#fff"><tspan x="571.3" y="146">4.0 sec</tspan></text>
   <text font-size="14" font-weight="400"><tspan x="638.4" y="84">POOR</tspan></text>
   <text font-size="14" font-weight="400"><tspan x="515.3" y="76">NEEDS </tspan> <tspan x="488.3" y="92">IMPROVEMENT</tspan></text>
 </svg>
