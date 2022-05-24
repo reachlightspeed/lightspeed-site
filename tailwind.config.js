@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{html,js,njk}"],
+  content: ["./src/**/*.{html,js,njk,md}"],
   theme: {
     fontFamily: {
       sans: ['Avenir Next', 'Avenir', 'Segoe UI', 'Helvetica', 'helvetica', 'sans-serif'],
