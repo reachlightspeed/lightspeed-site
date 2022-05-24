@@ -8,7 +8,7 @@ a {
 
 /* Button */
 .btn {
-  @apply relative inline-block px-6 py-4 text-center font-medium rounded leading-none text-white bg-lightspeed-purple no-underline border border-white/[.16] transition hover:opacity-80 active:top-px;
+  @apply relative inline-block px-6 py-4 text-center font-medium rounded leading-none text-white bg-lightspeed-purple no-underline border border-white/[.16] transition hover:opacity-80 active:top-px [text-shadow:0_1px_1px_rgba(0,0,0,0.3)] bg-center bg-[length:101%];
 }
 
 @tailwind utilities;
