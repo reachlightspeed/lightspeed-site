@@ -1,9 +1,9 @@
-<header class="mb-8 z-20 w-full pt-1 bg-white/[.03] border-b border-white/[.13] backdrop-blur">
-  <div class="flex max-w-6xl m-auto h-16">
+<header class="mb-8 z-20 w-full bg-white/[.03] border-b border-white/[.13] backdrop-blur pt-3 sm:pt-1">
+  <div class="flex flex-wrap sm:flex-nowrap max-w-6xl m-auto sm:h-16">
 
-    <div class="flex flex-1">
+    <div class="flex flex-1 w-1/2 sm:order-1 sm:w-auto">
 
-        <a href="/" class="relative border-none flex items-center pl-3 md:px-3 active:top-px" aria-label="Home">
+        <a href="/" class="relative border-none flex items-center ml-3 mr-1 active:top-px" aria-label="Home">
         
         <svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" width="42" height="42" class="mr-2 w-6 h-6">
           <defs>
@@ -16,12 +16,16 @@
           <path fill="url(#lslogo)" fill="currentColor" fill-rule="evenodd" d="M21 42a21 21 0 100-42 21 21 0 000 42zM31.8 7.59a1 1 0 00-1.32-1.44l-18 11a1 1 0 00-.19 1.56l5.4 5.4-7.5 10.3a1 1 0 001.33 1.44l18-11a1 1 0 00.19-1.56l-5.4-5.4 7.5-10.3z" clip-rule="evenodd"></path>
         </svg>
         
-        <h1 class="whitespace-no-wrap inline-flex text-2xl italic font-semibold tracking-tight leading-none">Lightspeed</h1>
+        <span class="whitespace-nowrap inline-flex text-2xl italic font-semibold tracking-tight leading-none">Lightspeed</span>
       </a>
     </div>
+    
+    <div class="flex items-center justify-end sm:order-3 md:flex-1">
+      <a class="btn whitespace-nowrap px-5 md:px-6 py-3 ml-2 mr-3 text-md bg-white/[.10] hover:bg-lightspeed-purple hover:opacity-100" href="/contact">Let’s Chat</a>
+    </div>
 
-    <div class="flex flex-1 sm:flex-initial sm:w-2/3 md:w-1/2 justify-center">
-      <nav class="flex w-full max-w-xl justify-around uppercase tracking-[2px] font-medium text-[13px]">
+    <div class="flex justify-center md:flex-1 mt-3 px-1 bg-black/[.05] border-t border-white/[.13] sm:mt-0 sm:border-t-0 md:flex-initial w-full sm:w-1/2 sm:order-2 md:px-2 md:justify-between">
+      <nav class="flex w-full max-w-xl justify-around sm:justify-center md:justify-between uppercase tracking-[2px] font-medium text-[13px] whitespace-nowrap min-h-[3rem]">
         <a class="relative px-2 flex items-center border-b-px border-transparent group" href="/services">
           <span class="relative group-active:top-px">Services</span>
           <span class="block w-full h-px absolute left-0 bottom-[-1px] bg-gradient-to-r from-lightspeed-green via-lightspeed-blue to-lightspeed-purple rounded transition-all opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 {{ '!opacity-100 !scale-100' if '/services' in page.url }}" aria-hidden="true"></span>
@@ -41,9 +45,6 @@
       </nav>
     </div>
 
-    <div class="hidden lg:flex-1 lg:flex flex-row-reverse items-center">
-      <a class="btn px-5 py-3 text-md bg-white/[.10] hover:bg-lightspeed-purple hover:opacity-100" href="/contact">Let’s Chat</a>
-    </div>
 
   </div>
 </header>
