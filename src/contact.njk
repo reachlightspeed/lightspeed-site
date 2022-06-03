@@ -18,7 +18,7 @@ title: Contact Us
               <div class="sm:pr-2 w-full">
                 <label>
                   <span class="text-xl font-light">Name</span>
-                  <input type="text" name="name" required="" class="text-left w-full p-3 btn whitespace-nowrap px-5 md:px-6 py-3 ml-2 mr-3 text-md bg-white/[.10]">
+                  <input type="text" name="name" required="" class="text-left w-full p-3 btn whitespace-nowrap py-3 mr-3 text-md bg-white/[.10]">
                 </label>
                 <label>
                   <span class="hidden">Company</span>
@@ -28,33 +28,35 @@ title: Contact Us
               <div class="pt-4 sm:pt-0 sm:pl-2 w-full">
                 <label>
                   <span class="text-xl font-light">Email</span>
-                  <input type="email" name="email" required="" class="text-left w-full p-3 btn whitespace-nowrap px-5 md:px-6 py-3 ml-2 mr-3 text-md bg-white/[.10]">
+                  <input type="email" name="email" required="" class="text-left w-full p-3 btn whitespace-nowrap py-3 mr-3 text-md bg-white/[.10]">
                 </label>
               </div>
             </div>
             <div class="pt-4">
               <label>
                 <span class="text-xl font-light">Message</span>
-                <textarea name="message" rows="4" required="" class="text-left w-full p-3 btn whitespace-nowrap px-5 md:px-6 py-3 ml-2 mr-3 text-md bg-white/[.10]"></textarea>
+                <textarea name="message" rows="4" required="" class="text-left w-full p-3 btn whitespace-nowrap py-3 mr-3 text-md bg-white/[.10]"></textarea>
               </label>
             </div>
             <div class="send-it pt-4">
-              
-              <button type="submit" class="btn whitespace-nowrap px-5 md:px-6 py-3 ml-2 mr-3 text-md bg-white/[.10] touch-manipulation hover:bg-lightspeed-purple hover:opacity-100">Send</button>
+              <button type="submit" class="btn whitespace-nowrap px-5 md:px-6 py-3 mr-3 text-md bg-white/[.10] touch-manipulation hover:bg-lightspeed-purple hover:opacity-100">Send</button>
             </div>
           </form>
         </div>
       </div>
-    <div class="hidden thank-you">
-      <h3>Thanks, your message was sent</h3>
-      <p>Someone from the Lightspeed team will get in touch with you shortly.</p>
-    </div>
-    <div class="hidden error">
-      <h3>We're sorry, that didn't transmit</h3>
-      <p>There was an issue with the form and your message did not come through. Please reload the page and try again.</p>
-    </div>
   </div>
 
-  <p class="text-sm mt-6">👮‍♂️ If you're selling something, you should know we get a lot of spam through the form and unless your pitch is <em>really</em> good we probably won't get back to you.</p>
+  <p class="text-sm mt-6 spam-warning">👮‍♂️ If you're selling something, you should know we get a lot of spam through the form and unless your pitch is <em>really</em> good we probably won't get back to you.</p>
 
 </section>
+
+{% set js %}
+  {% include 'js/contact.js' %}
+{% endset %}
+<script>
+  {% if site.environment === 'production' %}
+    {{ js | jsmin | safe }}
+  {% else %}
+    {{ js | safe }}
+  {% endif %}
+</script>
