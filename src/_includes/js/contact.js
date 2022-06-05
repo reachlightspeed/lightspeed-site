@@ -45,6 +45,7 @@ var serialize = function (form) {
     // update h1 to thank you
     document.querySelector('h1').innerText = "Thanks, your message was sent";
     document.querySelector('p').innerText = "Someone from the team will get back to you shortly.";
+    document.querySelector('p').classList.add('text-center');
     // remove spam text 
     hideSpamWarning();
   }
@@ -73,7 +74,6 @@ var serialize = function (form) {
       showFormSuccess();
     }).catch(function(e){
       // on error show error 
-      document.querySelector('.contact-us').classList.add('hidden');
-      document.querySelector('.hidden.error').classList.remove('hidden');
+      showFormError();
     });
   }, false);
