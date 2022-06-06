@@ -9,7 +9,7 @@ title: Contact Us
 
 <p class="text-left leading-relaxed text-lg md:text-xl">
   We'd love to learn more about what you're looking for. Feel free to reach out to<span style="unicode-bidi:bidi-override; direction: rtl;">
-      <a class="underline decoration-1" href="mailto:team@reachlightspeed.com">moc.deepsthgilhcaer@maet</a>
+      <a class="underline decoration-1 mailto" href="mailto:wholeteam@reachlightspeed.com">moc.deepsthgilhcaer@maet</a>
     </span>or fill out the form below.
 </p> 
 <div class="mt-6">
@@ -55,6 +55,7 @@ title: Contact Us
 
 {% set js %}
   {% include 'js/contact.js' %}
+  {% include 'js/email.js' %}
 {% endset %}
 <script>
   {% if site.environment === 'production' %}

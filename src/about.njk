@@ -31,7 +31,7 @@ title: About
   </span>
   <p>Utilizing best practices in conversion rate optimization to optimize and improve business outcomes</p>
   <ul class="mt-6 flex justify-center gap-3">
-    <li><a href="mailto:tomh@reachlightspeed.com" class="block p-2.5 rounded-full text-lightspeed-night/90 bg-white/50 transition hover:bg-gradient-to-br from-lightspeed-green via-lightspeed-blue to-lightspeed-purple hover:text-white">
+    <li><a href="mailto:tomh@reachlightspeed.com" class="mailto block p-2.5 rounded-full text-lightspeed-night/90 bg-white/50 transition hover:bg-gradient-to-br from-lightspeed-green via-lightspeed-blue to-lightspeed-purple hover:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
         <title>Tom's Email</title><path d="m1.57 5.29 7.5 4.02c.26.14.58.2.91.2.33 0 .65-.06.9-.2l7.5-4.02c.5-.27.96-1.29.06-1.29H1.52c-.9 0-.43 1.02.05 1.29zm17.04 2.2-7.72 4.03c-.34.18-.58.2-.91.2s-.57-.03-.9-.2l-7.7-4.03C1 7.29 1 7.52 1 7.7V15c0 .42.57 1 1 1h16c.43 0 1-.58 1-1V7.7c0-.2 0-.42-.39-.21z"/></svg>
     </a></li>
@@ -62,7 +62,7 @@ title: About
   </span>
   <p>Performance obsessed designer, turning ideas into polished production-ready experiences</p>
   <ul class="mt-6 flex justify-center gap-3">
-    <li><a href="mailto:dank@reachlightspeed.com" class="block p-2.5 rounded-full text-lightspeed-night/90 bg-white/50 transition hover:bg-gradient-to-br from-lightspeed-green via-lightspeed-blue to-lightspeed-purple hover:text-white">
+    <li><a href="mailto:dank@reachlightspeed.com" class="mailto block p-2.5 rounded-full text-lightspeed-night/90 bg-white/50 transition hover:bg-gradient-to-br from-lightspeed-green via-lightspeed-blue to-lightspeed-purple hover:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
         <title>Dan's Email</title><path d="m1.57 5.29 7.5 4.02c.26.14.58.2.91.2.33 0 .65-.06.9-.2l7.5-4.02c.5-.27.96-1.29.06-1.29H1.52c-.9 0-.43 1.02.05 1.29zm17.04 2.2-7.72 4.03c-.34.18-.58.2-.91.2s-.57-.03-.9-.2l-7.7-4.03C1 7.29 1 7.52 1 7.7V15c0 .42.57 1 1 1h16c.43 0 1-.58 1-1V7.7c0-.2 0-.42-.39-.21z"/></svg>
     </a></li>
@@ -104,4 +104,13 @@ title: About
   
 </section>
 
-
+{% set js %}
+  {% include 'js/email.js' %}
+{% endset %}
+<script>
+  {% if site.environment === 'production' %}
+    {{ js | jsmin | safe }}
+  {% else %}
+    {{ js | safe }}
+  {% endif %}
+</script>
