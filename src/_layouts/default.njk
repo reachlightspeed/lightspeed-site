@@ -62,5 +62,21 @@
         {{ js | safe }}
       {% endif %}
     </script>
+    
+    <template id="prefetch-nav-links">
+      <link rel="prefetch" as="document" href="/">
+      <link rel="prefetch" as="document" href="/services/">
+      <link rel="prefetch" as="document" href="/about/">
+      <link rel="prefetch" as="document" href="/blog/">
+      <link rel="prefetch" as="document" href="/contact/">
+    </template>
+    <script>
+      function prefetchNavLinks() {
+        var prefetchNav = document.getElementById('prefetch-nav-links');
+        var prefetchNavClone = document.importNode(prefetchNav.content, true);
+        document.body.appendChild(prefetchNavClone);
+      }
+      window.onload = prefetchNavLinks;
+    </script>
   </body>
 </html>
