@@ -4,19 +4,13 @@
 # build artifacts
 /dist
 /src/site/css
-_site/
+
+# build
+_site
 
 # secrets
 .env
 
-# built css file
-/src/site/_includes/css/styles.css
-
 # macOS related files
 .DS_Store
-.AppleDouble
-.LSOverride
 .nova
-
-# Local Netlify folder
-.netlify
