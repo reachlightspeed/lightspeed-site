@@ -4,6 +4,7 @@
 # build artifacts
 /dist
 /src/site/css
+_site/
 
 # secrets
 .env
