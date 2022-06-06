@@ -1,4 +1,2 @@
-Sitemap: https://reachlightspeed.com/sitemap.xml
-
 User-agent: *
 Disallow:
