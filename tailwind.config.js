@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Avenir Next', 'Avenir', 'Segoe UI', 'Helvetica', 'arial', 'sans-serif'],
-      headline: ['Avenir Next', 'Avenir', 'Helvetica', 'helvetica', 'arial', 'sans-serif'],
+      headline: ['Avenir Next', 'Avenir', 'Helvetica', 'arial', 'sans-serif'],
     },
     extend: {
       backgroundImage: {
