@@ -2,7 +2,8 @@ module.exports = {
   content: ["./src/**/*.{html,js,njk,md}"],
   theme: {
     fontFamily: {
-      sans: ['Avenir Next', 'Avenir', 'Segoe UI', 'Helvetica', 'helvetica', 'sans-serif'],
+      sans: ['Avenir Next', 'Avenir', 'Segoe UI', 'Helvetica', 'arial', 'sans-serif'],
+      headline: ['Avenir Next', 'Avenir', 'Helvetica', 'helvetica', 'arial', 'sans-serif'],
     },
     extend: {
       backgroundImage: {
