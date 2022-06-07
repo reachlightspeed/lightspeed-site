@@ -13,6 +13,7 @@ module.exports = {
         lightspeed: {
           green: '#85F8A2',
           teal: '#46999B',
+          teal_dark: '#128387',
           blue: '#4A84BE',
           purple: '#7060B4',
           night: '#0F153A',
