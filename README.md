@@ -12,21 +12,16 @@ The need for speed, using:
 ## Prerequisites
 
 - [Node and NPM](https://nodejs.org/)
-- [Netlify CLI](https://www.npmjs.com/package/netlify-cli)
-
 
 ## Running locally
 
 ```bash
 
-# install Netlify CLI globally
-npm install netlify-cli -g
-
 # install the project dependencies
 npm install
 
 # run the build and server locally
-netlify dev
+npm run watch
 ```
 
 
