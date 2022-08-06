@@ -17,17 +17,17 @@ The need for speed, using:
 
 ```bash
 
-# install the project dependencies
+# install dependencies
 npm install
 
-# run the build and server locally
+# serve locally
 npm run watch
 ```
 
 
 ## Previewing the production build
 
-When building for production, an extra build step will strip out all CSS classes not used in the site. This step is not performed during the automatic rebuilds which take place during dev.
+When building for production, the CSS is inlined and purged per page.
 
 ```bash
 
