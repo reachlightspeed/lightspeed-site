@@ -6,7 +6,7 @@ The need for speed, using:
 - [TailwindCSS](https://tailwindcss.com) for a utility first CSS workflow
 - [PurgeCSS](https://www.purgecss.com/) for optimizing CSS output
 - [Terser](https://www.npmjs.com/package/terser) for a simple JS build pipeline
-- [HTML-Minifier](https://www.npmjs.com/package/html-minifier) for minifying all HTML
+- [HTML-Minifier-Terser](https://www.npmjs.com/package/html-minifier-terser) for minifying all HTML
 
 
 ## Prerequisites
